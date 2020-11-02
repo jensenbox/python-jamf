@@ -1,4 +1,4 @@
-# openapi_client.MobileDevicePrestagesApi
+# jamf.MobileDevicePrestagesApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -54,20 +54,20 @@ Search for sorted and paged mobile device prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -124,22 +124,22 @@ Remove an attachment for a Mobile Device Prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
-file_attachment_delete = openapi_client.FileAttachmentDelete() # FileAttachmentDelete | 
+file_attachment_delete = jamf.FileAttachmentDelete() # FileAttachmentDelete | 
 
     try:
         # Remove an attachment for a Mobile Device Prestage 
@@ -187,20 +187,20 @@ Get attachments for a Mobile Device Prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
 
     try:
@@ -250,20 +250,20 @@ Add an attachment to a Mobile Device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Identifier of the Mobile Device Prestage the attachment should be assigned to
 file = '/path/to/file' # file | The file to upload
 
@@ -316,20 +316,20 @@ Deletes a Mobile Device Prestage with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
 
     try:
@@ -377,20 +377,20 @@ Retrieves a Mobile Device Prestage with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
 
     try:
@@ -440,20 +440,20 @@ Gets sorted and paged mobile device prestage history objects
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
 page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
@@ -512,22 +512,22 @@ Adds mobile device prestage history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
-object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Mobile Device Prestage history object notes 
@@ -577,22 +577,22 @@ Updates a Mobile Device Prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
-put_mobile_device_prestage = openapi_client.PutMobileDevicePrestage() # PutMobileDevicePrestage | Mobile Device Prestage to update
+put_mobile_device_prestage = jamf.PutMobileDevicePrestage() # PutMobileDevicePrestage | Mobile Device Prestage to update
 
     try:
         # Update a Mobile Device Prestage 
@@ -643,22 +643,22 @@ Remove device scope for a specific mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to remove from scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to remove from scope
 
     try:
         # Remove Device Scope for a specific Mobile Device Prestage 
@@ -710,20 +710,20 @@ Get device scope for a specific mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
 
     try:
@@ -773,22 +773,22 @@ Add device scope for a specific mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
 
     try:
         # Add Device Scope for a specific Mobile Device Prestage 
@@ -840,22 +840,22 @@ Replace device scope for a specific mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
 
     try:
         # Replace Device Scope for a specific Mobile Device Prestage 
@@ -907,21 +907,21 @@ Create a mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
-    mobile_device_prestage = openapi_client.MobileDevicePrestage() # MobileDevicePrestage | Mobile Device Prestage to create. ids defined in this body will be ignored
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
+    mobile_device_prestage = jamf.MobileDevicePrestage() # MobileDevicePrestage | Mobile Device Prestage to create. ids defined in this body will be ignored
 
     try:
         # Create a Mobile Device Prestage 
@@ -969,20 +969,20 @@ Get all device scope for all mobile device prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     
     try:
         # Get all Device Scope for all Mobile Device Prestages 
@@ -1027,20 +1027,20 @@ Get all prestage sync states for all prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     
     try:
         # Get all Prestage sync States for all prestages 
@@ -1085,20 +1085,20 @@ Get all prestage sync states for a single prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
 
     try:
@@ -1147,20 +1147,20 @@ Get the latest sync state for a single prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 56 # int | Mobile Device Prestage identifier
 
     try:
@@ -1209,20 +1209,20 @@ Gets sorted and paged mobile device prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["id:desc"] # list[str] | Sorting criteria in the format: property:asc/desc. Multiple sort criteria are supported and must be separated with a comma. Example: sort=date:desc,name:asc  (optional) (default to ["id:desc"])
@@ -1275,22 +1275,22 @@ Remove an attachment for a Mobile Device Prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
-ids = openapi_client.Ids() # Ids | 
+ids = jamf.Ids() # Ids | 
 
     try:
         # Remove an attachment for a Mobile Device Prestage 
@@ -1338,20 +1338,20 @@ Get attachments for a Mobile Device Prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
 
     try:
@@ -1401,20 +1401,20 @@ Add an attachment to a Mobile Device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Identifier of the Mobile Device Prestage the attachment should be assigned to
 file = '/path/to/file' # file | The file to upload
 
@@ -1467,20 +1467,20 @@ Deletes a Mobile Device Prestage with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
 
     try:
@@ -1528,20 +1528,20 @@ Retrieves a Mobile Device Prestage with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
 
     try:
@@ -1591,20 +1591,20 @@ Gets sorted and paged mobile device prestage history objects
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
 page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
@@ -1659,22 +1659,22 @@ Adds mobile device prestage history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
-object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Mobile Device Prestage history object notes 
@@ -1724,22 +1724,22 @@ Updates a Mobile Device Prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
-put_mobile_device_prestage_v2 = openapi_client.PutMobileDevicePrestageV2() # PutMobileDevicePrestageV2 | Mobile Device Prestage to update
+put_mobile_device_prestage_v2 = jamf.PutMobileDevicePrestageV2() # PutMobileDevicePrestageV2 | Mobile Device Prestage to update
 
     try:
         # Update a Mobile Device Prestage 
@@ -1790,22 +1790,22 @@ Remove device scope for a specific mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to remove from scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to remove from scope
 
     try:
         # Remove Device Scope for a specific Mobile Device Prestage 
@@ -1857,20 +1857,20 @@ Get device scope for a specific mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
 
     try:
@@ -1920,22 +1920,22 @@ Add device scope for a specific mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
 
     try:
         # Add Device Scope for a specific Mobile Device Prestage 
@@ -1987,22 +1987,22 @@ Replace device scope for a specific mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
 
     try:
         # Replace Device Scope for a specific Mobile Device Prestage 
@@ -2054,20 +2054,20 @@ Get all prestage sync states for a single prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
 
     try:
@@ -2116,20 +2116,20 @@ Get the latest sync state for a single prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     id = 'id_example' # str | Mobile Device Prestage identifier
 
     try:
@@ -2178,21 +2178,21 @@ Create a mobile device prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
-    mobile_device_prestage_v2 = openapi_client.MobileDevicePrestageV2() # MobileDevicePrestageV2 | Mobile Device Prestage to create. ids defined in this body will be ignored
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
+    mobile_device_prestage_v2 = jamf.MobileDevicePrestageV2() # MobileDevicePrestageV2 | Mobile Device Prestage to create. ids defined in this body will be ignored
 
     try:
         # Create a Mobile Device Prestage 
@@ -2240,20 +2240,20 @@ Get all device scope for all mobile device prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     
     try:
         # Get all Device Scope for all Mobile Device Prestages 
@@ -2298,20 +2298,20 @@ Get all prestage sync states for all prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicePrestagesApi(api_client)
+    api_instance = jamf.MobileDevicePrestagesApi(api_client)
     
     try:
         # Get all Prestage sync States for all prestages 

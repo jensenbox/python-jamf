@@ -1,4 +1,4 @@
-# openapi_client.LdapPreviewApi
+# jamf.LdapPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -20,20 +20,20 @@ Retrieves the configured access groups that contain the text in the searchParam.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LdapPreviewApi(api_client)
+    api_instance = jamf.LdapPreviewApi(api_client)
     q = 'null' # str | Will perform a \"contains\" search on the names of access groups (optional) (default to 'null')
 
     try:
@@ -82,20 +82,20 @@ Retrieves all LDAP Servers including Cloud Identity Providers.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LdapPreviewApi(api_client)
+    api_instance = jamf.LdapPreviewApi(api_client)
     
     try:
         # Retrieve all LDAP Servers including Cloud Identity Providers 

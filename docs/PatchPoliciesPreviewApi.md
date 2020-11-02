@@ -1,4 +1,4 @@
-# openapi_client.PatchPoliciesPreviewApi
+# jamf.PatchPoliciesPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -22,20 +22,20 @@ Returns a list of patch policies.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchPoliciesPreviewApi(api_client)
+    api_instance = jamf.PatchPoliciesPreviewApi(api_client)
     on_dashboard = False # bool | Filters whether or not the patch policies are on the dashboard. (optional) (default to False)
 enabled = False # bool | Filters whether or not the patch policies are enabled. (optional) (default to False)
 
@@ -86,20 +86,20 @@ Removes a patch policy from the dashboard.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchPoliciesPreviewApi(api_client)
+    api_instance = jamf.PatchPoliciesPreviewApi(api_client)
     id = 56 # int | patch id
 
     try:
@@ -147,20 +147,20 @@ Returns whether or not the requested patch policy is on the dashboard
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchPoliciesPreviewApi(api_client)
+    api_instance = jamf.PatchPoliciesPreviewApi(api_client)
     id = 56 # int | patch policy id
 
     try:
@@ -210,20 +210,20 @@ Adds a patch policy to the dashboard.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchPoliciesPreviewApi(api_client)
+    api_instance = jamf.PatchPoliciesPreviewApi(api_client)
     id = 56 # int | patch policy id
 
     try:

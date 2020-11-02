@@ -1,4 +1,4 @@
-# openapi_client.SsoSettingsApi
+# jamf.SsoSettingsApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -26,20 +26,20 @@ Retrieves the list of Enrollment Customizations using SSO
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoSettingsApi(api_client)
+    api_instance = jamf.SsoSettingsApi(api_client)
     
     try:
         # Retrieve the list of Enrollment Customizations using SSO 
@@ -84,20 +84,20 @@ Disable SSO
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoSettingsApi(api_client)
+    api_instance = jamf.SsoSettingsApi(api_client)
     
     try:
         # Disable SSO 
@@ -142,20 +142,20 @@ Retrieves the current Single Sign On configuration settings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoSettingsApi(api_client)
+    api_instance = jamf.SsoSettingsApi(api_client)
     
     try:
         # Retrieve the current Single Sign On configuration settings 
@@ -200,20 +200,20 @@ Gets SSO history object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoSettingsApi(api_client)
+    api_instance = jamf.SsoSettingsApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["id:desc"] # list[str] | Sorting criteria in the format: property:asc/desc. Default sort is date:desc. Multiple sort criteria are supported and must be separated with a comma. Example: sort=date:desc,name:asc  (optional) (default to ["id:desc"])
@@ -268,21 +268,21 @@ Adds SSO history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoSettingsApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+    api_instance = jamf.SsoSettingsApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add SSO history object notes 
@@ -331,20 +331,20 @@ Download the Jamf Pro SAML metadata file
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoSettingsApi(api_client)
+    api_instance = jamf.SsoSettingsApi(api_client)
     
     try:
         # Download the Jamf Pro SAML metadata file 
@@ -389,21 +389,21 @@ Updates the current Single Sign On configuration settings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoSettingsApi(api_client)
-    sso_settings = openapi_client.SsoSettings() # SsoSettings | 
+    api_instance = jamf.SsoSettingsApi(api_client)
+    sso_settings = jamf.SsoSettings() # SsoSettings | 
 
     try:
         # Updates the current Single Sign On configuration settings 
@@ -452,21 +452,21 @@ Validation of a content available under provided metadata URL.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoSettingsApi(api_client)
-    sso_metadata_url = openapi_client.SsoMetadataUrl() # SsoMetadataUrl | url to validate
+    api_instance = jamf.SsoSettingsApi(api_client)
+    sso_metadata_url = jamf.SsoMetadataUrl() # SsoMetadataUrl | url to validate
 
     try:
         # Endpoint for validation of a saml metadata url 

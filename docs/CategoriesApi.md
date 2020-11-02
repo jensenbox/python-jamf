@@ -1,4 +1,4 @@
-# openapi_client.CategoriesApi
+# jamf.CategoriesApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -26,21 +26,21 @@ Delete multiple Categories by their IDs
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CategoriesApi(api_client)
-    ids = openapi_client.Ids() # Ids | IDs of the categories to be deleted
+    api_instance = jamf.CategoriesApi(api_client)
+    ids = jamf.Ids() # Ids | IDs of the categories to be deleted
 
     try:
         # Delete multiple Categories by their IDs 
@@ -88,20 +88,20 @@ Gets `Category` objects.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CategoriesApi(api_client)
+    api_instance = jamf.CategoriesApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["id:asc"] # list[str] | Sorting criteria in the format: property:asc/desc. Default sort is id:asc. Multiple sort criteria are supported and must be separated with a comma. Example: sort=date:desc,name:asc  (optional) (default to ["id:asc"])
@@ -156,20 +156,20 @@ Removes specified category record
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CategoriesApi(api_client)
+    api_instance = jamf.CategoriesApi(api_client)
     id = 'id_example' # str | instance id of category record
 
     try:
@@ -217,20 +217,20 @@ Gets specified Category object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CategoriesApi(api_client)
+    api_instance = jamf.CategoriesApi(api_client)
     id = 'id_example' # str | instance id of category record
 
     try:
@@ -280,20 +280,20 @@ Gets specified Category history object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CategoriesApi(api_client)
+    api_instance = jamf.CategoriesApi(api_client)
     id = 'id_example' # str | instance id of category history record
 page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
@@ -351,22 +351,22 @@ Adds specified Category history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CategoriesApi(api_client)
+    api_instance = jamf.CategoriesApi(api_client)
     id = 'id_example' # str | instance id of category history record
-object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add specified Category history object notes 
@@ -417,22 +417,22 @@ Update specified category object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CategoriesApi(api_client)
+    api_instance = jamf.CategoriesApi(api_client)
     id = 'id_example' # str | instance id of category record
-category = openapi_client.Category() # Category | category object to create. id defined in this body will be ignored
+category = jamf.Category() # Category | category object to create. id defined in this body will be ignored
 
     try:
         # Update specified Category object 
@@ -481,21 +481,21 @@ Create category record
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CategoriesApi(api_client)
-    category = openapi_client.Category() # Category | category object to create. IDs defined in this body will be ignored
+    api_instance = jamf.CategoriesApi(api_client)
+    category = jamf.Category() # Category | category object to create. IDs defined in this body will be ignored
 
     try:
         # Create Category record 

@@ -1,4 +1,4 @@
-# openapi_client.ClientCheckInApi
+# jamf.ClientCheckInApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -26,20 +26,20 @@ Gets `Client Check-In` object.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientCheckInApi(api_client)
+    api_instance = jamf.ClientCheckInApi(api_client)
     
     try:
         # Get Client Check-In settings 
@@ -84,20 +84,20 @@ Gets Client Check-In history object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientCheckInApi(api_client)
+    api_instance = jamf.ClientCheckInApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -156,21 +156,21 @@ Adds Client Check-In history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientCheckInApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+    api_instance = jamf.ClientCheckInApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add a Note to Client Check-In History 
@@ -219,21 +219,21 @@ Update Client Check-In object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientCheckInApi(api_client)
-    client_check_in = openapi_client.ClientCheckIn() # ClientCheckIn | Client Check-In object to update
+    api_instance = jamf.ClientCheckInApi(api_client)
+    client_check_in = jamf.ClientCheckIn() # ClientCheckIn | Client Check-In object to update
 
     try:
         # Update Client Check-In object 
@@ -281,20 +281,20 @@ Gets `Client Check-In` object.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientCheckInApi(api_client)
+    api_instance = jamf.ClientCheckInApi(api_client)
     
     try:
         # Get Client Check-In settings 
@@ -339,20 +339,20 @@ Gets Client Check-In history object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientCheckInApi(api_client)
+    api_instance = jamf.ClientCheckInApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["date:desc"] # list[str] | Sorting criteria in the format: property:asc/desc. Default sort is name:asc. Multiple sort criteria are supported and must be separated with a comma. Example: sort=date:desc,username:asc  (optional) (default to ["date:desc"])
@@ -407,21 +407,21 @@ Adds Client Check-In history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientCheckInApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+    api_instance = jamf.ClientCheckInApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add a Note to Client Check-In History 
@@ -470,21 +470,21 @@ Update Client Check-In object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientCheckInApi(api_client)
-    client_check_in_v2 = openapi_client.ClientCheckInV2() # ClientCheckInV2 | Client Check-In object to update
+    api_instance = jamf.ClientCheckInApi(api_client)
+    client_check_in_v2 = jamf.ClientCheckInV2() # ClientCheckInV2 | Client Check-In object to update
 
     try:
         # Update Client Check-In object 

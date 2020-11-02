@@ -1,4 +1,4 @@
-# openapi_client.AdvancedMobileDeviceSearchesApi
+# jamf.AdvancedMobileDeviceSearchesApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -25,20 +25,20 @@ Gets Mobile Device Advanced Search criteria choices. A list of potentially valid
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedMobileDeviceSearchesApi(api_client)
+    api_instance = jamf.AdvancedMobileDeviceSearchesApi(api_client)
     criteria = 'criteria_example' # str | 
 site = '-1' # str |  (optional) (default to '-1')
 contains = 'null' # str |  (optional) (default to 'null')
@@ -91,21 +91,21 @@ Removes specified Advanced Search Objects
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedMobileDeviceSearchesApi(api_client)
-    ids = openapi_client.Ids() # Ids | ids of the building to be deleted
+    api_instance = jamf.AdvancedMobileDeviceSearchesApi(api_client)
+    ids = jamf.Ids() # Ids | ids of the building to be deleted
 
     try:
         # Remove specified Advanced Search objects 
@@ -153,20 +153,20 @@ Gets Advanced Search Objects
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedMobileDeviceSearchesApi(api_client)
+    api_instance = jamf.AdvancedMobileDeviceSearchesApi(api_client)
     
     try:
         # Get Advanced Search objects 
@@ -211,20 +211,20 @@ Removes specified Advanced Search Object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedMobileDeviceSearchesApi(api_client)
+    api_instance = jamf.AdvancedMobileDeviceSearchesApi(api_client)
     id = 'id_example' # str | instance id of advanced search record
 
     try:
@@ -273,20 +273,20 @@ Gets Specified Advanced Search Object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedMobileDeviceSearchesApi(api_client)
+    api_instance = jamf.AdvancedMobileDeviceSearchesApi(api_client)
     id = 'id_example' # str | id of target Advanced Search
 
     try:
@@ -336,22 +336,22 @@ Gets Specified Advanced Search Object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedMobileDeviceSearchesApi(api_client)
+    api_instance = jamf.AdvancedMobileDeviceSearchesApi(api_client)
     id = 'id_example' # str | id of target Advanced Search
-advanced_search = openapi_client.AdvancedSearch() # AdvancedSearch | 
+advanced_search = jamf.AdvancedSearch() # AdvancedSearch | 
 
     try:
         # Get specified Advanced Search object 
@@ -401,21 +401,21 @@ Creates Advanced Search Object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedMobileDeviceSearchesApi(api_client)
-    advanced_search = openapi_client.AdvancedSearch() # AdvancedSearch | 
+    api_instance = jamf.AdvancedMobileDeviceSearchesApi(api_client)
+    advanced_search = jamf.AdvancedSearch() # AdvancedSearch | 
 
     try:
         # Create Advanced Search object 

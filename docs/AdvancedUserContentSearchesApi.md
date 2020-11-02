@@ -1,4 +1,4 @@
-# openapi_client.AdvancedUserContentSearchesApi
+# jamf.AdvancedUserContentSearchesApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -23,20 +23,20 @@ Get All Advanced User Content Search Objects
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedUserContentSearchesApi(api_client)
+    api_instance = jamf.AdvancedUserContentSearchesApi(api_client)
     
     try:
         # Get All Advanced User Content Search objects 
@@ -81,20 +81,20 @@ Removes specified Advanced User Content Search Object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedUserContentSearchesApi(api_client)
+    api_instance = jamf.AdvancedUserContentSearchesApi(api_client)
     id = 'id_example' # str | instance id of Advanced User Content Search record
 
     try:
@@ -143,20 +143,20 @@ Gets Specified Advanced User Content Search Object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedUserContentSearchesApi(api_client)
+    api_instance = jamf.AdvancedUserContentSearchesApi(api_client)
     id = 'id_example' # str | id of target Advanced User Content Search
 
     try:
@@ -206,22 +206,22 @@ Gets Specified Advanced User Content Search Object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedUserContentSearchesApi(api_client)
+    api_instance = jamf.AdvancedUserContentSearchesApi(api_client)
     id = 'id_example' # str | id of target Advanced User Content Search
-advanced_user_content_search = openapi_client.AdvancedUserContentSearch() # AdvancedUserContentSearch | 
+advanced_user_content_search = jamf.AdvancedUserContentSearch() # AdvancedUserContentSearch | 
 
     try:
         # Get Specified Advanced User Content Search object 
@@ -271,21 +271,21 @@ Creates Advanced User Content Search Object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdvancedUserContentSearchesApi(api_client)
-    advanced_user_content_search = openapi_client.AdvancedUserContentSearch() # AdvancedUserContentSearch | 
+    api_instance = jamf.AdvancedUserContentSearchesApi(api_client)
+    advanced_user_content_search = jamf.AdvancedUserContentSearch() # AdvancedUserContentSearch | 
 
     try:
         # Create Advanced User Content Search object 

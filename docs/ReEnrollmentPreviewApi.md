@@ -1,4 +1,4 @@
-# openapi_client.ReEnrollmentPreviewApi
+# jamf.ReEnrollmentPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -22,20 +22,20 @@ Gets Re-enrollment object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ReEnrollmentPreviewApi(api_client)
+    api_instance = jamf.ReEnrollmentPreviewApi(api_client)
     
     try:
         # Get Re-enrollment object 
@@ -81,20 +81,20 @@ Gets Re-enrollment history object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ReEnrollmentPreviewApi(api_client)
+    api_instance = jamf.ReEnrollmentPreviewApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -151,21 +151,21 @@ Adds specified Re-enrollment history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ReEnrollmentPreviewApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+    api_instance = jamf.ReEnrollmentPreviewApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add specified Re-enrollment history object notes 
@@ -214,21 +214,21 @@ Update the Re-enrollment object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ReEnrollmentPreviewApi(api_client)
-    reenrollment = openapi_client.Reenrollment() # Reenrollment | Re-enrollment object to update
+    api_instance = jamf.ReEnrollmentPreviewApi(api_client)
+    reenrollment = jamf.Reenrollment() # Reenrollment | Re-enrollment object to update
 
     try:
         # Update the Re-enrollment object 

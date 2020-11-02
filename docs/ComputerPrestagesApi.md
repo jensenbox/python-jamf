@@ -1,4 +1,4 @@
-# openapi_client.ComputerPrestagesApi
+# jamf.ComputerPrestagesApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -38,20 +38,20 @@ Search for sorted and paged computer prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -108,20 +108,20 @@ Deletes a Computer Prestage with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 56 # int | Computer Prestage identifier
 
     try:
@@ -169,20 +169,20 @@ Retrieves a Computer Prestage with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 56 # int | Computer Prestage identifier
 
     try:
@@ -232,22 +232,22 @@ Updates a Computer Prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 56 # int | Computer Prestage identifier
-put_computer_prestage = openapi_client.PutComputerPrestage() # PutComputerPrestage | Computer Prestage to update
+put_computer_prestage = jamf.PutComputerPrestage() # PutComputerPrestage | Computer Prestage to update
 
     try:
         # Update a Computer Prestage 
@@ -299,22 +299,22 @@ Remove device scope for a specific computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 56 # int | Computer Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to remove from scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to remove from scope
 
     try:
         # Remove device Scope for a specific Computer Prestage 
@@ -366,20 +366,20 @@ Get device scope for a specific computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 56 # int | Computer Prestage identifier
 
     try:
@@ -429,22 +429,22 @@ Add device scope for a specific computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 56 # int | Computer Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
 
     try:
         # Add device Scope for a specific Computer Prestage 
@@ -496,22 +496,22 @@ Replace device scope for a specific computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 56 # int | Computer Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
 
     try:
         # Replace device Scope for a specific Computer Prestage 
@@ -563,21 +563,21 @@ Create a computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
-    computer_prestage = openapi_client.ComputerPrestage() # ComputerPrestage | Computer Prestage to create. ids defined in this body will be ignored
+    api_instance = jamf.ComputerPrestagesApi(api_client)
+    computer_prestage = jamf.ComputerPrestage() # ComputerPrestage | Computer Prestage to create. ids defined in this body will be ignored
 
     try:
         # Create a Computer Prestage 
@@ -626,20 +626,20 @@ Get all device scope for all computer prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     
     try:
         # Get all device Scope for all Computer Prestages 
@@ -684,20 +684,20 @@ Gets sorted and paged computer prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["id:desc"] # list[str] | Sorting criteria in the format: property:asc/desc. Multiple sort criteria are supported and must be separated with a comma. Example: sort=date:desc,name:asc  (optional) (default to ["id:desc"])
@@ -750,20 +750,20 @@ Deletes a Computer Prestage with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 'id_example' # str | Computer Prestage identifier
 
     try:
@@ -811,20 +811,20 @@ Retrieves a Computer Prestage with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 'id_example' # str | Computer Prestage identifier
 
     try:
@@ -874,22 +874,22 @@ Updates a Computer Prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 'id_example' # str | Computer Prestage identifier
-put_computer_prestage_v2 = openapi_client.PutComputerPrestageV2() # PutComputerPrestageV2 | Computer Prestage to update
+put_computer_prestage_v2 = jamf.PutComputerPrestageV2() # PutComputerPrestageV2 | Computer Prestage to update
 
     try:
         # Update a Computer Prestage 
@@ -941,22 +941,22 @@ Remove device scope for a specific computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 'id_example' # str | Computer Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to remove from scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to remove from scope
 
     try:
         # Remove device Scope for a specific Computer Prestage 
@@ -1008,20 +1008,20 @@ Get device scope for a specific computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 'id_example' # str | Computer Prestage identifier
 
     try:
@@ -1071,22 +1071,22 @@ Add device scope for a specific computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 'id_example' # str | Computer Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
 
     try:
         # Add device Scope for a specific Computer Prestage 
@@ -1138,22 +1138,22 @@ Replace device scope for a specific computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     id = 'id_example' # str | Computer Prestage identifier
-prestage_scope_update = openapi_client.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
+prestage_scope_update = jamf.PrestageScopeUpdate() # PrestageScopeUpdate | Serial Numbers to scope
 
     try:
         # Replace device Scope for a specific Computer Prestage 
@@ -1205,21 +1205,21 @@ Create a computer prestage
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
-    computer_prestage_v2 = openapi_client.ComputerPrestageV2() # ComputerPrestageV2 | Computer Prestage to create. ids defined in this body will be ignored
+    api_instance = jamf.ComputerPrestagesApi(api_client)
+    computer_prestage_v2 = jamf.ComputerPrestageV2() # ComputerPrestageV2 | Computer Prestage to create. ids defined in this body will be ignored
 
     try:
         # Create a Computer Prestage 
@@ -1268,20 +1268,20 @@ Get all device scope for all computer prestages
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerPrestagesApi(api_client)
+    api_instance = jamf.ComputerPrestagesApi(api_client)
     
     try:
         # Get all device Scope for all Computer Prestages 

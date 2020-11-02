@@ -5,9 +5,14 @@ set -o nounset
 set -o pipefail
 set -o verbose
 
+VERSION=v10.25.0
+
 docker run \
         --rm \
         -v ${PWD}:/local openapitools/openapi-generator-cli generate \
-        -i https://resources.jamf.com/open-api/v10.25.0_JPAPI.json \
+        -i https://resources.jamf.com/open-api/${VERSION}_JPAPI.json \
         -g python \
-        -o /local
+        -o /local \
+        --additional-properties=packageName=jamf \
+        --additional-properties=packageVersion=${VERSION} \
+        --additional-properties=projectName=python-jamf

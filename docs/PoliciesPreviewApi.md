@@ -1,4 +1,4 @@
-# openapi_client.PoliciesPreviewApi
+# jamf.PoliciesPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -20,20 +20,20 @@ Gets `Policy Properties` object.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PoliciesPreviewApi(api_client)
+    api_instance = jamf.PoliciesPreviewApi(api_client)
     
     try:
         # Get Policy Properties object 
@@ -78,21 +78,21 @@ Update Policy Properties object (NOTE: isPoliciesRequireNetworkStateChange is a 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PoliciesPreviewApi(api_client)
-    policy_properties = openapi_client.PolicyProperties() # PolicyProperties | Policy Properties object to update
+    api_instance = jamf.PoliciesPreviewApi(api_client)
+    policy_properties = jamf.PolicyProperties() # PolicyProperties | Policy Properties object to update
 
     try:
         # Update Policy Properties object 

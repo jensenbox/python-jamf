@@ -1,4 +1,4 @@
-# openapi_client.JamfProNotificationsPreviewApi
+# jamf.JamfProNotificationsPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -21,20 +21,20 @@ Gets notifications for user and site
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProNotificationsPreviewApi(api_client)
+    api_instance = jamf.JamfProNotificationsPreviewApi(api_client)
     
     try:
         # Get Notifications for user and site 
@@ -79,20 +79,20 @@ DEPRECATED - USE \"alerts/{type}/{id}\" INSTEAD. Deletes only Patch Management n
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProNotificationsPreviewApi(api_client)
+    api_instance = jamf.JamfProNotificationsPreviewApi(api_client)
     id = 56 # int | instance ID of the notification
 
     try:
@@ -141,20 +141,20 @@ Deletes notifications. Options for 'type' are 'PRESTAGE_IMAGING_SECURITY' and 'P
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProNotificationsPreviewApi(api_client)
+    api_instance = jamf.JamfProNotificationsPreviewApi(api_client)
     id = 56 # int | instance ID of the notification
 type = 'type_example' # str | type of the notification
 

@@ -1,4 +1,4 @@
-# openapi_client.EnrollmentApi
+# jamf.EnrollmentApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -46,20 +46,20 @@ Retrieves the configured LDAP groups configured for User-Initiated Enrollment.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -116,20 +116,20 @@ Deletes an LDAP group's access to user initiated enrollment. The group \"All LDA
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     group_key = 'group_key_example' # str | The group key is a string composed of the LDAP server ID, underscore and the LDAP group id. Example: ``1_2``
 
     try:
@@ -178,20 +178,20 @@ Retrieves the configured LDAP groups configured for User-Initiated Enrollment.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     group_key = 'group_key_example' # str | The group key is a string composed of the LDAP server ID, underscore and the LDAP group id. Example: ``1_2``
 
     try:
@@ -241,22 +241,22 @@ Modifies the configured LDAP groups configured for User-Initiated Enrollment.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     group_key = 'group_key_example' # str | The group key is a string composed of the LDAP server ID, underscore and the LDAP group id. Example: ``1_2``
-enrollment_access_group = openapi_client.EnrollmentAccessGroup() # EnrollmentAccessGroup |  (optional)
+enrollment_access_group = jamf.EnrollmentAccessGroup() # EnrollmentAccessGroup |  (optional)
 
     try:
         # Modify the configured LDAP groups configured for User-Initiated Enrollment 
@@ -306,20 +306,20 @@ Retrieves the list of languages and corresponding ISO 639-1 Codes, but only thos
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     
     try:
         # Retrieve the list of languages and corresponding ISO 639-1 Codes but only those not already added to Enrollment 
@@ -364,20 +364,20 @@ Gets Enrollment object and re-enrollment settings. The settings can be altered w
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     
     try:
         # Get Enrollment object and Re-enrollment settings 
@@ -422,20 +422,20 @@ Gets sorted and paged Enrollment history object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -492,21 +492,21 @@ Adds Enrollment history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+    api_instance = jamf.EnrollmentApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add Enrollment history object notes 
@@ -555,20 +555,20 @@ Retrieves the list of languages and corresponding ISO 639-1 Codes.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     
     try:
         # Retrieve the list of languages and corresponding ISO 639-1 Codes 
@@ -613,20 +613,20 @@ Returns an array of the language codes that have enrollment messaging currently 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -683,20 +683,20 @@ Delete the enrollment messaging for a language.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     language = 'language_example' # str | Two letter ISO 639-1 Language Code
 
     try:
@@ -745,20 +745,20 @@ Retrieves the enrollment messaging for a language.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     language = 'language_example' # str | Two letter ISO 639-1 Language Code
 
     try:
@@ -808,22 +808,22 @@ Edit enrollment messaging for a language.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     language = 'language_example' # str | Two letter ISO 639-1 Language Code
-enrollment_process_text_object = openapi_client.EnrollmentProcessTextObject() # EnrollmentProcessTextObject |  (optional)
+enrollment_process_text_object = jamf.EnrollmentProcessTextObject() # EnrollmentProcessTextObject |  (optional)
 
     try:
         # Edit Enrollment messaging for a language 
@@ -873,21 +873,21 @@ Update enrollment object. Regarding the `developerCertificateIdentity`, if this 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
-    enrollment_settings = openapi_client.EnrollmentSettings() # EnrollmentSettings | Update enrollment
+    api_instance = jamf.EnrollmentApi(api_client)
+    enrollment_settings = jamf.EnrollmentSettings() # EnrollmentSettings | Update enrollment
 
     try:
         # Update Enrollment object 
@@ -936,20 +936,20 @@ Retrieves the configured LDAP groups configured for User-Initiated Enrollment.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["name:asc"] # list[str] | Sorting criteria in the format: `property:asc/desc`. Default sort is `name:asc`. Multiple sort criteria are supported and must be separated with a comma. Example: `sort=date:desc,name:asc`.  (optional) (default to ["name:asc"])
@@ -1002,20 +1002,20 @@ Deletes an LDAP group's access to user initiated enrollment. The group \"All LDA
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     server_id = 'server_id_example' # str | LDAP server id
 group_id = 'group_id_example' # str | LDAP group id.
 
@@ -1066,20 +1066,20 @@ Retrieves the configured LDAP groups configured for User-Initiated Enrollment.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     server_id = 'server_id_example' # str | LDAP server id.
 group_id = 'group_id_example' # str | LDAP group id.
 
@@ -1131,23 +1131,23 @@ Modifies the configured LDAP groups configured for User-Initiated Enrollment.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     server_id = 'server_id_example' # str | LDAP server id.
 group_id = 'group_id_example' # str | LDAP group id.
-enrollment_access_group_v2 = openapi_client.EnrollmentAccessGroupV2() # EnrollmentAccessGroupV2 |  (optional)
+enrollment_access_group_v2 = jamf.EnrollmentAccessGroupV2() # EnrollmentAccessGroupV2 |  (optional)
 
     try:
         # Modify the configured LDAP groups configured for User-Initiated Enrollment 
@@ -1198,20 +1198,20 @@ Retrieves the list of languages and corresponding ISO 639-1 Codes, but only thos
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     
     try:
         # Retrieve the list of languages and corresponding ISO 639-1 Codes but only those not already added to Enrollment 
@@ -1256,20 +1256,20 @@ Gets Enrollment object and re-enrollment settings. The settings can be altered w
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     
     try:
         # Get Enrollment object and Re-enrollment settings 
@@ -1314,20 +1314,20 @@ Gets sorted and paged Enrollment history object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["date:desc"] # list[str] | Sorting criteria in the format: `property:asc/desc`. Default sort is `date:desc`. Multiple sort criteria are supported and must be separated with a comma. Example: `sort=date:desc,name:asc`.  (optional) (default to ["date:desc"])
@@ -1380,21 +1380,21 @@ Adds Enrollment history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+    api_instance = jamf.EnrollmentApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add Enrollment history object notes 
@@ -1443,20 +1443,20 @@ Retrieves the list of languages and corresponding ISO 639-1 Codes.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     
     try:
         # Retrieve the list of languages and corresponding ISO 639-1 Codes 
@@ -1501,20 +1501,20 @@ Returns an array of the language codes that have enrollment messaging currently 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["languageCode:asc"] # list[str] | Sorting criteria in the format: property:asc/desc. Default sort is `languageCode:asc`. Multiple sort criteria are supported and must be separated with a comma. Example: `sort=date:desc,name:asc`.  (optional) (default to ["languageCode:asc"])
@@ -1567,20 +1567,20 @@ Delete the enrollment messaging for a language.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     language_id = 'language_id_example' # str | Two letter ISO 639-1 Language Code
 
     try:
@@ -1629,20 +1629,20 @@ Retrieves the enrollment messaging for a language.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     language_id = 'language_id_example' # str | Two letter ISO 639-1 Language Code
 
     try:
@@ -1692,22 +1692,22 @@ Edit enrollment messaging for a language.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
+    api_instance = jamf.EnrollmentApi(api_client)
     language_id = 'language_id_example' # str | Two letter ISO 639-1 Language Code
-enrollment_process_text_object = openapi_client.EnrollmentProcessTextObject() # EnrollmentProcessTextObject |  (optional)
+enrollment_process_text_object = jamf.EnrollmentProcessTextObject() # EnrollmentProcessTextObject |  (optional)
 
     try:
         # Edit Enrollment messaging for a language 
@@ -1757,21 +1757,21 @@ Update enrollment object. Regarding the `developerCertificateIdentity`, if this 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentApi(api_client)
-    enrollment_settings_v2 = openapi_client.EnrollmentSettingsV2() # EnrollmentSettingsV2 | Update enrollment
+    api_instance = jamf.EnrollmentApi(api_client)
+    enrollment_settings_v2 = jamf.EnrollmentSettingsV2() # EnrollmentSettingsV2 | Update enrollment
 
     try:
         # Update Enrollment object 

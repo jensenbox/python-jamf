@@ -1,4 +1,4 @@
-# openapi_client.MobileDevicesApi
+# jamf.MobileDevicesApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -27,20 +27,20 @@ Gets Mobile Device objects.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
+    api_instance = jamf.MobileDevicesApi(api_client)
     
     try:
         # Get Mobile Device objects 
@@ -85,20 +85,20 @@ Get MobileDevice
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
+    api_instance = jamf.MobileDevicesApi(api_client)
     id = 56 # int | instance id of mobile device record
 
     try:
@@ -147,20 +147,20 @@ Get MobileDevice
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
+    api_instance = jamf.MobileDevicesApi(api_client)
     id = 56 # int | instance id of mobile device record
 
     try:
@@ -209,22 +209,22 @@ Updates fields on a mobile device that are allowed to be modified by users.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
+    api_instance = jamf.MobileDevicesApi(api_client)
     id = 56 # int | instance id of mobile device record
-update_mobile_device = openapi_client.UpdateMobileDevice() # UpdateMobileDevice | 
+update_mobile_device = jamf.UpdateMobileDevice() # UpdateMobileDevice | 
 
     try:
         # Update fields on a mobile device that are allowed to be modified by users 
@@ -273,21 +273,21 @@ Search Mobile Devices
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
-    mobile_device_search_params = openapi_client.MobileDeviceSearchParams() # MobileDeviceSearchParams |  (optional)
+    api_instance = jamf.MobileDevicesApi(api_client)
+    mobile_device_search_params = jamf.MobileDeviceSearchParams() # MobileDeviceSearchParams |  (optional)
 
     try:
         # Search Mobile Devices 
@@ -335,20 +335,20 @@ Gets Mobile Device objects.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
+    api_instance = jamf.MobileDevicesApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["id:asc"] # list[str] | Sorting criteria in the format: property:asc/desc. Default sort is id:asc. Multiple sort criteria are supported and must be separated with a comma. Example: sort=date:desc,name:asc  (optional) (default to ["id:asc"])
@@ -401,20 +401,20 @@ Get MobileDevice
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
+    api_instance = jamf.MobileDevicesApi(api_client)
     id = 'id_example' # str | instance id of mobile device record
 
     try:
@@ -464,20 +464,20 @@ Get MobileDevice
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
+    api_instance = jamf.MobileDevicesApi(api_client)
     id = 'id_example' # str | instance id of mobile device record
 
     try:
@@ -527,22 +527,22 @@ Updates fields on a mobile device that are allowed to be modified by users.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MobileDevicesApi(api_client)
+    api_instance = jamf.MobileDevicesApi(api_client)
     id = 'id_example' # str | instance id of mobile device record
-update_mobile_device_v2 = openapi_client.UpdateMobileDeviceV2() # UpdateMobileDeviceV2 | 
+update_mobile_device_v2 = jamf.UpdateMobileDeviceV2() # UpdateMobileDeviceV2 | 
 
     try:
         # Update fields on a mobile device that are allowed to be modified by users 

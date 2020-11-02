@@ -1,4 +1,4 @@
-# openapi_client.TeacherAppApi
+# jamf.TeacherAppApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -22,20 +22,20 @@ Get the Jamf Teacher settings that you have access to see.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TeacherAppApi(api_client)
+    api_instance = jamf.TeacherAppApi(api_client)
     
     try:
         # Get the Jamf Teacher settings that you have access to see 
@@ -80,20 +80,20 @@ Gets Jamf Teacher app settings history
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TeacherAppApi(api_client)
+    api_instance = jamf.TeacherAppApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["date:desc","username:asc"] # list[str] | Sorting criteria in the format: property,asc/desc. Default sort order is descending. Multiple sort criteria are supported and must be entered on separate lines in Swagger UI. In the URI the 'sort' query param is not duplicated for each sort criterion, e.g., ...&sort=name%2Casc,date%2Cdesc (optional) (default to ["date:desc","username:asc"])
@@ -148,21 +148,21 @@ Adds Jamf Teacher app settings history notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TeacherAppApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+    api_instance = jamf.TeacherAppApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add Jamf Teacher app settings history notes 
@@ -211,21 +211,21 @@ Update a Jamf Teacher settings object.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TeacherAppApi(api_client)
-    teacher_settings_request = openapi_client.TeacherSettingsRequest() # TeacherSettingsRequest | Teacher settings to create.
+    api_instance = jamf.TeacherAppApi(api_client)
+    teacher_settings_request = jamf.TeacherSettingsRequest() # TeacherSettingsRequest | Teacher settings to create.
 
     try:
         # Update a Jamf Teacher settings object 

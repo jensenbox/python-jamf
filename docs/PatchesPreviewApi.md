@@ -1,4 +1,4 @@
-# openapi_client.PatchesPreviewApi
+# jamf.PatchesPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -32,20 +32,20 @@ Accept Patch reporting disclaimer
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     
     try:
         # Accept Patch reporting disclaimer 
@@ -89,20 +89,20 @@ Returns active patch summary.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     id = 56 # int | patch id
 
     try:
@@ -151,22 +151,22 @@ Updates patch report.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     id = 56 # int | patch id
-active_patch_summary = openapi_client.ActivePatchSummary() # ActivePatchSummary | Active patch summary.
+active_patch_summary = jamf.ActivePatchSummary() # ActivePatchSummary | Active patch summary.
 
     try:
         # Update patch report 
@@ -215,20 +215,20 @@ Returns patch versions.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     id = 56 # int | patch id
 
     try:
@@ -277,20 +277,20 @@ return the count of the patch policy logs for the policy ID that are eligible fo
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     id = 56 # int | policy id
 
     try:
@@ -339,20 +339,20 @@ Return the Software Title Configuration Id for the given patch policy.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     id = 56 # int | policy id
 
     try:
@@ -401,20 +401,20 @@ Returns the software title configuration.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     id = 56 # int | software title configuration id
 
     try:
@@ -463,20 +463,20 @@ Returns the summaries of the patch policies for the software title.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     id = 56 # int | software title id
 
     try:
@@ -525,20 +525,20 @@ Returns patch policy summary.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     id = 56 # int | patch policy id
 
     try:
@@ -587,20 +587,20 @@ Returns list of patch ids on dashboard.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
+    api_instance = jamf.PatchesPreviewApi(api_client)
     
     try:
         # Return list of Patch ids on dashboard 
@@ -645,21 +645,21 @@ Retry policy
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
-    retry_patch_policy_params = openapi_client.RetryPatchPolicyParams() # RetryPatchPolicyParams |  (optional)
+    api_instance = jamf.PatchesPreviewApi(api_client)
+    retry_patch_policy_params = jamf.RetryPatchPolicyParams() # RetryPatchPolicyParams |  (optional)
 
     try:
         # Retry policy 
@@ -706,21 +706,21 @@ Searches the history for a specific active patch.  This is used to get detailed 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
-    search_active_patch_history_params = openapi_client.SearchActivePatchHistoryParams() # SearchActivePatchHistoryParams | Parameters for search (optional)
+    api_instance = jamf.PatchesPreviewApi(api_client)
+    search_active_patch_history_params = jamf.SearchActivePatchHistoryParams() # SearchActivePatchHistoryParams | Parameters for search (optional)
 
     try:
         # Search the history for a Specific Active Patch 
@@ -768,21 +768,21 @@ Return patch policy logs
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
-    search_patch_policy_log_params = openapi_client.SearchPatchPolicyLogParams() # SearchPatchPolicyLogParams |  (optional)
+    api_instance = jamf.PatchesPreviewApi(api_client)
+    search_patch_policy_log_params = jamf.SearchPatchPolicyLogParams() # SearchPatchPolicyLogParams |  (optional)
 
     try:
         # Return Patch Policy Logs 
@@ -830,21 +830,21 @@ Retry policy
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PatchesPreviewApi(api_client)
-    retry_patch_policy_params = openapi_client.RetryPatchPolicyParams() # RetryPatchPolicyParams |  (optional)
+    api_instance = jamf.PatchesPreviewApi(api_client)
+    retry_patch_policy_params = jamf.RetryPatchPolicyParams() # RetryPatchPolicyParams |  (optional)
 
     try:
         # Retry policy 

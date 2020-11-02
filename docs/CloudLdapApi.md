@@ -1,4 +1,4 @@
-# openapi_client.CloudLdapApi
+# jamf.CloudLdapApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -35,20 +35,20 @@ Get default mappings which will work with Google Cloud Identity Provider.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     
     try:
         # Get default mappings
@@ -94,20 +94,20 @@ Get default server configuration which will work with Google Cloud Identity Prov
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     
     try:
         # Get default server configuration
@@ -153,20 +153,20 @@ Returns all configured Cloud Identity Provider instances without keystore data.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -223,20 +223,20 @@ Get all search connection pool for chosen Cloud Identity Provider. numConnection
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
 
     try:
@@ -287,20 +287,20 @@ Get all search connection pool for chosen Cloud Identity Provider. numConnection
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
 
     try:
@@ -351,20 +351,20 @@ Delete Cloud Identity Provider configuration.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
 
     try:
@@ -414,20 +414,20 @@ Get Cloud Identity Provider configuration with given id.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
 
     try:
@@ -478,20 +478,20 @@ Gets specified Cloud Identity Provider object history
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
 page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
@@ -552,22 +552,22 @@ Adds specified Cloud Identity Provider object history notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
-object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
+object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | history notes to create
 
     try:
         # Add Cloud Identity Provider history note
@@ -618,20 +618,20 @@ Get all mappings configurations for Cloud Identity Providers server configuratio
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
 
     try:
@@ -682,22 +682,22 @@ Update Cloud Identity Provider mappings configuration. Cannot be used for partia
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
-cloud_ldap_mappings_request = openapi_client.CloudLdapMappingsRequest() # CloudLdapMappingsRequest | Cloud Identity Provider mappings to update.
+cloud_ldap_mappings_request = jamf.CloudLdapMappingsRequest() # CloudLdapMappingsRequest | Cloud Identity Provider mappings to update.
 
     try:
         # Update Cloud Identity Provider mappings configuration.
@@ -749,22 +749,22 @@ Update Cloud Identity Provider configuration. Cannot be used for partial updates
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
-cloud_ldap_configuration_update = openapi_client.CloudLdapConfigurationUpdate() # CloudLdapConfigurationUpdate | Cloud Identity Provider configuration to update
+cloud_ldap_configuration_update = jamf.CloudLdapConfigurationUpdate() # CloudLdapConfigurationUpdate | Cloud Identity Provider configuration to update
 
     try:
         # Update Cloud Identity Provider configuration
@@ -815,22 +815,22 @@ Do test search to ensure about configuration and mappings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
-group_test_search_request = openapi_client.GroupTestSearchRequest() # GroupTestSearchRequest | Search request
+group_test_search_request = jamf.GroupTestSearchRequest() # GroupTestSearchRequest | Search request
 
     try:
         # Get group test search
@@ -880,22 +880,22 @@ Do test search to ensure about configuration and mappings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
-membership_test_search_request = openapi_client.MembershipTestSearchRequest() # MembershipTestSearchRequest | Search request
+membership_test_search_request = jamf.MembershipTestSearchRequest() # MembershipTestSearchRequest | Search request
 
     try:
         # Get membership test search
@@ -945,22 +945,22 @@ Do test search to ensure about configuration and mappings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
+    api_instance = jamf.CloudLdapApi(api_client)
     id = 'id_example' # str | Cloud Identity Provider identifier
-user_test_search_request = openapi_client.UserTestSearchRequest() # UserTestSearchRequest | Search request
+user_test_search_request = jamf.UserTestSearchRequest() # UserTestSearchRequest | Search request
 
     try:
         # Get user test search
@@ -1010,21 +1010,21 @@ Create new Cloud Identity Provider configuration with unique display name. If ma
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
-    cloud_ldap_configuration_request = openapi_client.CloudLdapConfigurationRequest() # CloudLdapConfigurationRequest | Cloud Identity Provider configuration to create
+    api_instance = jamf.CloudLdapApi(api_client)
+    cloud_ldap_configuration_request = jamf.CloudLdapConfigurationRequest() # CloudLdapConfigurationRequest | Cloud Identity Provider configuration to create
 
     try:
         # Create Cloud Identity Provider configuration
@@ -1073,21 +1073,21 @@ Validate keystore for Cloud Identity Provider secure connection
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CloudLdapApi(api_client)
-    cloud_ldap_keystore_file = openapi_client.CloudLdapKeystoreFile() # CloudLdapKeystoreFile | 
+    api_instance = jamf.CloudLdapApi(api_client)
+    cloud_ldap_keystore_file = jamf.CloudLdapKeystoreFile() # CloudLdapKeystoreFile | 
 
     try:
         # Validate keystore for Cloud Identity Provider secure connection

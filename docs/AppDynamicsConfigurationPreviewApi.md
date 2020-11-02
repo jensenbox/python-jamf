@@ -1,4 +1,4 @@
-# openapi_client.AppDynamicsConfigurationPreviewApi
+# jamf.AppDynamicsConfigurationPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -19,20 +19,20 @@ Gets `AppDynamicsConfig` object. Details for using the response as script config
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppDynamicsConfigurationPreviewApi(api_client)
+    api_instance = jamf.AppDynamicsConfigurationPreviewApi(api_client)
     
     try:
         # Get Application Dynamics Config object 

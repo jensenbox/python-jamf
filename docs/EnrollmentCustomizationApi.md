@@ -1,4 +1,4 @@
-# openapi_client.EnrollmentCustomizationApi
+# jamf.EnrollmentCustomizationApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -36,20 +36,20 @@ Retrieves sorted and paged Enrollment Customizations
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -106,20 +106,20 @@ Deletes an Enrollment Customization with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 
     try:
@@ -167,20 +167,20 @@ Retrieves an Enrollment Customization with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 
     try:
@@ -230,20 +230,20 @@ Gets sorted and paged enrollment customization history objects
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
@@ -302,22 +302,22 @@ Adds enrollment customization history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 56 # int | Enrollment Customization identifier
-object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Enrollment Customization history object notes 
@@ -367,20 +367,20 @@ Retrieves the list of Prestages using this Enrollment Customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 
     try:
@@ -430,22 +430,22 @@ Updates an Enrollment Customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 56 # int | Enrollment Customization identifier
-enrollment_customization = openapi_client.EnrollmentCustomization() # EnrollmentCustomization | Enrollment Customization to update
+enrollment_customization = jamf.EnrollmentCustomization() # EnrollmentCustomization | Enrollment Customization to update
 
     try:
         # Update an Enrollment Customization 
@@ -495,20 +495,20 @@ Uploads an image
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     file = '/path/to/file' # file | The file to upload
 
     try:
@@ -557,21 +557,21 @@ Create an enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
-    enrollment_customization = openapi_client.EnrollmentCustomization() # EnrollmentCustomization | Enrollment customization to create.
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
+    enrollment_customization = jamf.EnrollmentCustomization() # EnrollmentCustomization | Enrollment customization to create.
 
     try:
         # Create an Enrollment Customization 
@@ -619,20 +619,20 @@ Retrieves sorted and paged Enrollment Customizations
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["id:asc"] # list[str] | Sorting criteria in the format: property:asc/desc. Multiple sort criteria are supported and must be separated with a comma. Example: sort=date:desc,name:asc  (optional) (default to ["id:asc"])
@@ -685,20 +685,20 @@ Deletes an Enrollment Customization with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 'id_example' # str | Enrollment Customization identifier
 
     try:
@@ -746,20 +746,20 @@ Retrieves an Enrollment Customization with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 'id_example' # str | Enrollment Customization identifier
 
     try:
@@ -809,20 +809,20 @@ Gets sorted and paged enrollment customization history objects
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 'id_example' # str | Enrollment Customization identifier
 page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
@@ -877,22 +877,22 @@ Adds enrollment customization history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 'id_example' # str | Enrollment Customization identifier
-object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Enrollment Customization history object notes 
@@ -942,20 +942,20 @@ Retrieves the list of Prestages using this Enrollment Customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 'id_example' # str | Enrollment Customization identifier
 
     try:
@@ -1005,22 +1005,22 @@ Updates an Enrollment Customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     id = 'id_example' # str | Enrollment Customization identifier
-enrollment_customization_v2 = openapi_client.EnrollmentCustomizationV2() # EnrollmentCustomizationV2 | Enrollment Customization to update
+enrollment_customization_v2 = jamf.EnrollmentCustomizationV2() # EnrollmentCustomizationV2 | Enrollment Customization to update
 
     try:
         # Update an Enrollment Customization 
@@ -1070,20 +1070,20 @@ Uploads an image
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
     file = '/path/to/file' # file | The file to upload
 
     try:
@@ -1132,21 +1132,21 @@ Create an enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationApi(api_client)
-    enrollment_customization_v2 = openapi_client.EnrollmentCustomizationV2() # EnrollmentCustomizationV2 | Enrollment customization to create.
+    api_instance = jamf.EnrollmentCustomizationApi(api_client)
+    enrollment_customization_v2 = jamf.EnrollmentCustomizationV2() # EnrollmentCustomizationV2 | Enrollment customization to create.
 
     try:
         # Create an Enrollment Customization 

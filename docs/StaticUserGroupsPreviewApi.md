@@ -1,4 +1,4 @@
-# openapi_client.StaticUserGroupsPreviewApi
+# jamf.StaticUserGroupsPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -20,20 +20,20 @@ Returns a list of all static user groups.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.StaticUserGroupsPreviewApi(api_client)
+    api_instance = jamf.StaticUserGroupsPreviewApi(api_client)
     
     try:
         # Return a list of all Static User Groups 
@@ -78,20 +78,20 @@ Returns a specific static user group by id.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.StaticUserGroupsPreviewApi(api_client)
+    api_instance = jamf.StaticUserGroupsPreviewApi(api_client)
     id = 56 # int | Instance id of static user group record
 
     try:

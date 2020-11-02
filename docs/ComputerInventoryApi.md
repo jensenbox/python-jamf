@@ -1,4 +1,4 @@
-# openapi_client.ComputerInventoryApi
+# jamf.ComputerInventoryApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -26,20 +26,20 @@ Return a Computer details with all sections
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerInventoryApi(api_client)
+    api_instance = jamf.ComputerInventoryApi(api_client)
     id = 'id_example' # str | instance id of computer record
 
     try:
@@ -89,22 +89,22 @@ Return a updated computer instance
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerInventoryApi(api_client)
+    api_instance = jamf.ComputerInventoryApi(api_client)
     id = 'id_example' # str | instance id of computer record
-computer_inventory_update_request = openapi_client.ComputerInventoryUpdateRequest() # ComputerInventoryUpdateRequest | 
+computer_inventory_update_request = jamf.ComputerInventoryUpdateRequest() # ComputerInventoryUpdateRequest | 
 
     try:
         # Return a updated computer instance 
@@ -154,20 +154,20 @@ Return a Computer Inventory for paginated list of computers
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerInventoryApi(api_client)
+    api_instance = jamf.ComputerInventoryApi(api_client)
     section = ["GENERAL"] # list[ComputerSection] | section of computer details, if not specified, General section data is returned. Multiple section parameters are supported, e.g. section=GENERAL&section=HARDWARE (optional) (default to ["GENERAL"])
 page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
@@ -224,20 +224,20 @@ Remove attachment
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerInventoryApi(api_client)
+    api_instance = jamf.ComputerInventoryApi(api_client)
     id = 'id_example' # str | instance id of computer record
 attachment_id = 'attachment_id_example' # str | instance id of attachment object
 
@@ -288,20 +288,20 @@ Download attachment file
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerInventoryApi(api_client)
+    api_instance = jamf.ComputerInventoryApi(api_client)
     id = 'id_example' # str | instance id of computer record
 attachment_id = 'attachment_id_example' # str | instance id of attachment object
 
@@ -353,20 +353,20 @@ Upload attachment and assign to computer
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerInventoryApi(api_client)
+    api_instance = jamf.ComputerInventoryApi(api_client)
     id = 'id_example' # str | instance id of computer record
 file = '/path/to/file' # file | The file to upload
 
@@ -418,20 +418,20 @@ Remove specified Computer record
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerInventoryApi(api_client)
+    api_instance = jamf.ComputerInventoryApi(api_client)
     id = 'id_example' # str | instance id of computer record
 
     try:
@@ -480,20 +480,20 @@ Return a Computer General details
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComputerInventoryApi(api_client)
+    api_instance = jamf.ComputerInventoryApi(api_client)
     id = 'id_example' # str | instance id of computer record
 section = ["GENERAL"] # list[ComputerSection] | section of computer details, if not specified, General section data is returned. Multiple section parameters are supported, e.g. section=general&section=hardware (optional) (default to ["GENERAL"])
 

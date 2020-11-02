@@ -1,4 +1,4 @@
-# openapi_client.JamfProInitializationPreviewApi
+# jamf.JamfProInitializationPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -20,21 +20,21 @@ Provide database password during startup
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProInitializationPreviewApi(api_client)
-    database_password = openapi_client.DatabasePassword() # DatabasePassword | 
+    api_instance = jamf.JamfProInitializationPreviewApi(api_client)
+    database_password = jamf.DatabasePassword() # DatabasePassword | 
 
     try:
         # Provide Database Password during startup 
@@ -84,21 +84,21 @@ Set up fresh installed Jamf Pro Server
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProInitializationPreviewApi(api_client)
-    initialize = openapi_client.Initialize() # Initialize | 
+    api_instance = jamf.JamfProInitializationPreviewApi(api_client)
+    initialize = jamf.Initialize() # Initialize | 
 
     try:
         # Set up fresh installed Jamf Pro Server 

@@ -1,4 +1,4 @@
-# openapi_client.VenafiPreviewApi
+# jamf.VenafiPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -27,20 +27,20 @@ Tests the communication between Jamf Pro and a Jamf Pro PKI Proxy Server
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
+    api_instance = jamf.VenafiPreviewApi(api_client)
     id = 'id_example' # str | ID of the Venafi configuration
 
     try:
@@ -90,20 +90,20 @@ Retrieve a Venafi PKI configuration from Jamf Pro
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
+    api_instance = jamf.VenafiPreviewApi(api_client)
     id = 'id_example' # str | ID of the Venafi configuration
 
     try:
@@ -153,20 +153,20 @@ Downloads a certificate for an existing Venafi configuration that can be used to
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
+    api_instance = jamf.VenafiPreviewApi(api_client)
     id = 'id_example' # str | ID of the Venafi configuration
 
     try:
@@ -217,20 +217,20 @@ Regenerates a certificate for an existing Venafi configuration that can be used 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
+    api_instance = jamf.VenafiPreviewApi(api_client)
     id = 'id_example' # str | ID of the Venafi configuration
 
     try:
@@ -279,22 +279,22 @@ Update a Venafi PKI configuration in Jamf Pro
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
+    api_instance = jamf.VenafiPreviewApi(api_client)
     id = 'id_example' # str | ID of the Venafi configuration
-venafi_ca_record = openapi_client.VenafiCaRecord() # VenafiCaRecord | 
+venafi_ca_record = jamf.VenafiCaRecord() # VenafiCaRecord | 
 
     try:
         # Update a Venafi PKI configuration in Jamf Pro 
@@ -345,20 +345,20 @@ Removes the uploaded PKI Proxy Server public key to do basic TLS certificate val
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
+    api_instance = jamf.VenafiPreviewApi(api_client)
     id = 'id_example' # str | ID of the Venafi configuration
 
     try:
@@ -407,20 +407,20 @@ Downloads the uploaded PKI Proxy Server public key to do basic TLS certificate v
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
+    api_instance = jamf.VenafiPreviewApi(api_client)
     id = 'id_example' # str | ID of the Venafi configuration
 
     try:
@@ -471,20 +471,20 @@ Uploads the PKI Proxy Server public key to do basic TLS certificate validation b
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
+    api_instance = jamf.VenafiPreviewApi(api_client)
     id = 'id_example' # str | ID of the Venafi configuration
 body = '/path/to/file' # file | 
 
@@ -536,21 +536,21 @@ Creates a Venafi PKI configuration in Jamf Pro, which can be used to issue certi
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VenafiPreviewApi(api_client)
-    venafi_ca_record = openapi_client.VenafiCaRecord() # VenafiCaRecord | 
+    api_instance = jamf.VenafiPreviewApi(api_client)
+    venafi_ca_record = jamf.VenafiCaRecord() # VenafiCaRecord | 
 
     try:
         # Create a PKI configuration in Jamf Pro for Venafi 

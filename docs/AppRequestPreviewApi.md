@@ -1,4 +1,4 @@
-# openapi_client.AppRequestPreviewApi
+# jamf.AppRequestPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -26,20 +26,20 @@ Search for form input fields
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppRequestPreviewApi(api_client)
+    api_instance = jamf.AppRequestPreviewApi(api_client)
     
     try:
         # Search for Form Input Fields 
@@ -84,20 +84,20 @@ Removes specified form input field record
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppRequestPreviewApi(api_client)
+    api_instance = jamf.AppRequestPreviewApi(api_client)
     id = 56 # int | Instance id of form input field record
 
     try:
@@ -146,20 +146,20 @@ Gets specified form input field object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppRequestPreviewApi(api_client)
+    api_instance = jamf.AppRequestPreviewApi(api_client)
     id = 56 # int | Instance id of form input field record
 
     try:
@@ -209,22 +209,22 @@ Update specified form input field object
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppRequestPreviewApi(api_client)
+    api_instance = jamf.AppRequestPreviewApi(api_client)
     id = 56 # int | Instance id of form input field record
-app_request_form_input_field = openapi_client.AppRequestFormInputField() # AppRequestFormInputField | form input field object to create. ids defined in this body will be ignored
+app_request_form_input_field = jamf.AppRequestFormInputField() # AppRequestFormInputField | form input field object to create. ids defined in this body will be ignored
 
     try:
         # Update specified Form Input Field object 
@@ -275,21 +275,21 @@ Create form input field record
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppRequestPreviewApi(api_client)
-    app_request_form_input_field = openapi_client.AppRequestFormInputField() # AppRequestFormInputField | form input field object to create. ids defined in this body will be ignored
+    api_instance = jamf.AppRequestPreviewApi(api_client)
+    app_request_form_input_field = jamf.AppRequestFormInputField() # AppRequestFormInputField | form input field object to create. ids defined in this body will be ignored
 
     try:
         # Create Form Input Field record 
@@ -338,21 +338,21 @@ Replace all form input fields. Will delete, update, and create all input fields 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppRequestPreviewApi(api_client)
-    app_request_form_input_field = [openapi_client.AppRequestFormInputField()] # list[AppRequestFormInputField] | list of form input fields to replace all existing fields. Will delete, update, and create all input fields accordingly.
+    api_instance = jamf.AppRequestPreviewApi(api_client)
+    app_request_form_input_field = [jamf.AppRequestFormInputField()] # list[AppRequestFormInputField] | list of form input fields to replace all existing fields. Will delete, update, and create all input fields accordingly.
 
     try:
         # Replace all Form Input Fields 
@@ -402,20 +402,20 @@ Get app request settings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppRequestPreviewApi(api_client)
+    api_instance = jamf.AppRequestPreviewApi(api_client)
     
     try:
         # Get Applicastion Request Settings 
@@ -460,21 +460,21 @@ Update app request settings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AppRequestPreviewApi(api_client)
-    app_request_settings = openapi_client.AppRequestSettings() # AppRequestSettings | App request settings object
+    api_instance = jamf.AppRequestPreviewApi(api_client)
+    app_request_settings = jamf.AppRequestSettings() # AppRequestSettings | App request settings object
 
     try:
         # Update Application Request Settings 

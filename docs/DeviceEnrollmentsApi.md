@@ -1,4 +1,4 @@
-# openapi_client.DeviceEnrollmentsApi
+# jamf.DeviceEnrollmentsApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -31,20 +31,20 @@ Search for sorted and paged device enrollment instances
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["id:asc"] # list[str] | Sorting criteria in the format: property:asc/desc. Multiple sort criteria are supported and must be separated with a comma. Example: sort=date:desc,name:asc  (optional) (default to ["id:asc"])
@@ -97,20 +97,20 @@ Deletes a Device Enrollment Instance with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
 
     try:
@@ -159,22 +159,22 @@ Disowns devices from the given device enrollment instance
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
-device_enrollment_disown_body = openapi_client.DeviceEnrollmentDisownBody() # DeviceEnrollmentDisownBody | List of device serial numbers to disown (optional)
+device_enrollment_disown_body = jamf.DeviceEnrollmentDisownBody() # DeviceEnrollmentDisownBody | List of device serial numbers to disown (optional)
 
     try:
         # Disown devices from the given Device Enrollment Instance 
@@ -225,20 +225,20 @@ Retrieves a Device Enrollment Instance with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
 
     try:
@@ -288,20 +288,20 @@ Gets sorted and paged device enrollment history objects
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
 page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
@@ -358,22 +358,22 @@ Adds device enrollment history object notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
-object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Device Enrollment history object notes 
@@ -423,22 +423,22 @@ Updates a Device Enrollment Instance with the supplied id
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
-device_enrollment_instance = openapi_client.DeviceEnrollmentInstance() # DeviceEnrollmentInstance | 
+device_enrollment_instance = jamf.DeviceEnrollmentInstance() # DeviceEnrollmentInstance | 
 
     try:
         # Update a Device Enrollment Instance with the supplied id 
@@ -488,20 +488,20 @@ Get all instance sync states for a single instance
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
 
     try:
@@ -550,20 +550,20 @@ Get the latest sync state for a single instance
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
 
     try:
@@ -612,22 +612,22 @@ Updates a device enrollment instance with the supplied token.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     id = 'id_example' # str | Device Enrollment Instance identifier
-device_enrollment_token = openapi_client.DeviceEnrollmentToken() # DeviceEnrollmentToken | The downloaded token base 64 encoded from the MDM server to be used to create a new Device Enrollment Instance.
+device_enrollment_token = jamf.DeviceEnrollmentToken() # DeviceEnrollmentToken | The downloaded token base 64 encoded from the MDM server to be used to create a new Device Enrollment Instance.
 
     try:
         # Update a Device Enrollment Instance with the supplied Token 
@@ -678,20 +678,20 @@ Retrieve the Jamf Pro device enrollment public key
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     
     try:
         # Retrieve the Jamf Pro Device Enrollment public key 
@@ -737,20 +737,20 @@ Get all instance sync states for all instances
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
     
     try:
         # Get all instance sync states for all Device Enrollment Instances 
@@ -795,21 +795,21 @@ Creates a device enrollment instance with the supplied token.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceEnrollmentsApi(api_client)
-    device_enrollment_token = openapi_client.DeviceEnrollmentToken() # DeviceEnrollmentToken | The downloaded token base 64 encoded from the MDM server to be used to create a new Device Enrollment Instance.
+    api_instance = jamf.DeviceEnrollmentsApi(api_client)
+    device_enrollment_token = jamf.DeviceEnrollmentToken() # DeviceEnrollmentToken | The downloaded token base 64 encoded from the MDM server to be used to create a new Device Enrollment Instance.
 
     try:
         # Create a Device Enrollment Instance with the supplied Token 

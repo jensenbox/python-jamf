@@ -1,4 +1,4 @@
-# openapi_client.DeviceCommunicationSettingsPreviewApi
+# jamf.DeviceCommunicationSettingsPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -20,20 +20,20 @@ Retrieves all device communication settings, including automatic renewal of the 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceCommunicationSettingsPreviewApi(api_client)
+    api_instance = jamf.DeviceCommunicationSettingsPreviewApi(api_client)
     
     try:
         # Retrieves all settings for device communication 
@@ -78,21 +78,21 @@ Update device communication settings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceCommunicationSettingsPreviewApi(api_client)
-    device_communication_settings = openapi_client.DeviceCommunicationSettings() # DeviceCommunicationSettings | 
+    api_instance = jamf.DeviceCommunicationSettingsPreviewApi(api_client)
+    device_communication_settings = jamf.DeviceCommunicationSettings() # DeviceCommunicationSettings | 
 
     try:
         # Update device communication settings 

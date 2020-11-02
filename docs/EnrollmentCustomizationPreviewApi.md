@@ -1,4 +1,4 @@
-# openapi_client.EnrollmentCustomizationPreviewApi
+# jamf.EnrollmentCustomizationPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -35,20 +35,20 @@ Get all panels for single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 
     try:
@@ -98,20 +98,20 @@ Delete a single panel from an Enrollment Customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -161,20 +161,20 @@ Get a single panel for a single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -226,20 +226,20 @@ Delete an LDAP single Panel from an Enrollment Customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -289,20 +289,20 @@ Get a single LDAP panel for a single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -354,23 +354,23 @@ Update a single LDAP panel for a single enrollment customization. If multiple LD
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
-enrollment_customization_panel_ldap_auth = openapi_client.EnrollmentCustomizationPanelLdapAuth() # EnrollmentCustomizationPanelLdapAuth | Enrollment Customization Panel to update
+enrollment_customization_panel_ldap_auth = jamf.EnrollmentCustomizationPanelLdapAuth() # EnrollmentCustomizationPanelLdapAuth | Enrollment Customization Panel to update
 
     try:
         # Update a single LDAP Panel for a single Enrollment Customization 
@@ -421,22 +421,22 @@ Create an LDAP panel for a single enrollment customization. If multiple LDAP acc
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
-enrollment_customization_panel_ldap_auth = openapi_client.EnrollmentCustomizationPanelLdapAuth() # EnrollmentCustomizationPanelLdapAuth | Enrollment Customization Panel to create
+enrollment_customization_panel_ldap_auth = jamf.EnrollmentCustomizationPanelLdapAuth() # EnrollmentCustomizationPanelLdapAuth | Enrollment Customization Panel to create
 
     try:
         # Create an LDAP Panel for a single Enrollment Customization 
@@ -486,20 +486,20 @@ Delete a single SSO panel from an Enrollment Customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -549,20 +549,20 @@ Get a single SSO panel for a single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -614,23 +614,23 @@ Update a single SSO panel for a single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
-enrollment_customization_panel_sso_auth = openapi_client.EnrollmentCustomizationPanelSsoAuth() # EnrollmentCustomizationPanelSsoAuth | Enrollment Customization Panel to update
+enrollment_customization_panel_sso_auth = jamf.EnrollmentCustomizationPanelSsoAuth() # EnrollmentCustomizationPanelSsoAuth | Enrollment Customization Panel to update
 
     try:
         # Update a single SSO Panel for a single Enrollment Customization 
@@ -681,22 +681,22 @@ Create an SSO panel for a single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
-enrollment_customization_panel_sso_auth = openapi_client.EnrollmentCustomizationPanelSsoAuth() # EnrollmentCustomizationPanelSsoAuth | Enrollment Customization Panel to create
+enrollment_customization_panel_sso_auth = jamf.EnrollmentCustomizationPanelSsoAuth() # EnrollmentCustomizationPanelSsoAuth | Enrollment Customization Panel to create
 
     try:
         # Create an SSO Panel for a single Enrollment Customization 
@@ -746,20 +746,20 @@ Delete a Text single panel from an Enrollment Customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -809,20 +809,20 @@ Get a single Text panel for a single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -874,20 +874,20 @@ Get the markdown output of a single Text panel for a single enrollment customiza
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
 
@@ -939,23 +939,23 @@ Update a single Text panel for a single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
 panel_id = 56 # int | Panel object identifier
-enrollment_customization_panel_text = openapi_client.EnrollmentCustomizationPanelText() # EnrollmentCustomizationPanelText | Enrollment Customization Panel to update
+enrollment_customization_panel_text = jamf.EnrollmentCustomizationPanelText() # EnrollmentCustomizationPanelText | Enrollment Customization Panel to update
 
     try:
         # Update a single Text Panel for a single Enrollment Customization 
@@ -1006,22 +1006,22 @@ Create a Text panel for a single enrollment customization
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
     id = 56 # int | Enrollment Customization identifier
-enrollment_customization_panel_text = openapi_client.EnrollmentCustomizationPanelText() # EnrollmentCustomizationPanelText | Enrollment Customization Panel to create
+enrollment_customization_panel_text = jamf.EnrollmentCustomizationPanelText() # EnrollmentCustomizationPanelText | Enrollment Customization Panel to create
 
     try:
         # Create a Text Panel for a single Enrollment Customization 
@@ -1071,21 +1071,21 @@ Parse the given string as markdown text and return Html output
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EnrollmentCustomizationPreviewApi(api_client)
-    markdown = openapi_client.Markdown() # Markdown | Enrollment Customization Panel to create
+    api_instance = jamf.EnrollmentCustomizationPreviewApi(api_client)
+    markdown = jamf.Markdown() # Markdown | Enrollment Customization Panel to create
 
     try:
         # Parse the given string as markdown text and return Html output 

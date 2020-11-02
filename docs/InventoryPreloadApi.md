@@ -1,4 +1,4 @@
-# openapi_client.InventoryPreloadApi
+# jamf.InventoryPreloadApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -50,20 +50,20 @@ Retrieves the Inventory Preload CSV template.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     
     try:
         # Get the Inventory Preload CSV template 
@@ -108,20 +108,20 @@ Deletes all Inventory Preload records.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     
     try:
         # Delete all Inventory Preload records 
@@ -165,20 +165,20 @@ Returns all Inventory Preload records.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 pagesize = 100 # int |  (optional) (default to 100)
 sort = 'ASC' # str |  (optional) (default to 'ASC')
@@ -233,20 +233,20 @@ Gets Inventory Preload history entries.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -303,21 +303,21 @@ Adds Inventory Preload history object notes.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+    api_instance = jamf.InventoryPreloadApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Inventory Preload history object notes 
@@ -366,20 +366,20 @@ Deletes an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 56 # int | Inventory Preload identifier
 
     try:
@@ -428,20 +428,20 @@ Retrieves an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 56 # int | Inventory Preload identifier
 
     try:
@@ -491,22 +491,22 @@ Updates an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 56 # int | Inventory Preload identifier
-inventory_preload_record = openapi_client.InventoryPreloadRecord() # InventoryPreloadRecord | Inventory Preload record to update
+inventory_preload_record = jamf.InventoryPreloadRecord() # InventoryPreloadRecord | Inventory Preload record to update
 
     try:
         # Update an Inventory Preload record 
@@ -556,21 +556,21 @@ Create a new Inventory Preload record using JSON or CSV. A CSV template can be d
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
-    inventory_preload_record = openapi_client.InventoryPreloadRecord() # InventoryPreloadRecord | Inventory Preload record or records to be created
+    api_instance = jamf.InventoryPreloadApi(api_client)
+    inventory_preload_record = jamf.InventoryPreloadRecord() # InventoryPreloadRecord | Inventory Preload record or records to be created
 
     try:
         # Create a new Inventory Preload record using JSON or CSV 
@@ -619,20 +619,20 @@ Validate a given CSV file. Serial number and device type are required. All other
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     body = None # object | Inventory Preload records to be validated. A CSV template can be downloaded from /api/inventory-preload/csv-template
 
     try:
@@ -682,20 +682,20 @@ Retrieves the Inventory Preload CSV template.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     
     try:
         # Retrieve the Inventory Preload CSV template 
@@ -740,20 +740,20 @@ Deletes all Inventory Preload records.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     
     try:
         # Delete all Inventory Preload records 
@@ -797,20 +797,20 @@ Returns all Inventory Preload records.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -867,20 +867,20 @@ Gets Inventory Preload history entries.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -937,21 +937,21 @@ Adds Inventory Preload history object notes.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+    api_instance = jamf.InventoryPreloadApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Inventory Preload history object notes 
@@ -1000,20 +1000,20 @@ Deletes an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 56 # int | Inventory Preload identifier
 
     try:
@@ -1062,20 +1062,20 @@ Retrieves an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 56 # int | Inventory Preload identifier
 
     try:
@@ -1125,22 +1125,22 @@ Updates an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 56 # int | Inventory Preload identifier
-inventory_preload_record = openapi_client.InventoryPreloadRecord() # InventoryPreloadRecord | Inventory Preload record to update
+inventory_preload_record = jamf.InventoryPreloadRecord() # InventoryPreloadRecord | Inventory Preload record to update
 
     try:
         # Update an Inventory Preload record 
@@ -1190,21 +1190,21 @@ Create a new Inventory Preload record using JSON or CSV. A CSV template can be d
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
-    inventory_preload_record = openapi_client.InventoryPreloadRecord() # InventoryPreloadRecord | Inventory Preload record or records to be created
+    api_instance = jamf.InventoryPreloadApi(api_client)
+    inventory_preload_record = jamf.InventoryPreloadRecord() # InventoryPreloadRecord | Inventory Preload record or records to be created
 
     try:
         # Create a new Inventory Preload record using JSON or CSV 
@@ -1253,20 +1253,20 @@ Validate a given CSV file. Serial number and device type are required. All other
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     body = None # object | Inventory Preload records to be validated. A CSV template can be downloaded from /api/inventory-preload/csv-template
 
     try:
@@ -1316,20 +1316,20 @@ Returns all Inventory Preload records as a CSV file.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     
     try:
         # Download all Inventory Preload records
@@ -1374,20 +1374,20 @@ Create one or more new Inventory Preload records using CSV. A CSV template can b
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     file = 'file_example' # str | The CSV file to upload
 
     try:
@@ -1437,20 +1437,20 @@ Retrieves the Inventory Preload CSV file template.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     
     try:
         # Download the Inventory Preload CSV template
@@ -1495,20 +1495,20 @@ Validate a given CSV file. Serial number and device type are required. All other
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     file = 'file_example' # str | The CSV file to upload
 
     try:
@@ -1558,20 +1558,20 @@ Gets Inventory Preload history entries.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["date:desc"] # list[str] | Sorting criteria in the format: `property:asc/desc`. Default sort is `date:desc`. Multiple sort criteria are supported and must be separated with a comma.  Example: `sort=date:desc,name:asc`.  (optional) (default to ["date:desc"])
@@ -1624,21 +1624,21 @@ Adds Inventory Preload history object notes.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+    api_instance = jamf.InventoryPreloadApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Inventory Preload history object notes
@@ -1687,20 +1687,20 @@ Deletes all Inventory Preload records.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     
     try:
         # Delete all Inventory Preload records 
@@ -1744,20 +1744,20 @@ Returns all Inventory Preload records.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 page_size = 100 # int |  (optional) (default to 100)
 sort = ["id:asc"] # list[str] | Sorting criteria in the format: `property:asc/desc`. Default sort is `id:asc`. Multiple sort criteria are supported and must be separated with a comma.  Example: `sort=date:desc,name:asc`.  (optional) (default to ["id:asc"])
@@ -1810,20 +1810,20 @@ Deletes an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 'id_example' # str | Inventory Preload identifier
 
     try:
@@ -1872,20 +1872,20 @@ Retrieves an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 'id_example' # str | Inventory Preload identifier
 
     try:
@@ -1935,22 +1935,22 @@ Updates an Inventory Preload record.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
+    api_instance = jamf.InventoryPreloadApi(api_client)
     id = 'id_example' # str | Inventory Preload identifier
-inventory_preload_record_v2 = openapi_client.InventoryPreloadRecordV2() # InventoryPreloadRecordV2 | Inventory Preload record to update
+inventory_preload_record_v2 = jamf.InventoryPreloadRecordV2() # InventoryPreloadRecordV2 | Inventory Preload record to update
 
     try:
         # Update an Inventory Preload record
@@ -2000,21 +2000,21 @@ Create a new Inventory Preload record using JSON.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InventoryPreloadApi(api_client)
-    inventory_preload_record_v2 = openapi_client.InventoryPreloadRecordV2() # InventoryPreloadRecordV2 | Inventory Preload record to be created.
+    api_instance = jamf.InventoryPreloadApi(api_client)
+    inventory_preload_record_v2 = jamf.InventoryPreloadRecordV2() # InventoryPreloadRecordV2 | Inventory Preload record to be created.
 
     try:
         # Create a new Inventory Preload record using JSON

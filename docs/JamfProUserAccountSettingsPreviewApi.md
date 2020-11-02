@@ -1,4 +1,4 @@
-# openapi_client.JamfProUserAccountSettingsPreviewApi
+# jamf.JamfProUserAccountSettingsPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -21,20 +21,20 @@ Remove specified setting for authenticated user
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProUserAccountSettingsPreviewApi(api_client)
+    api_instance = jamf.JamfProUserAccountSettingsPreviewApi(api_client)
     key = 'key_example' # str | key of user setting to be persisted
 
     try:
@@ -83,20 +83,20 @@ Gets the user setting for the authenticated user and key.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProUserAccountSettingsPreviewApi(api_client)
+    api_instance = jamf.JamfProUserAccountSettingsPreviewApi(api_client)
     key = 'key_example' # str | user setting to be retrieved
 
     try:
@@ -146,20 +146,20 @@ Persists the user setting
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProUserAccountSettingsPreviewApi(api_client)
+    api_instance = jamf.JamfProUserAccountSettingsPreviewApi(api_client)
     key = 'key_example' # str | key of user setting to be persisted
 body = 'body_example' # str | user setting value to be persisted (optional)
 

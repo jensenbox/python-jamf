@@ -1,4 +1,4 @@
-# openapi_client.JamfProServerUrlPreviewApi
+# jamf.JamfProServerUrlPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -22,20 +22,20 @@ Get Jamf Pro Server URL settings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProServerUrlPreviewApi(api_client)
+    api_instance = jamf.JamfProServerUrlPreviewApi(api_client)
     
     try:
         # Get Jamf Pro Server URL settings 
@@ -80,20 +80,20 @@ Gets Jamf Pro Server URL settings history
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProServerUrlPreviewApi(api_client)
+    api_instance = jamf.JamfProServerUrlPreviewApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 size = 100 # int |  (optional) (default to 100)
 pagesize = 100 # int |  (optional) (default to 100)
@@ -150,21 +150,21 @@ Adds Jamf Pro Server URL settings history notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProServerUrlPreviewApi(api_client)
-    object_history_note = openapi_client.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
+    api_instance = jamf.JamfProServerUrlPreviewApi(api_client)
+    object_history_note = jamf.ObjectHistoryNote() # ObjectHistoryNote | History notes to create
 
     try:
         # Add Jamf Pro Server URL settings history notes 
@@ -214,21 +214,21 @@ Update Jamf Pro Server URL settings
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.JamfProServerUrlPreviewApi(api_client)
-    jamf_pro_server_url = openapi_client.JamfProServerUrl() # JamfProServerUrl | Jamf Pro Server URL settings object
+    api_instance = jamf.JamfProServerUrlPreviewApi(api_client)
+    jamf_pro_server_url = jamf.JamfProServerUrl() # JamfProServerUrl | Jamf Pro Server URL settings object
 
     try:
         # Update Jamf Pro Server URL settings 

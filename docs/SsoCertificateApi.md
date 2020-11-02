@@ -1,4 +1,4 @@
-# openapi_client.SsoCertificateApi
+# jamf.SsoCertificateApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -24,20 +24,20 @@ Deletes the currently configured certificate used by SSO.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoCertificateApi(api_client)
+    api_instance = jamf.SsoCertificateApi(api_client)
     
     try:
         # Delete the currently configured certificate used by SSO 
@@ -81,20 +81,20 @@ Downloads the certificate currently configured for use with Jamf Pro's SSO confi
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoCertificateApi(api_client)
+    api_instance = jamf.SsoCertificateApi(api_client)
     
     try:
         # Download the certificate currently configured for use with Jamf Pro's SSO configuration 
@@ -139,20 +139,20 @@ Retrieves the certificate currently configured for use with SSO.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoCertificateApi(api_client)
+    api_instance = jamf.SsoCertificateApi(api_client)
     
     try:
         # Retrieve the certificate currently configured for use with SSO 
@@ -197,21 +197,21 @@ Parse the certificate to get details about certificate type and keys needed to u
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoCertificateApi(api_client)
-    sso_keystore_parse = openapi_client.SsoKeystoreParse() # SsoKeystoreParse | 
+    api_instance = jamf.SsoCertificateApi(api_client)
+    sso_keystore_parse = jamf.SsoKeystoreParse() # SsoKeystoreParse | 
 
     try:
         # Parse the certificate to get details about certificate type and keys needed to upload certificate file 
@@ -260,20 +260,20 @@ Jamf Pro will generate a new certificate and use it to sign SSO requests to the 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoCertificateApi(api_client)
+    api_instance = jamf.SsoCertificateApi(api_client)
     
     try:
         # Jamf Pro will generate a new certificate and use it to sign SSO 
@@ -318,21 +318,21 @@ Update the certificate used by Jamf Pro to sign SSO requests to the identify pro
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SsoCertificateApi(api_client)
-    sso_keystore = openapi_client.SsoKeystore() # SsoKeystore | 
+    api_instance = jamf.SsoCertificateApi(api_client)
+    sso_keystore = jamf.SsoKeystore() # SsoKeystore | 
 
     try:
         # Update the certificate used by Jamf Pro to sign SSO requests to the identify provider 

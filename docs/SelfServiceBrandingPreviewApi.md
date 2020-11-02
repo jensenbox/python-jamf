@@ -1,4 +1,4 @@
-# openapi_client.SelfServiceBrandingPreviewApi
+# jamf.SelfServiceBrandingPreviewApi
 
 All URIs are relative to *https://tryitout.jamfcloud.com/uapi*
 
@@ -24,20 +24,20 @@ Search for sorted and paged branding configurations
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SelfServiceBrandingPreviewApi(api_client)
+    api_instance = jamf.SelfServiceBrandingPreviewApi(api_client)
     page = 0 # int |  (optional) (default to 0)
 pagesize = 100 # int |  (optional) (default to 100)
 size = 100 # int |  (optional) (default to 100)
@@ -94,20 +94,20 @@ Delete the Self Service branding configuration indicated by the provided id.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SelfServiceBrandingPreviewApi(api_client)
+    api_instance = jamf.SelfServiceBrandingPreviewApi(api_client)
     id = 56 # int | id of branding configuration
 
     try:
@@ -156,20 +156,20 @@ Read a single Self Service branding configuration indicated by the provided id.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SelfServiceBrandingPreviewApi(api_client)
+    api_instance = jamf.SelfServiceBrandingPreviewApi(api_client)
     id = 56 # int | id of branding configuration
 
     try:
@@ -218,22 +218,22 @@ Update a Self Service branding configuration with the supplied details
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SelfServiceBrandingPreviewApi(api_client)
+    api_instance = jamf.SelfServiceBrandingPreviewApi(api_client)
     id = 56 # int | id of branding configuration
-branding_configuration = openapi_client.BrandingConfiguration() # BrandingConfiguration | The branding configuration values to update (optional)
+branding_configuration = jamf.BrandingConfiguration() # BrandingConfiguration | The branding configuration values to update (optional)
 
     try:
         # Update a Self Service branding configuration with the supplied details 
@@ -283,21 +283,21 @@ Create a Self Service branding configuration with the supplied details
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SelfServiceBrandingPreviewApi(api_client)
-    branding_configuration = openapi_client.BrandingConfiguration() # BrandingConfiguration | The branding configuration to create (optional)
+    api_instance = jamf.SelfServiceBrandingPreviewApi(api_client)
+    branding_configuration = jamf.BrandingConfiguration() # BrandingConfiguration | The branding configuration to create (optional)
 
     try:
         # Create a Self Service branding configuration with the supplied 
@@ -345,20 +345,20 @@ Uploads an image
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import jamf
+from jamf.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://tryitout.jamfcloud.com/uapi
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = jamf.Configuration(
     host = "https://tryitout.jamfcloud.com/uapi"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with jamf.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SelfServiceBrandingPreviewApi(api_client)
+    api_instance = jamf.SelfServiceBrandingPreviewApi(api_client)
     file = '/path/to/file' # file | The file to upload
 
     try:
