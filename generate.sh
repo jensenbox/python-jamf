@@ -10,9 +10,12 @@ VERSION=v10.25.0
 docker run \
         --rm \
         -v ${PWD}:/local openapitools/openapi-generator-cli generate \
-        -i https://resources.jamf.com/open-api/${VERSION}_JPAPI.json \
-        -g python \
-        -o /local \
+        --input-spec https://resources.jamf.com/open-api/${VERSION}_JPAPI.json \
+        --generator-name python \
+        --output /local \
         --additional-properties=packageName=jamf \
         --additional-properties=packageVersion=${VERSION} \
-        --additional-properties=projectName=python-jamf
+        --additional-properties=projectName=python-jamf \
+        --git-user-id jensenbox \
+        --git-repo-id python-jamf \
+        --http-user-agent "Python/JAMF ${VERSION}"
