@@ -1,0 +1,53 @@
+# EnrollmentProcessTextObject
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**language_code** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
+**title** | **str** |  | [optional] 
+**login_description** | **str** |  | [optional] 
+**username** | **str** |  | [optional] 
+**password** | **str** |  | [optional] 
+**login_button** | **str** |  | [optional] 
+**device_class_description** | **str** |  | [optional] 
+**device_class_personal** | **str** |  | [optional] 
+**device_class_personal_description** | **str** |  | [optional] 
+**device_class_enterprise** | **str** |  | [optional] 
+**device_class_enterprise_description** | **str** |  | [optional] 
+**device_class_button** | **str** |  | [optional] 
+**personal_eula** | **str** |  | [optional] 
+**enterprise_eula** | **str** |  | [optional] 
+**eula_button** | **str** |  | [optional] 
+**site_description** | **str** |  | [optional] 
+**certificate_text** | **str** |  | [optional] 
+**certificate_button** | **str** |  | [optional] 
+**certificate_profile_name** | **str** |  | [optional] 
+**certificate_profile_description** | **str** |  | [optional] 
+**personal_text** | **str** |  | [optional] 
+**personal_button** | **str** |  | [optional] 
+**personal_profile_name** | **str** |  | [optional] 
+**personal_profile_description** | **str** |  | [optional] 
+**user_enrollment_text** | **str** |  | [optional] [default to 'Enter your Managed Apple id to install the MDM Profile.']
+**user_enrollment_button** | **str** |  | [optional] [default to 'Continue']
+**user_enrollment_profile_name** | **str** |  | [optional] [default to 'MDM Profile']
+**user_enrollment_profile_description** | **str** |  | [optional] [default to 'MDM Profile for mobile device management']
+**enterprise_text** | **str** |  | [optional] 
+**enterprise_button** | **str** |  | [optional] 
+**enterprise_profile_name** | **str** |  | [optional] 
+**enterprise_profile_description** | **str** |  | [optional] 
+**enterprise_pending** | **str** |  | [optional] 
+**quick_add_text** | **str** |  | [optional] 
+**quick_add_button** | **str** |  | [optional] 
+**quick_add_name** | **str** |  | [optional] [default to 'QuickAdd.pkg']
+**quick_add_pending** | **str** |  | [optional] 
+**complete_message** | **str** |  | [optional] 
+**failed_message** | **str** |  | [optional] 
+**try_again_button** | **str** |  | [optional] 
+**check_now_button** | **str** |  | [optional] 
+**check_enrollment_message** | **str** |  | [optional] 
+**logout_button** | **str** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
