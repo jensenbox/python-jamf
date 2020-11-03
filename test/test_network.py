@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.network import Network  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.network import Network  # noqa: E501
+from jamf.rest import ApiException
 
 class TestNetwork(unittest.TestCase):
     """Network unit test stubs"""
@@ -33,7 +33,7 @@ class TestNetwork(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.network.Network()  # noqa: E501
+        # model = jamf.models.network.Network()  # noqa: E501
         if include_optional :
             return Network(
                 cellular_technology = 'Unknown', 

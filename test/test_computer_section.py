@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_section import ComputerSection  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_section import ComputerSection  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerSection(unittest.TestCase):
     """ComputerSection unit test stubs"""
@@ -33,7 +33,7 @@ class TestComputerSection(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_section.ComputerSection()  # noqa: E501
+        # model = jamf.models.computer_section.ComputerSection()  # noqa: E501
         if include_optional :
             return ComputerSection(
             )

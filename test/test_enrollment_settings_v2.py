@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.enrollment_settings_v2 import EnrollmentSettingsV2  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.enrollment_settings_v2 import EnrollmentSettingsV2  # noqa: E501
+from jamf.rest import ApiException
 
 class TestEnrollmentSettingsV2(unittest.TestCase):
     """EnrollmentSettingsV2 unit test stubs"""
@@ -33,12 +33,12 @@ class TestEnrollmentSettingsV2(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.enrollment_settings_v2.EnrollmentSettingsV2()  # noqa: E501
+        # model = jamf.models.enrollment_settings_v2.EnrollmentSettingsV2()  # noqa: E501
         if include_optional :
             return EnrollmentSettingsV2(
                 install_single_profile = True, 
                 signing_mdm_profile_enabled = True, 
-                mdm_signing_certificate = openapi_client.models.certificate_identity_v2.CertificateIdentityV2(
+                mdm_signing_certificate = jamf.models.certificate_identity_v2.CertificateIdentityV2(
                     filename = '0', 
                     keystore_password = '0', 
                     identity_keystore = ZXhhbXBsZSBvZiBhIGJhc2U2NCBlbmNvZGVkIHZhbGlkIHAxMi4ga2V5c3RvcmUgZmlsZQ==, 
@@ -61,15 +61,15 @@ class TestEnrollmentSettingsV2(unittest.TestCase):
                 ensure_ssh_running = True, 
                 launch_self_service = True, 
                 sign_quick_add = True, 
-                developer_certificate_identity = openapi_client.models.certificate_identity_v2.CertificateIdentityV2(
+                developer_certificate_identity = jamf.models.certificate_identity_v2.CertificateIdentityV2(
                     filename = '0', 
                     keystore_password = '0', 
                     identity_keystore = ZXhhbXBsZSBvZiBhIGJhc2U2NCBlbmNvZGVkIHZhbGlkIHAxMi4ga2V5c3RvcmUgZmlsZQ==, 
                     md5_sum = '0', ), 
-                developer_certificate_identity_details = openapi_client.models.certificate_details.CertificateDetails(
+                developer_certificate_identity_details = jamf.models.certificate_details.CertificateDetails(
                     subject = '0', 
                     serial_number = '0', ), 
-                mdm_signing_certificate_details = openapi_client.models.certificate_details.CertificateDetails(
+                mdm_signing_certificate_details = jamf.models.certificate_details.CertificateDetails(
                     subject = '0', 
                     serial_number = '0', ), 
                 ios_enterprise_enrollment_enabled = True, 

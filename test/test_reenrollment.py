@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.reenrollment import Reenrollment  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.reenrollment import Reenrollment  # noqa: E501
+from jamf.rest import ApiException
 
 class TestReenrollment(unittest.TestCase):
     """Reenrollment unit test stubs"""
@@ -33,7 +33,7 @@ class TestReenrollment(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.reenrollment.Reenrollment()  # noqa: E501
+        # model = jamf.models.reenrollment.Reenrollment()  # noqa: E501
         if include_optional :
             return Reenrollment(
                 is_flush_policy_history_enabled = True, 

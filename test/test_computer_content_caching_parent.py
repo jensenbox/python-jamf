@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_content_caching_parent import ComputerContentCachingParent  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_content_caching_parent import ComputerContentCachingParent  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerContentCachingParent(unittest.TestCase):
     """ComputerContentCachingParent unit test stubs"""
@@ -33,21 +33,21 @@ class TestComputerContentCachingParent(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_content_caching_parent.ComputerContentCachingParent()  # noqa: E501
+        # model = jamf.models.computer_content_caching_parent.ComputerContentCachingParent()  # noqa: E501
         if include_optional :
             return ComputerContentCachingParent(
                 content_caching_parent_id = '1', 
                 address = 'SomeAddress', 
-                alerts = openapi_client.models.computer_content_caching_parent_alert.ComputerContentCachingParentAlert(
+                alerts = jamf.models.computer_content_caching_parent_alert.ComputerContentCachingParentAlert(
                     content_caching_parent_alert_id = '1', 
                     addresses = [], 
                     class_name = 'SomeClass', 
                     post_date = '2018-10-31T18:04:13Z', ), 
-                details = openapi_client.models.computer_content_caching_parent_details.ComputerContentCachingParentDetails(
+                details = jamf.models.computer_content_caching_parent_details.ComputerContentCachingParentDetails(
                     content_caching_parent_details_id = '1', 
                     ac_power = True, 
                     cache_size_bytes = 0, 
-                    capabilities = openapi_client.models.computer_content_caching_parent_capabilities.ComputerContentCachingParentCapabilities(
+                    capabilities = jamf.models.computer_content_caching_parent_capabilities.ComputerContentCachingParentCapabilities(
                         content_caching_parent_capabilities_id = '1', 
                         imports = True, 
                         namespaces = True, 
@@ -57,7 +57,7 @@ class TestComputerContentCachingParent(unittest.TestCase):
                         prioritization = True, ), 
                     portable = True, 
                     local_network = [
-                        openapi_client.models.computer_content_caching_parent_local_network.ComputerContentCachingParentLocalNetwork(
+                        jamf.models.computer_content_caching_parent_local_network.ComputerContentCachingParentLocalNetwork(
                             content_caching_parent_local_network_id = '1', 
                             speed = 5000, 
                             wired = True, )

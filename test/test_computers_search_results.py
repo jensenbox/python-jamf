@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computers_search_results import ComputersSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computers_search_results import ComputersSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputersSearchResults(unittest.TestCase):
     """ComputersSearchResults unit test stubs"""
@@ -33,14 +33,14 @@ class TestComputersSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computers_search_results.ComputersSearchResults()  # noqa: E501
+        # model = jamf.models.computers_search_results.ComputersSearchResults()  # noqa: E501
         if include_optional :
             return ComputersSearchResults(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.computer_overview.ComputerOverview(
+                    jamf.models.computer_overview.ComputerOverview(
                         id = '7', 
-                        location = openapi_client.models.computer_location.ComputerLocation(
+                        location = jamf.models.computer_location.ComputerLocation(
                             username = 'admin', 
                             position = 'IT Team Lead', 
                             room = '4th Floor - Quad 3', ), 

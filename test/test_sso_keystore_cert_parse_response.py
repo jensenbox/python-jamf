@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.sso_keystore_cert_parse_response import SsoKeystoreCertParseResponse  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.sso_keystore_cert_parse_response import SsoKeystoreCertParseResponse  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSsoKeystoreCertParseResponse(unittest.TestCase):
     """SsoKeystoreCertParseResponse unit test stubs"""
@@ -33,12 +33,12 @@ class TestSsoKeystoreCertParseResponse(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.sso_keystore_cert_parse_response.SsoKeystoreCertParseResponse()  # noqa: E501
+        # model = jamf.models.sso_keystore_cert_parse_response.SsoKeystoreCertParseResponse()  # noqa: E501
         if include_optional :
             return SsoKeystoreCertParseResponse(
                 key = '0', 
                 keys = [
-                    openapi_client.models.certificate_key.CertificateKey(
+                    jamf.models.certificate_key.CertificateKey(
                         id = '1', 
                         valid = True, )
                     ], 

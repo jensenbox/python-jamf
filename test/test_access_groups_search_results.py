@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.access_groups_search_results import AccessGroupsSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.access_groups_search_results import AccessGroupsSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAccessGroupsSearchResults(unittest.TestCase):
     """AccessGroupsSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestAccessGroupsSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.access_groups_search_results.AccessGroupsSearchResults()  # noqa: E501
+        # model = jamf.models.access_groups_search_results.AccessGroupsSearchResults()  # noqa: E501
         if include_optional :
             return AccessGroupsSearchResults(
                 total_count = 10, 
                 results = [
-                    openapi_client.models.enrollment_access_group.EnrollmentAccessGroup(
+                    jamf.models.enrollment_access_group.EnrollmentAccessGroup(
                         id = '1', 
                         ldap_server_id = 1, 
                         name = 'Grade School Pupils', 

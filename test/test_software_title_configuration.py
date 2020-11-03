@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.software_title_configuration import SoftwareTitleConfiguration  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.software_title_configuration import SoftwareTitleConfiguration  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSoftwareTitleConfiguration(unittest.TestCase):
     """SoftwareTitleConfiguration unit test stubs"""
@@ -33,7 +33,7 @@ class TestSoftwareTitleConfiguration(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.software_title_configuration.SoftwareTitleConfiguration()  # noqa: E501
+        # model = jamf.models.software_title_configuration.SoftwareTitleConfiguration()  # noqa: E501
         if include_optional :
             return SoftwareTitleConfiguration(
                 id = 1, 

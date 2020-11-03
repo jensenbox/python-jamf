@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.supervision_identities_preview_api import SupervisionIdentitiesPreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.supervision_identities_preview_api import SupervisionIdentitiesPreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestSupervisionIdentitiesPreviewApi(unittest.TestCase):
     """SupervisionIdentitiesPreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.supervision_identities_preview_api.SupervisionIdentitiesPreviewApi()  # noqa: E501
+        self.api = jamf.api.supervision_identities_preview_api.SupervisionIdentitiesPreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

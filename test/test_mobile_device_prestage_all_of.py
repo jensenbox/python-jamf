@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.mobile_device_prestage_all_of import MobileDevicePrestageAllOf  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.mobile_device_prestage_all_of import MobileDevicePrestageAllOf  # noqa: E501
+from jamf.rest import ApiException
 
 class TestMobileDevicePrestageAllOf(unittest.TestCase):
     """MobileDevicePrestageAllOf unit test stubs"""
@@ -33,7 +33,7 @@ class TestMobileDevicePrestageAllOf(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.mobile_device_prestage_all_of.MobileDevicePrestageAllOf()  # noqa: E501
+        # model = jamf.models.mobile_device_prestage_all_of.MobileDevicePrestageAllOf()  # noqa: E501
         if include_optional :
             return MobileDevicePrestageAllOf(
                 is_allow_pairing = True, 
@@ -44,10 +44,10 @@ class TestMobileDevicePrestageAllOf(unittest.TestCase):
                 is_configure_device_before_setup_assistant = True, 
                 language = 'en', 
                 region = 'US', 
-                names = openapi_client.models.mobile_device_prestage_names.MobileDevicePrestageNames(
+                names = jamf.models.mobile_device_prestage_names.MobileDevicePrestageNames(
                     assign_names_using = 'List of Names', 
                     prestage_device_names = [
-                        openapi_client.models.mobile_device_prestage_name.MobileDevicePrestageName(
+                        jamf.models.mobile_device_prestage_name.MobileDevicePrestageName(
                             id = 1, 
                             device_name = 'iPad', 
                             is_used = False, )

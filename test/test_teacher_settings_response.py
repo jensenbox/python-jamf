@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.teacher_settings_response import TeacherSettingsResponse  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.teacher_settings_response import TeacherSettingsResponse  # noqa: E501
+from jamf.rest import ApiException
 
 class TestTeacherSettingsResponse(unittest.TestCase):
     """TeacherSettingsResponse unit test stubs"""
@@ -33,7 +33,7 @@ class TestTeacherSettingsResponse(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.teacher_settings_response.TeacherSettingsResponse()  # noqa: E501
+        # model = jamf.models.teacher_settings_response.TeacherSettingsResponse()  # noqa: E501
         if include_optional :
             return TeacherSettingsResponse(
                 is_enabled = True, 
@@ -41,7 +41,7 @@ class TestTeacherSettingsResponse(unittest.TestCase):
                 auto_clear = '05:30', 
                 max_restriction_length_seconds = 600, 
                 display_name_type = 'user', 
-                features = openapi_client.models.teacher_features.TeacherFeatures(
+                features = jamf.models.teacher_features.TeacherFeatures(
                     is_allow_app_lock = True, 
                     is_allow_web_lock = True, 
                     is_allow_restrictions = True, 

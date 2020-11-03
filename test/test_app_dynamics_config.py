@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.app_dynamics_config import AppDynamicsConfig  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.app_dynamics_config import AppDynamicsConfig  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAppDynamicsConfig(unittest.TestCase):
     """AppDynamicsConfig unit test stubs"""
@@ -33,7 +33,7 @@ class TestAppDynamicsConfig(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.app_dynamics_config.AppDynamicsConfig()  # noqa: E501
+        # model = jamf.models.app_dynamics_config.AppDynamicsConfig()  # noqa: E501
         if include_optional :
             return AppDynamicsConfig(
                 enable_eum = True, 

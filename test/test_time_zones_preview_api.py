@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.time_zones_preview_api import TimeZonesPreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.time_zones_preview_api import TimeZonesPreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestTimeZonesPreviewApi(unittest.TestCase):
     """TimeZonesPreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.time_zones_preview_api.TimeZonesPreviewApi()  # noqa: E501
+        self.api = jamf.api.time_zones_preview_api.TimeZonesPreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

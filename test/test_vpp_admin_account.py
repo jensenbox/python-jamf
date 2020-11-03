@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.vpp_admin_account import VPPAdminAccount  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.vpp_admin_account import VPPAdminAccount  # noqa: E501
+from jamf.rest import ApiException
 
 class TestVPPAdminAccount(unittest.TestCase):
     """VPPAdminAccount unit test stubs"""
@@ -33,7 +33,7 @@ class TestVPPAdminAccount(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.vpp_admin_account.VPPAdminAccount()  # noqa: E501
+        # model = jamf.models.vpp_admin_account.VPPAdminAccount()  # noqa: E501
         if include_optional :
             return VPPAdminAccount(
                 id = 1, 
@@ -42,7 +42,7 @@ class TestVPPAdminAccount(unittest.TestCase):
                 used_license_count = 40, 
                 location = 'Public School', 
                 expiration_date = '2000-10-31', 
-                site = openapi_client.models.site.Site(
+                site = jamf.models.site.Site(
                     id = 1, 
                     name = 'Eau Claire', )
             )

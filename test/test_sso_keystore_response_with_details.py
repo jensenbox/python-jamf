@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.sso_keystore_response_with_details import SsoKeystoreResponseWithDetails  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.sso_keystore_response_with_details import SsoKeystoreResponseWithDetails  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSsoKeystoreResponseWithDetails(unittest.TestCase):
     """SsoKeystoreResponseWithDetails unit test stubs"""
@@ -33,20 +33,20 @@ class TestSsoKeystoreResponseWithDetails(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.sso_keystore_response_with_details.SsoKeystoreResponseWithDetails()  # noqa: E501
+        # model = jamf.models.sso_keystore_response_with_details.SsoKeystoreResponseWithDetails()  # noqa: E501
         if include_optional :
             return SsoKeystoreResponseWithDetails(
-                keystore = openapi_client.models.sso_keystore_response.SsoKeystoreResponse(
+                keystore = jamf.models.sso_keystore_response.SsoKeystoreResponse(
                     key = '0', 
                     keys = [
-                        openapi_client.models.certificate_key.CertificateKey(
+                        jamf.models.certificate_key.CertificateKey(
                             id = '1', 
                             valid = True, )
                         ], 
                     type = 'PKCS12', 
                     keystore_setup_type = 'UPLOADED', 
                     keystore_file_name = 'keystore.p12', ), 
-                keystore_details = openapi_client.models.sso_keystore_details.SsoKeystoreDetails(
+                keystore_details = jamf.models.sso_keystore_details.SsoKeystoreDetails(
                     keys = [
                         '0'
                         ], 

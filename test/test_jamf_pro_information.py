@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.jamf_pro_information import JamfProInformation  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.jamf_pro_information import JamfProInformation  # noqa: E501
+from jamf.rest import ApiException
 
 class TestJamfProInformation(unittest.TestCase):
     """JamfProInformation unit test stubs"""
@@ -33,7 +33,7 @@ class TestJamfProInformation(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.jamf_pro_information.JamfProInformation()  # noqa: E501
+        # model = jamf.models.jamf_pro_information.JamfProInformation()  # noqa: E501
         if include_optional :
             return JamfProInformation(
                 is_vpp_token_enabled = False, 

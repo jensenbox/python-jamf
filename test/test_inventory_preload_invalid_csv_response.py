@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.inventory_preload_invalid_csv_response import InventoryPreloadInvalidCsvResponse  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.inventory_preload_invalid_csv_response import InventoryPreloadInvalidCsvResponse  # noqa: E501
+from jamf.rest import ApiException
 
 class TestInventoryPreloadInvalidCsvResponse(unittest.TestCase):
     """InventoryPreloadInvalidCsvResponse unit test stubs"""
@@ -33,12 +33,12 @@ class TestInventoryPreloadInvalidCsvResponse(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.inventory_preload_invalid_csv_response.InventoryPreloadInvalidCsvResponse()  # noqa: E501
+        # model = jamf.models.inventory_preload_invalid_csv_response.InventoryPreloadInvalidCsvResponse()  # noqa: E501
         if include_optional :
             return InventoryPreloadInvalidCsvResponse(
                 https_status = 400, 
                 errors = [
-                    openapi_client.models.inventory_preload_csv_error.InventoryPreloadCsvError(
+                    jamf.models.inventory_preload_csv_error.InventoryPreloadCsvError(
                         code = 'SIZE_EXCEEDED', 
                         description = 'Field 'vendor' exceeds max size 60', 
                         field = 'vendor', 

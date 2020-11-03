@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.cloud_ldap_server_request import CloudLdapServerRequest  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.cloud_ldap_server_request import CloudLdapServerRequest  # noqa: E501
+from jamf.rest import ApiException
 
 class TestCloudLdapServerRequest(unittest.TestCase):
     """CloudLdapServerRequest unit test stubs"""
@@ -33,7 +33,7 @@ class TestCloudLdapServerRequest(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.cloud_ldap_server_request.CloudLdapServerRequest()  # noqa: E501
+        # model = jamf.models.cloud_ldap_server_request.CloudLdapServerRequest()  # noqa: E501
         if include_optional :
             return CloudLdapServerRequest(
                 enabled = True, 
@@ -42,7 +42,7 @@ class TestCloudLdapServerRequest(unittest.TestCase):
                 server_url = 'ldap.google.com', 
                 domain_name = 'jamf.com', 
                 port = 636, 
-                keystore = openapi_client.models.cloud_ldap_keystore_file.CloudLdapKeystoreFile(
+                keystore = jamf.models.cloud_ldap_keystore_file.CloudLdapKeystoreFile(
                     password = '***', 
                     file_bytes = 'YQ==', 
                     file_name = 'keystore.p12', ), 
@@ -59,7 +59,7 @@ class TestCloudLdapServerRequest(unittest.TestCase):
                 server_url = 'ldap.google.com',
                 domain_name = 'jamf.com',
                 port = 636,
-                keystore = openapi_client.models.cloud_ldap_keystore_file.CloudLdapKeystoreFile(
+                keystore = jamf.models.cloud_ldap_keystore_file.CloudLdapKeystoreFile(
                     password = '***', 
                     file_bytes = 'YQ==', 
                     file_name = 'keystore.p12', ),

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.departments_search_results import DepartmentsSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.departments_search_results import DepartmentsSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestDepartmentsSearchResults(unittest.TestCase):
     """DepartmentsSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestDepartmentsSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.departments_search_results.DepartmentsSearchResults()  # noqa: E501
+        # model = jamf.models.departments_search_results.DepartmentsSearchResults()  # noqa: E501
         if include_optional :
             return DepartmentsSearchResults(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.department.Department(
+                    jamf.models.department.Department(
                         id = '1', 
                         name = 'Department of Redundancy Department', )
                     ]

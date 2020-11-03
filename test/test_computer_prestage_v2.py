@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_prestage_v2 import ComputerPrestageV2  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_prestage_v2 import ComputerPrestageV2  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerPrestageV2(unittest.TestCase):
     """ComputerPrestageV2 unit test stubs"""
@@ -33,7 +33,7 @@ class TestComputerPrestageV2(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_prestage_v2.ComputerPrestageV2()  # noqa: E501
+        # model = jamf.models.computer_prestage_v2.ComputerPrestageV2()  # noqa: E501
         if include_optional :
             return ComputerPrestageV2(
                 display_name = 'Example Mobile Prestage Name', 
@@ -52,7 +52,7 @@ class TestComputerPrestageV2(unittest.TestCase):
                 enable_device_based_activation_lock = True, 
                 device_enrollment_program_instance_id = '5', 
                 skip_setup_items = {"Location":true,"Privacy":false}, 
-                location_information = openapi_client.models.location_information_v2.LocationInformationV2(
+                location_information = jamf.models.location_information_v2.LocationInformationV2(
                     username = 'name', 
                     realname = 'realName', 
                     phone = '123-456-7890', 
@@ -63,7 +63,7 @@ class TestComputerPrestageV2(unittest.TestCase):
                     building_id = '1', 
                     id = '-1', 
                     version_lock = 1, ), 
-                purchasing_information = openapi_client.models.prestage_purchasing_information_v2.PrestagePurchasingInformationV2(
+                purchasing_information = jamf.models.prestage_purchasing_information_v2.PrestagePurchasingInformationV2(
                     id = '-1', 
                     leased = True, 
                     purchased = True, 
@@ -111,7 +111,7 @@ class TestComputerPrestageV2(unittest.TestCase):
                 prevent_activation_lock = True,
                 enable_device_based_activation_lock = True,
                 device_enrollment_program_instance_id = '5',
-                location_information = openapi_client.models.location_information_v2.LocationInformationV2(
+                location_information = jamf.models.location_information_v2.LocationInformationV2(
                     username = 'name', 
                     realname = 'realName', 
                     phone = '123-456-7890', 
@@ -122,7 +122,7 @@ class TestComputerPrestageV2(unittest.TestCase):
                     building_id = '1', 
                     id = '-1', 
                     version_lock = 1, ),
-                purchasing_information = openapi_client.models.prestage_purchasing_information_v2.PrestagePurchasingInformationV2(
+                purchasing_information = jamf.models.prestage_purchasing_information_v2.PrestagePurchasingInformationV2(
                     id = '-1', 
                     leased = True, 
                     purchased = True, 

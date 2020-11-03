@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.self_service_login_settings import SelfServiceLoginSettings  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.self_service_login_settings import SelfServiceLoginSettings  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSelfServiceLoginSettings(unittest.TestCase):
     """SelfServiceLoginSettings unit test stubs"""
@@ -33,7 +33,7 @@ class TestSelfServiceLoginSettings(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.self_service_login_settings.SelfServiceLoginSettings()  # noqa: E501
+        # model = jamf.models.self_service_login_settings.SelfServiceLoginSettings()  # noqa: E501
         if include_optional :
             return SelfServiceLoginSettings(
                 user_login_level = 'NotRequired', 

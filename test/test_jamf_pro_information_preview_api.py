@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.jamf_pro_information_preview_api import JamfProInformationPreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.jamf_pro_information_preview_api import JamfProInformationPreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestJamfProInformationPreviewApi(unittest.TestCase):
     """JamfProInformationPreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.jamf_pro_information_preview_api.JamfProInformationPreviewApi()  # noqa: E501
+        self.api = jamf.api.jamf_pro_information_preview_api.JamfProInformationPreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

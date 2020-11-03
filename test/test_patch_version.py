@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.patch_version import PatchVersion  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.patch_version import PatchVersion  # noqa: E501
+from jamf.rest import ApiException
 
 class TestPatchVersion(unittest.TestCase):
     """PatchVersion unit test stubs"""
@@ -33,7 +33,7 @@ class TestPatchVersion(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.patch_version.PatchVersion()  # noqa: E501
+        # model = jamf.models.patch_version.PatchVersion()  # noqa: E501
         if include_optional :
             return PatchVersion(
                 absolute_order_id = 1, 

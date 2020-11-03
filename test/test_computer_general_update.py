@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_general_update import ComputerGeneralUpdate  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_general_update import ComputerGeneralUpdate  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerGeneralUpdate(unittest.TestCase):
     """ComputerGeneralUpdate unit test stubs"""
@@ -33,7 +33,7 @@ class TestComputerGeneralUpdate(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_general_update.ComputerGeneralUpdate()  # noqa: E501
+        # model = jamf.models.computer_general_update.ComputerGeneralUpdate()  # noqa: E501
         if include_optional :
             return ComputerGeneralUpdate(
                 name = 'Boalime', 
@@ -42,7 +42,7 @@ class TestComputerGeneralUpdate(unittest.TestCase):
                 barcode2 = '5 12345 678900', 
                 asset_tag = '304822', 
                 extension_attributes = [
-                    openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                    jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                         definition_id = '23', 
                         name = 'Some Attribute', 
                         description = 'Some Attribute defines how much Foo impacts Bar.', 

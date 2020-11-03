@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.update_apple_tv import UpdateAppleTv  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.update_apple_tv import UpdateAppleTv  # noqa: E501
+from jamf.rest import ApiException
 
 class TestUpdateAppleTv(unittest.TestCase):
     """UpdateAppleTv unit test stubs"""
@@ -33,11 +33,11 @@ class TestUpdateAppleTv(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.update_apple_tv.UpdateAppleTv()  # noqa: E501
+        # model = jamf.models.update_apple_tv.UpdateAppleTv()  # noqa: E501
         if include_optional :
             return UpdateAppleTv(
                 airplay_password = '12345', 
-                purchasing = openapi_client.models.purchasing.Purchasing(
+                purchasing = jamf.models.purchasing.Purchasing(
                     is_purchased = True, 
                     is_leased = False, 
                     po_number = '8675309', 

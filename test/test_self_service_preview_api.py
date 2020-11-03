@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.self_service_preview_api import SelfServicePreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.self_service_preview_api import SelfServicePreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestSelfServicePreviewApi(unittest.TestCase):
     """SelfServicePreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.self_service_preview_api.SelfServicePreviewApi()  # noqa: E501
+        self.api = jamf.api.self_service_preview_api.SelfServicePreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

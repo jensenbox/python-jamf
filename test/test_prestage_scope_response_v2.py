@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.prestage_scope_response_v2 import PrestageScopeResponseV2  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.prestage_scope_response_v2 import PrestageScopeResponseV2  # noqa: E501
+from jamf.rest import ApiException
 
 class TestPrestageScopeResponseV2(unittest.TestCase):
     """PrestageScopeResponseV2 unit test stubs"""
@@ -33,12 +33,12 @@ class TestPrestageScopeResponseV2(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.prestage_scope_response_v2.PrestageScopeResponseV2()  # noqa: E501
+        # model = jamf.models.prestage_scope_response_v2.PrestageScopeResponseV2()  # noqa: E501
         if include_optional :
             return PrestageScopeResponseV2(
                 prestage_id = '1', 
                 assignments = [
-                    openapi_client.models.prestage_scope_assignment_v2.PrestageScopeAssignmentV2(
+                    jamf.models.prestage_scope_assignment_v2.PrestageScopeAssignmentV2(
                         serial_number = 'XYZ', 
                         assignment_date = '2019-02-04T21:09:31.661Z', 
                         user_assigned = 'admin', )

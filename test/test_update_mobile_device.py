@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.update_mobile_device import UpdateMobileDevice  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.update_mobile_device import UpdateMobileDevice  # noqa: E501
+from jamf.rest import ApiException
 
 class TestUpdateMobileDevice(unittest.TestCase):
     """UpdateMobileDevice unit test stubs"""
@@ -33,27 +33,27 @@ class TestUpdateMobileDevice(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.update_mobile_device.UpdateMobileDevice()  # noqa: E501
+        # model = jamf.models.update_mobile_device.UpdateMobileDevice()  # noqa: E501
         if include_optional :
             return UpdateMobileDevice(
                 name = 'Jan's Mobile Device', 
                 asset_tag = '8675309', 
                 site_id = 1, 
-                location = openapi_client.models.location.Location(
+                location = jamf.models.location.Location(
                     username = 'admin', 
                     real_name = 'IT Bob', 
                     email_address = 'ITBob@jamf.com', 
                     position = 'IT Team Lead', 
                     phone_number = '555-555-5555', 
-                    department = openapi_client.models.location_department.Location_department(
+                    department = jamf.models.location_department.Location_department(
                         name = 'IT', 
                         id = 1, ), 
-                    building = openapi_client.models.location_building.Location_building(
+                    building = jamf.models.location_building.Location_building(
                         name = 'Eau Claire', 
                         id = 1, ), 
                     room = '4th Floor - Quad 3', ), 
                 updated_extension_attributes = [
-                    openapi_client.models.extension_attribute.ExtensionAttribute(
+                    jamf.models.extension_attribute.ExtensionAttribute(
                         id = 1, 
                         name = 'Example EA', 
                         type = 'STRING', 
@@ -62,8 +62,8 @@ class TestUpdateMobileDevice(unittest.TestCase):
                             ], 
                         is_extension_attribute_collection_allowed = False, )
                     ], 
-                ios = openapi_client.models.update_ios.UpdateIos(
-                    purchasing = openapi_client.models.purchasing.Purchasing(
+                ios = jamf.models.update_ios.UpdateIos(
+                    purchasing = jamf.models.purchasing.Purchasing(
                         is_purchased = True, 
                         is_leased = False, 
                         po_number = '8675309', 
@@ -76,9 +76,9 @@ class TestUpdateMobileDevice(unittest.TestCase):
                         lease_expires_date = '2019-02-04T21:09:31.661Z', 
                         life_expectancy = 7, 
                         purchasing_contact = 'Nick in IT', ), ), 
-                apple_tv = openapi_client.models.update_apple_tv.UpdateAppleTv(
+                apple_tv = jamf.models.update_apple_tv.UpdateAppleTv(
                     airplay_password = '12345', 
-                    purchasing = openapi_client.models.purchasing.Purchasing(
+                    purchasing = jamf.models.purchasing.Purchasing(
                         is_purchased = True, 
                         is_leased = False, 
                         po_number = '8675309', 

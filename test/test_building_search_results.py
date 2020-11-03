@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.building_search_results import BuildingSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.building_search_results import BuildingSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestBuildingSearchResults(unittest.TestCase):
     """BuildingSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestBuildingSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.building_search_results.BuildingSearchResults()  # noqa: E501
+        # model = jamf.models.building_search_results.BuildingSearchResults()  # noqa: E501
         if include_optional :
             return BuildingSearchResults(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.building.Building(
+                    jamf.models.building.Building(
                         id = '1', 
                         name = 'The Empire State Building', 
                         street_address1 = 'Floor 42', 

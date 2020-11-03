@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.software_title_patch_policy_summaries import SoftwareTitlePatchPolicySummaries  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.software_title_patch_policy_summaries import SoftwareTitlePatchPolicySummaries  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSoftwareTitlePatchPolicySummaries(unittest.TestCase):
     """SoftwareTitlePatchPolicySummaries unit test stubs"""
@@ -33,12 +33,12 @@ class TestSoftwareTitlePatchPolicySummaries(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.software_title_patch_policy_summaries.SoftwareTitlePatchPolicySummaries()  # noqa: E501
+        # model = jamf.models.software_title_patch_policy_summaries.SoftwareTitlePatchPolicySummaries()  # noqa: E501
         if include_optional :
             return SoftwareTitlePatchPolicySummaries(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.patch_policy_summary.PatchPolicySummary(
+                    jamf.models.patch_policy_summary.PatchPolicySummary(
                         policy_id = 1, 
                         policy_name = 'Policy name', 
                         is_policy_enabled = False, 

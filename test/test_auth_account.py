@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.auth_account import AuthAccount  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.auth_account import AuthAccount  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAuthAccount(unittest.TestCase):
     """AuthAccount unit test stubs"""
@@ -33,14 +33,14 @@ class TestAuthAccount(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.auth_account.AuthAccount()  # noqa: E501
+        # model = jamf.models.auth_account.AuthAccount()  # noqa: E501
         if include_optional :
             return AuthAccount(
                 id = 1, 
                 username = 'admin', 
                 real_name = 'IT Bob', 
                 email = 'ITBob@Jamf.com', 
-                preferences = openapi_client.models.account_preferences.AccountPreferences(
+                preferences = jamf.models.account_preferences.AccountPreferences(
                     language = 'en', 
                     date_format = 'MM/dd/yyyy', 
                     region = 'Europe', 

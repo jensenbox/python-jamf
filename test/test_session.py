@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.session import Session  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.session import Session  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSession(unittest.TestCase):
     """Session unit test stubs"""
@@ -33,7 +33,7 @@ class TestSession(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.session.Session()  # noqa: E501
+        # model = jamf.models.session.Session()  # noqa: E501
         if include_optional :
             return Session(
                 current_site_id = 1

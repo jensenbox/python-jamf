@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.patch_policy_logs_preview_api import PatchPolicyLogsPreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.patch_policy_logs_preview_api import PatchPolicyLogsPreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestPatchPolicyLogsPreviewApi(unittest.TestCase):
     """PatchPolicyLogsPreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.patch_policy_logs_preview_api.PatchPolicyLogsPreviewApi()  # noqa: E501
+        self.api = jamf.api.patch_policy_logs_preview_api.PatchPolicyLogsPreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

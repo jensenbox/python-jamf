@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_purchase import ComputerPurchase  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_purchase import ComputerPurchase  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerPurchase(unittest.TestCase):
     """ComputerPurchase unit test stubs"""
@@ -33,23 +33,23 @@ class TestComputerPurchase(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_purchase.ComputerPurchase()  # noqa: E501
+        # model = jamf.models.computer_purchase.ComputerPurchase()  # noqa: E501
         if include_optional :
             return ComputerPurchase(
                 leased = True, 
                 purchased = True, 
                 po_number = '53-1', 
-                po_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                po_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                 vendor = 'Example Vendor', 
-                warranty_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                warranty_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                 apple_care_id = 'abcd', 
-                lease_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                lease_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                 purchase_price = '$500', 
                 life_expectancy = 5, 
                 purchasing_account = 'admin', 
                 purchasing_contact = 'true', 
                 extension_attributes = [
-                    openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                    jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                         definition_id = '23', 
                         name = 'Some Attribute', 
                         description = 'Some Attribute defines how much Foo impacts Bar.', 

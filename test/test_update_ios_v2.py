@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.update_ios_v2 import UpdateIosV2  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.update_ios_v2 import UpdateIosV2  # noqa: E501
+from jamf.rest import ApiException
 
 class TestUpdateIosV2(unittest.TestCase):
     """UpdateIosV2 unit test stubs"""
@@ -33,10 +33,10 @@ class TestUpdateIosV2(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.update_ios_v2.UpdateIosV2()  # noqa: E501
+        # model = jamf.models.update_ios_v2.UpdateIosV2()  # noqa: E501
         if include_optional :
             return UpdateIosV2(
-                purchasing = openapi_client.models.purchasing_v2.PurchasingV2(
+                purchasing = jamf.models.purchasing_v2.PurchasingV2(
                     purchased = True, 
                     leased = False, 
                     po_number = '8675309', 

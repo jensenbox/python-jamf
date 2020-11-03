@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.self_service_settings import SelfServiceSettings  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.self_service_settings import SelfServiceSettings  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSelfServiceSettings(unittest.TestCase):
     """SelfServiceSettings unit test stubs"""
@@ -33,17 +33,17 @@ class TestSelfServiceSettings(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.self_service_settings.SelfServiceSettings()  # noqa: E501
+        # model = jamf.models.self_service_settings.SelfServiceSettings()  # noqa: E501
         if include_optional :
             return SelfServiceSettings(
-                install_settings = openapi_client.models.self_service_install_settings.SelfServiceInstallSettings(
+                install_settings = jamf.models.self_service_install_settings.SelfServiceInstallSettings(
                     is_install_automatically = True, 
                     install_location = '/Applications', ), 
-                login_settings = openapi_client.models.self_service_login_settings.SelfServiceLoginSettings(
+                login_settings = jamf.models.self_service_login_settings.SelfServiceLoginSettings(
                     user_login_level = 'NotRequired', 
                     is_allow_remember_me = True, 
                     auth_type = 'Basic', ), 
-                configuration_settings = openapi_client.models.self_service_interaction_settings.SelfServiceInteractionSettings(
+                configuration_settings = jamf.models.self_service_interaction_settings.SelfServiceInteractionSettings(
                     is_notifications_enabled = True, 
                     default_home_category_id = 56, 
                     bookmarks_name = 'Bookmarks', 

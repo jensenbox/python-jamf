@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.sso_certificate_preview_api import SsoCertificatePreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.sso_certificate_preview_api import SsoCertificatePreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestSsoCertificatePreviewApi(unittest.TestCase):
     """SsoCertificatePreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.sso_certificate_preview_api.SsoCertificatePreviewApi()  # noqa: E501
+        self.api = jamf.api.sso_certificate_preview_api.SsoCertificatePreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.group_test_search_request import GroupTestSearchRequest  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.group_test_search_request import GroupTestSearchRequest  # noqa: E501
+from jamf.rest import ApiException
 
 class TestGroupTestSearchRequest(unittest.TestCase):
     """GroupTestSearchRequest unit test stubs"""
@@ -33,7 +33,7 @@ class TestGroupTestSearchRequest(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.group_test_search_request.GroupTestSearchRequest()  # noqa: E501
+        # model = jamf.models.group_test_search_request.GroupTestSearchRequest()  # noqa: E501
         if include_optional :
             return GroupTestSearchRequest(
                 groupname = 'users'

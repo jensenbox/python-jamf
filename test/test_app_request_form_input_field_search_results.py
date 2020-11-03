@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.app_request_form_input_field_search_results import AppRequestFormInputFieldSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.app_request_form_input_field_search_results import AppRequestFormInputFieldSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAppRequestFormInputFieldSearchResults(unittest.TestCase):
     """AppRequestFormInputFieldSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestAppRequestFormInputFieldSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.app_request_form_input_field_search_results.AppRequestFormInputFieldSearchResults()  # noqa: E501
+        # model = jamf.models.app_request_form_input_field_search_results.AppRequestFormInputFieldSearchResults()  # noqa: E501
         if include_optional :
             return AppRequestFormInputFieldSearchResults(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.app_request_form_input_field.AppRequestFormInputField(
+                    jamf.models.app_request_form_input_field.AppRequestFormInputField(
                         id = 1, 
                         title = 'Quantity', 
                         description = 'How many of these would you like?', 

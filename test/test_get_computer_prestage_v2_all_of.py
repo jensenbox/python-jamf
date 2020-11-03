@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.get_computer_prestage_v2_all_of import GetComputerPrestageV2AllOf  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.get_computer_prestage_v2_all_of import GetComputerPrestageV2AllOf  # noqa: E501
+from jamf.rest import ApiException
 
 class TestGetComputerPrestageV2AllOf(unittest.TestCase):
     """GetComputerPrestageV2AllOf unit test stubs"""
@@ -33,7 +33,7 @@ class TestGetComputerPrestageV2AllOf(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.get_computer_prestage_v2_all_of.GetComputerPrestageV2AllOf()  # noqa: E501
+        # model = jamf.models.get_computer_prestage_v2_all_of.GetComputerPrestageV2AllOf()  # noqa: E501
         if include_optional :
             return GetComputerPrestageV2AllOf(
                 id = '1', 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.process_texts_search_results import ProcessTextsSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.process_texts_search_results import ProcessTextsSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestProcessTextsSearchResults(unittest.TestCase):
     """ProcessTextsSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestProcessTextsSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.process_texts_search_results.ProcessTextsSearchResults()  # noqa: E501
+        # model = jamf.models.process_texts_search_results.ProcessTextsSearchResults()  # noqa: E501
         if include_optional :
             return ProcessTextsSearchResults(
                 total_count = 10, 
                 results = [
-                    openapi_client.models.enrollment_process_text_object.EnrollmentProcessTextObject(
+                    jamf.models.enrollment_process_text_object.EnrollmentProcessTextObject(
                         language_code = 'en', 
                         name = 'English', 
                         title = 'Enroll Your Device', 

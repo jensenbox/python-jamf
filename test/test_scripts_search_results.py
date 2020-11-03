@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.scripts_search_results import ScriptsSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.scripts_search_results import ScriptsSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestScriptsSearchResults(unittest.TestCase):
     """ScriptsSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestScriptsSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.scripts_search_results.ScriptsSearchResults()  # noqa: E501
+        # model = jamf.models.scripts_search_results.ScriptsSearchResults()  # noqa: E501
         if include_optional :
             return ScriptsSearchResults(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.script.Script(
+                    jamf.models.script.Script(
                         id = '1', 
                         name = 'Install Developer Utils Script', 
                         info = 'Installs utilities for developers', 

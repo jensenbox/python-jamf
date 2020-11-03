@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.day_of_week import DayOfWeek  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.day_of_week import DayOfWeek  # noqa: E501
+from jamf.rest import ApiException
 
 class TestDayOfWeek(unittest.TestCase):
     """DayOfWeek unit test stubs"""
@@ -33,7 +33,7 @@ class TestDayOfWeek(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.day_of_week.DayOfWeek()  # noqa: E501
+        # model = jamf.models.day_of_week.DayOfWeek()  # noqa: E501
         if include_optional :
             return DayOfWeek(
             )

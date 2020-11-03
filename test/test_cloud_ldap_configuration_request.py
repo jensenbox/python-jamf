@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.cloud_ldap_configuration_request import CloudLdapConfigurationRequest  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.cloud_ldap_configuration_request import CloudLdapConfigurationRequest  # noqa: E501
+from jamf.rest import ApiException
 
 class TestCloudLdapConfigurationRequest(unittest.TestCase):
     """CloudLdapConfigurationRequest unit test stubs"""
@@ -33,17 +33,17 @@ class TestCloudLdapConfigurationRequest(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.cloud_ldap_configuration_request.CloudLdapConfigurationRequest()  # noqa: E501
+        # model = jamf.models.cloud_ldap_configuration_request.CloudLdapConfigurationRequest()  # noqa: E501
         if include_optional :
             return CloudLdapConfigurationRequest(
-                server = openapi_client.models.cloud_ldap_server_request.CloudLdapServerRequest(
+                server = jamf.models.cloud_ldap_server_request.CloudLdapServerRequest(
                     enabled = True, 
                     provider_name = 'Google', 
                     display_name = 'Google Secure LDAP', 
                     server_url = 'ldap.google.com', 
                     domain_name = 'jamf.com', 
                     port = 636, 
-                    keystore = openapi_client.models.cloud_ldap_keystore_file.CloudLdapKeystoreFile(
+                    keystore = jamf.models.cloud_ldap_keystore_file.CloudLdapKeystoreFile(
                         password = '***', 
                         file_bytes = 'YQ==', 
                         file_name = 'keystore.p12', ), 
@@ -51,8 +51,8 @@ class TestCloudLdapConfigurationRequest(unittest.TestCase):
                     search_timeout = 60, 
                     use_wildcards = True, 
                     connection_type = 'LDAPS', ), 
-                mappings = openapi_client.models.cloud_ldap_mappings_request.CloudLdapMappingsRequest(
-                    user_mappings = openapi_client.models.user_mappings.UserMappings(
+                mappings = jamf.models.cloud_ldap_mappings_request.CloudLdapMappingsRequest(
+                    user_mappings = jamf.models.user_mappings.UserMappings(
                         object_class_limitation = 'ANY_OBJECT_CLASSES', 
                         object_classes = 'inetOrgPerson', 
                         search_base = 'ou=Users', 
@@ -68,7 +68,7 @@ class TestCloudLdapConfigurationRequest(unittest.TestCase):
                         phone = '0', 
                         position = 'title', 
                         user_uuid = 'uid', ), 
-                    group_mappings = openapi_client.models.group_mappings.GroupMappings(
+                    group_mappings = jamf.models.group_mappings.GroupMappings(
                         object_class_limitation = 'ANY_OBJECT_CLASSES', 
                         object_classes = 'groupOfNames', 
                         search_base = 'ou=Groups', 
@@ -76,19 +76,19 @@ class TestCloudLdapConfigurationRequest(unittest.TestCase):
                         group_id = 'cn', 
                         group_name = 'cn', 
                         group_uuid = 'gidNumber', ), 
-                    membership_mappings = openapi_client.models.membership_mappings.MembershipMappings(
+                    membership_mappings = jamf.models.membership_mappings.MembershipMappings(
                         group_membership_mapping = 'memberOf', ), )
             )
         else :
             return CloudLdapConfigurationRequest(
-                server = openapi_client.models.cloud_ldap_server_request.CloudLdapServerRequest(
+                server = jamf.models.cloud_ldap_server_request.CloudLdapServerRequest(
                     enabled = True, 
                     provider_name = 'Google', 
                     display_name = 'Google Secure LDAP', 
                     server_url = 'ldap.google.com', 
                     domain_name = 'jamf.com', 
                     port = 636, 
-                    keystore = openapi_client.models.cloud_ldap_keystore_file.CloudLdapKeystoreFile(
+                    keystore = jamf.models.cloud_ldap_keystore_file.CloudLdapKeystoreFile(
                         password = '***', 
                         file_bytes = 'YQ==', 
                         file_name = 'keystore.p12', ), 

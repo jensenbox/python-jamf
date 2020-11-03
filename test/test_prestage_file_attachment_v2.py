@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.prestage_file_attachment_v2 import PrestageFileAttachmentV2  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.prestage_file_attachment_v2 import PrestageFileAttachmentV2  # noqa: E501
+from jamf.rest import ApiException
 
 class TestPrestageFileAttachmentV2(unittest.TestCase):
     """PrestageFileAttachmentV2 unit test stubs"""
@@ -33,7 +33,7 @@ class TestPrestageFileAttachmentV2(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.prestage_file_attachment_v2.PrestageFileAttachmentV2()  # noqa: E501
+        # model = jamf.models.prestage_file_attachment_v2.PrestageFileAttachmentV2()  # noqa: E501
         if include_optional :
             return PrestageFileAttachmentV2(
                 id = '1', 

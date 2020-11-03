@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.device_enrollment_instance_sync_status import DeviceEnrollmentInstanceSyncStatus  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.device_enrollment_instance_sync_status import DeviceEnrollmentInstanceSyncStatus  # noqa: E501
+from jamf.rest import ApiException
 
 class TestDeviceEnrollmentInstanceSyncStatus(unittest.TestCase):
     """DeviceEnrollmentInstanceSyncStatus unit test stubs"""
@@ -33,7 +33,7 @@ class TestDeviceEnrollmentInstanceSyncStatus(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.device_enrollment_instance_sync_status.DeviceEnrollmentInstanceSyncStatus()  # noqa: E501
+        # model = jamf.models.device_enrollment_instance_sync_status.DeviceEnrollmentInstanceSyncStatus()  # noqa: E501
         if include_optional :
             return DeviceEnrollmentInstanceSyncStatus(
                 sync_state = 'CONNECTION_ERROR', 

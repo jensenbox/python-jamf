@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.script import Script  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.script import Script  # noqa: E501
+from jamf.rest import ApiException
 
 class TestScript(unittest.TestCase):
     """Script unit test stubs"""
@@ -33,7 +33,7 @@ class TestScript(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.script.Script()  # noqa: E501
+        # model = jamf.models.script.Script()  # noqa: E501
         if include_optional :
             return Script(
                 id = '1', 

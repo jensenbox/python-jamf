@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.api_error import ApiError  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.api_error import ApiError  # noqa: E501
+from jamf.rest import ApiException
 
 class TestApiError(unittest.TestCase):
     """ApiError unit test stubs"""
@@ -33,12 +33,12 @@ class TestApiError(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.api_error.ApiError()  # noqa: E501
+        # model = jamf.models.api_error.ApiError()  # noqa: E501
         if include_optional :
             return ApiError(
                 http_status = 400, 
                 errors = [
-                    openapi_client.models.api_error_cause.ApiErrorCause(
+                    jamf.models.api_error_cause.ApiErrorCause(
                         code = '8675309', 
                         field = 'Name', 
                         description = 'I've just picked up a fault in the AE35 unit. It's going to go 100% failure in 72 hours', 

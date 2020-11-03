@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.ios_details_v2_certificates import IosDetailsV2Certificates  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.ios_details_v2_certificates import IosDetailsV2Certificates  # noqa: E501
+from jamf.rest import ApiException
 
 class TestIosDetailsV2Certificates(unittest.TestCase):
     """IosDetailsV2Certificates unit test stubs"""
@@ -33,7 +33,7 @@ class TestIosDetailsV2Certificates(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.ios_details_v2_certificates.IosDetailsV2Certificates()  # noqa: E501
+        # model = jamf.models.ios_details_v2_certificates.IosDetailsV2Certificates()  # noqa: E501
         if include_optional :
             return IosDetailsV2Certificates(
                 common_name = '3B259E4B-FAD5-4860-B1DD-336ADA786EBA', 

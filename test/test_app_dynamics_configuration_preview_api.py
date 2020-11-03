@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.app_dynamics_configuration_preview_api import AppDynamicsConfigurationPreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.app_dynamics_configuration_preview_api import AppDynamicsConfigurationPreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestAppDynamicsConfigurationPreviewApi(unittest.TestCase):
     """AppDynamicsConfigurationPreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.app_dynamics_configuration_preview_api.AppDynamicsConfigurationPreviewApi()  # noqa: E501
+        self.api = jamf.api.app_dynamics_configuration_preview_api.AppDynamicsConfigurationPreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

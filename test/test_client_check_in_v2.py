@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.client_check_in_v2 import ClientCheckInV2  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.client_check_in_v2 import ClientCheckInV2  # noqa: E501
+from jamf.rest import ApiException
 
 class TestClientCheckInV2(unittest.TestCase):
     """ClientCheckInV2 unit test stubs"""
@@ -33,7 +33,7 @@ class TestClientCheckInV2(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.client_check_in_v2.ClientCheckInV2()  # noqa: E501
+        # model = jamf.models.client_check_in_v2.ClientCheckInV2()  # noqa: E501
         if include_optional :
             return ClientCheckInV2(
                 check_in_frequency = 56, 

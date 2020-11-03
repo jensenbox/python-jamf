@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.update_mobile_device_v2 import UpdateMobileDeviceV2  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.update_mobile_device_v2 import UpdateMobileDeviceV2  # noqa: E501
+from jamf.rest import ApiException
 
 class TestUpdateMobileDeviceV2(unittest.TestCase):
     """UpdateMobileDeviceV2 unit test stubs"""
@@ -33,13 +33,13 @@ class TestUpdateMobileDeviceV2(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.update_mobile_device_v2.UpdateMobileDeviceV2()  # noqa: E501
+        # model = jamf.models.update_mobile_device_v2.UpdateMobileDeviceV2()  # noqa: E501
         if include_optional :
             return UpdateMobileDeviceV2(
                 name = 'Jan's Mobile Device', 
                 asset_tag = '8675309', 
                 site_id = '1', 
-                location = openapi_client.models.location_v2.LocationV2(
+                location = jamf.models.location_v2.LocationV2(
                     username = 'admin', 
                     real_name = 'IT Bob', 
                     email_address = 'ITBob@jamf.com', 
@@ -49,7 +49,7 @@ class TestUpdateMobileDeviceV2(unittest.TestCase):
                     building_id = '1', 
                     room = '4th Floor - Quad 3', ), 
                 updated_extension_attributes = [
-                    openapi_client.models.extension_attribute_v2.ExtensionAttributeV2(
+                    jamf.models.extension_attribute_v2.ExtensionAttributeV2(
                         id = '1', 
                         name = 'Example EA', 
                         type = 'STRING', 
@@ -58,8 +58,8 @@ class TestUpdateMobileDeviceV2(unittest.TestCase):
                             ], 
                         extension_attribute_collection_allowed = False, )
                     ], 
-                ios = openapi_client.models.update_ios_v2.UpdateIosV2(
-                    purchasing = openapi_client.models.purchasing_v2.PurchasingV2(
+                ios = jamf.models.update_ios_v2.UpdateIosV2(
+                    purchasing = jamf.models.purchasing_v2.PurchasingV2(
                         purchased = True, 
                         leased = False, 
                         po_number = '8675309', 
@@ -72,9 +72,9 @@ class TestUpdateMobileDeviceV2(unittest.TestCase):
                         lease_expires_date = '2019-02-04T21:09:31.661Z', 
                         life_expectancy = 7, 
                         purchasing_contact = 'Nick in IT', ), ), 
-                tvos = openapi_client.models.update_tv_os.UpdateTvOs(
+                tvos = jamf.models.update_tv_os.UpdateTvOs(
                     airplay_password = '12345', 
-                    purchasing = openapi_client.models.purchasing_v2.PurchasingV2(
+                    purchasing = jamf.models.purchasing_v2.PurchasingV2(
                         purchased = True, 
                         leased = False, 
                         po_number = '8675309', 

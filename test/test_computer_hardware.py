@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_hardware import ComputerHardware  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_hardware import ComputerHardware  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerHardware(unittest.TestCase):
     """ComputerHardware unit test stubs"""
@@ -33,7 +33,7 @@ class TestComputerHardware(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_hardware.ComputerHardware()  # noqa: E501
+        # model = jamf.models.computer_hardware.ComputerHardware()  # noqa: E501
         if include_optional :
             return ComputerHardware(
                 make = 'Apple', 
@@ -60,7 +60,7 @@ class TestComputerHardware(unittest.TestCase):
                 boot_rom = 'MBP91.00D3.B08', 
                 ble_capable = False, 
                 extension_attributes = [
-                    openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                    jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                         definition_id = '23', 
                         name = 'Some Attribute', 
                         description = 'Some Attribute defines how much Foo impacts Bar.', 

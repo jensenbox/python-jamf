@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.authorization_v1 import AuthorizationV1  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.authorization_v1 import AuthorizationV1  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAuthorizationV1(unittest.TestCase):
     """AuthorizationV1 unit test stubs"""
@@ -33,15 +33,15 @@ class TestAuthorizationV1(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.authorization_v1.AuthorizationV1()  # noqa: E501
+        # model = jamf.models.authorization_v1.AuthorizationV1()  # noqa: E501
         if include_optional :
             return AuthorizationV1(
-                account = openapi_client.models.auth_account_v1.AuthAccountV1(
+                account = jamf.models.auth_account_v1.AuthAccountV1(
                     id = '1', 
                     username = 'admin', 
                     real_name = 'IT Bob', 
                     email = 'ITBob@Jamf.com', 
-                    preferences = openapi_client.models.account_preferences_v1.AccountPreferencesV1(
+                    preferences = jamf.models.account_preferences_v1.AccountPreferencesV1(
                         language = 'en', 
                         date_format = 'MM/dd/yyyy', 
                         region = 'Europe', 
@@ -54,7 +54,7 @@ class TestAuthorizationV1(unittest.TestCase):
                     group_ids = [1,3], 
                     current_site_id = '1', ), 
                 account_groups = [
-                    openapi_client.models.account_group.AccountGroup(
+                    jamf.models.account_group.AccountGroup(
                         access_level = 'FullAccess', 
                         privilege_set = 'CUSTOM', 
                         site_id = 1, 
@@ -62,7 +62,7 @@ class TestAuthorizationV1(unittest.TestCase):
                         member_user_ids = [1,3], )
                     ], 
                 sites = [
-                    openapi_client.models.v1_site.V1Site(
+                    jamf.models.v1_site.V1Site(
                         id = '1', 
                         name = 'Eau Claire', )
                     ], 

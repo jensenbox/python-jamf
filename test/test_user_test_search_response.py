@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.user_test_search_response import UserTestSearchResponse  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.user_test_search_response import UserTestSearchResponse  # noqa: E501
+from jamf.rest import ApiException
 
 class TestUserTestSearchResponse(unittest.TestCase):
     """UserTestSearchResponse unit test stubs"""
@@ -33,18 +33,18 @@ class TestUserTestSearchResponse(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.user_test_search_response.UserTestSearchResponse()  # noqa: E501
+        # model = jamf.models.user_test_search_response.UserTestSearchResponse()  # noqa: E501
         if include_optional :
             return UserTestSearchResponse(
                 total_count = 1, 
                 results = [
-                    openapi_client.models.user_test_search.UserTestSearch(
+                    jamf.models.user_test_search.UserTestSearch(
                         distinguished_name = 'uid=admin,ou=Users,dc=jamf,dc=com', 
                         id = 'admin@jamf.com', 
                         uuid = 'admin', 
                         server_id = '1001', 
                         name = 'admin', 
-                        attributes = openapi_client.models.user_attributes.UserAttributes(
+                        attributes = jamf.models.user_attributes.UserAttributes(
                             full_name = 'Bob', 
                             email_address = 'bob@jamf.com', 
                             phone_number = '123456789', 

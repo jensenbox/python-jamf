@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_general import ComputerGeneral  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_general import ComputerGeneral  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerGeneral(unittest.TestCase):
     """ComputerGeneral unit test stubs"""
@@ -33,7 +33,7 @@ class TestComputerGeneral(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_general.ComputerGeneral()  # noqa: E501
+        # model = jamf.models.computer_general.ComputerGeneral()  # noqa: E501
         if include_optional :
             return ComputerGeneral(
                 name = 'Boalime', 
@@ -44,12 +44,12 @@ class TestComputerGeneral(unittest.TestCase):
                 barcode1 = '5 12345 678900', 
                 barcode2 = '5 12345 678900', 
                 asset_tag = '304822', 
-                remote_management = openapi_client.models.computer_remote_management.ComputerRemoteManagement(
+                remote_management = jamf.models.computer_remote_management.ComputerRemoteManagement(
                     managed = True, 
                     management_username = 'rootname', 
                     management_password = 'example password', ), 
                 supervised = True, 
-                mdm_capable = openapi_client.models.computer_mdm_capability.ComputerMdmCapability(
+                mdm_capable = jamf.models.computer_mdm_capability.ComputerMdmCapability(
                     capable = True, 
                     capable_users = ["admin","rootadmin"], ), 
                 report_date = '2018-10-31T18:04:13Z', 
@@ -57,20 +57,20 @@ class TestComputerGeneral(unittest.TestCase):
                 last_cloud_backup_date = '2018-10-31T18:04:13Z', 
                 last_enrolled_date = '2018-10-31T18:04:13Z', 
                 mdm_profile_expiration = '2018-10-31T18:04:13Z', 
-                initial_entry_date = 'Tue Oct 30 17:00:00 PDT 2018', 
+                initial_entry_date = 'Wed Oct 31 00:00:00 GMT 2018', 
                 distribution_point = 'distribution point name', 
-                enrollment_method = openapi_client.models.enrollment_method.EnrollmentMethod(
+                enrollment_method = jamf.models.enrollment_method.EnrollmentMethod(
                     id = '1', 
                     object_name = 'user@domain.com', 
                     object_type = 'User-initiated - no invitation', ), 
-                site = openapi_client.models.v1_site.V1Site(
+                site = jamf.models.v1_site.V1Site(
                     id = '1', 
                     name = 'Eau Claire', ), 
                 itunes_store_account_active = True, 
                 enrolled_via_automated_device_enrollment = True, 
                 user_approved_mdm = True, 
                 extension_attributes = [
-                    openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                    jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                         definition_id = '23', 
                         name = 'Some Attribute', 
                         description = 'Some Attribute defines how much Foo impacts Bar.', 

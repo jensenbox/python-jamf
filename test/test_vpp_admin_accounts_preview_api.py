@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.vpp_admin_accounts_preview_api import VppAdminAccountsPreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.vpp_admin_accounts_preview_api import VppAdminAccountsPreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestVppAdminAccountsPreviewApi(unittest.TestCase):
     """VppAdminAccountsPreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.vpp_admin_accounts_preview_api.VppAdminAccountsPreviewApi()  # noqa: E501
+        self.api = jamf.api.vpp_admin_accounts_preview_api.VppAdminAccountsPreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

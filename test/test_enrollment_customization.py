@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.enrollment_customization import EnrollmentCustomization  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.enrollment_customization import EnrollmentCustomization  # noqa: E501
+from jamf.rest import ApiException
 
 class TestEnrollmentCustomization(unittest.TestCase):
     """EnrollmentCustomization unit test stubs"""
@@ -33,13 +33,13 @@ class TestEnrollmentCustomization(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.enrollment_customization.EnrollmentCustomization()  # noqa: E501
+        # model = jamf.models.enrollment_customization.EnrollmentCustomization()  # noqa: E501
         if include_optional :
             return EnrollmentCustomization(
                 site_id = 2, 
                 display_name = 'Example', 
                 description = 'Example description', 
-                enrollment_customization_branding_settings = openapi_client.models.enrollment_customization_branding_settings.EnrollmentCustomizationBrandingSettings(
+                enrollment_customization_branding_settings = jamf.models.enrollment_customization_branding_settings.EnrollmentCustomizationBrandingSettings(
                     text_color = '0000FF', 
                     button_color = '0000FF', 
                     button_text_color = '0000FF', 
@@ -51,7 +51,7 @@ class TestEnrollmentCustomization(unittest.TestCase):
                 site_id = 2,
                 display_name = 'Example',
                 description = 'Example description',
-                enrollment_customization_branding_settings = openapi_client.models.enrollment_customization_branding_settings.EnrollmentCustomizationBrandingSettings(
+                enrollment_customization_branding_settings = jamf.models.enrollment_customization_branding_settings.EnrollmentCustomizationBrandingSettings(
                     text_color = '0000FF', 
                     button_color = '0000FF', 
                     button_text_color = '0000FF', 

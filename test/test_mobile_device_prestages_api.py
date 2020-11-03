@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.mobile_device_prestages_api import MobileDevicePrestagesApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.mobile_device_prestages_api import MobileDevicePrestagesApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestMobileDevicePrestagesApi(unittest.TestCase):
     """MobileDevicePrestagesApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.mobile_device_prestages_api.MobileDevicePrestagesApi()  # noqa: E501
+        self.api = jamf.api.mobile_device_prestages_api.MobileDevicePrestagesApi()  # noqa: E501
 
     def tearDown(self):
         pass

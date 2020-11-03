@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.ebook_exclusions import EbookExclusions  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.ebook_exclusions import EbookExclusions  # noqa: E501
+from jamf.rest import ApiException
 
 class TestEbookExclusions(unittest.TestCase):
     """EbookExclusions unit test stubs"""
@@ -33,7 +33,7 @@ class TestEbookExclusions(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.ebook_exclusions.EbookExclusions()  # noqa: E501
+        # model = jamf.models.ebook_exclusions.EbookExclusions()  # noqa: E501
         if include_optional :
             return EbookExclusions(
                 computer_ids = [
@@ -60,12 +60,12 @@ class TestEbookExclusions(unittest.TestCase):
                 user_group_ids = [
                     '-1'
                     ], 
-                limitations = openapi_client.models.ebook_limitations.EbookLimitations(
+                limitations = jamf.models.ebook_limitations.EbookLimitations(
                     network_segments = [
                         '1'
                         ], 
                     users = [
-                        openapi_client.models.ebook_limitations_users.EbookLimitations_users(
+                        jamf.models.ebook_limitations_users.EbookLimitations_users(
                             name = 'admin', )
                         ], 
                     user_groups = [

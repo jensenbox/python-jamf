@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.initialize import Initialize  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.initialize import Initialize  # noqa: E501
+from jamf.rest import ApiException
 
 class TestInitialize(unittest.TestCase):
     """Initialize unit test stubs"""
@@ -33,7 +33,7 @@ class TestInitialize(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.initialize.Initialize()  # noqa: E501
+        # model = jamf.models.initialize.Initialize()  # noqa: E501
         if include_optional :
             return Initialize(
                 activation_code = 'VFAB-YDAB-DFAB-UDAB-DEAB-EFAB-ABAB-DEAB', 

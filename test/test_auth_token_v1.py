@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.auth_token_v1 import AuthTokenV1  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.auth_token_v1 import AuthTokenV1  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAuthTokenV1(unittest.TestCase):
     """AuthTokenV1 unit test stubs"""
@@ -33,7 +33,7 @@ class TestAuthTokenV1(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.auth_token_v1.AuthTokenV1()  # noqa: E501
+        # model = jamf.models.auth_token_v1.AuthTokenV1()  # noqa: E501
         if include_optional :
             return AuthTokenV1(
                 token = 'eyJhbGciOiJIUzUxMiJ9.eyJhdXRoZW50aWNhdGVkLWFwcCI6IkdFTkVSSUMiLCJhdXRoZW50aWNhdGlvbi10eXBlIjoiSlNTIiwiZ3JvdXBzIjpbXSwic3ViamVjdC10eXBlIjoiSlNTX1VTRVJfSUQiLCJ0b2tlbi11dWlkIjoiNzc0YWY3MGYtYWQ0Yy00N2QzLTk2MzktZjEwMjBhMTIwYzExIiwibGRhcC1zZXJ2ZXItaWQiOi0xLCJzdWIiOiIxIiwiZXhwIjoxNTM5NjE5MzQ4fQ.0t7sgYyIyA7kTTmrM8tMGE7fnXcJ1ZzQODAJp0pzg92-cBMQS0Cv8S9oWjkJD7VJS-CHA1dOppr0G_2dCPOfng', 

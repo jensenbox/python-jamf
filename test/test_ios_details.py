@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.ios_details import IosDetails  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.ios_details import IosDetails  # noqa: E501
+from jamf.rest import ApiException
 
 class TestIosDetails(unittest.TestCase):
     """IosDetails unit test stubs"""
@@ -33,7 +33,7 @@ class TestIosDetails(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.ios_details.IosDetails()  # noqa: E501
+        # model = jamf.models.ios_details.IosDetails()  # noqa: E501
         if include_optional :
             return IosDetails(
                 model = 'iPad 5th Generation (Wi-Fi)', 
@@ -53,10 +53,10 @@ class TestIosDetails(unittest.TestCase):
                 is_location_services_enabled = False, 
                 is_i_tunes_store_account_active = False, 
                 is_ble_capable = False, 
-                computer = openapi_client.models.ios_details_computer.IosDetails_computer(
+                computer = jamf.models.ios_details_computer.IosDetails_computer(
                     name = 'Bob's MacBook', 
                     id = 1, ), 
-                purchasing = openapi_client.models.purchasing.Purchasing(
+                purchasing = jamf.models.purchasing.Purchasing(
                     is_purchased = True, 
                     is_leased = False, 
                     po_number = '8675309', 
@@ -69,7 +69,7 @@ class TestIosDetails(unittest.TestCase):
                     lease_expires_date = '2019-02-04T21:09:31.661Z', 
                     life_expectancy = 7, 
                     purchasing_contact = 'Nick in IT', ), 
-                security = openapi_client.models.security.Security(
+                security = jamf.models.security.Security(
                     is_data_protected = False, 
                     is_block_level_encryption_capable = True, 
                     is_file_level_encryption_capable = True, 
@@ -79,7 +79,7 @@ class TestIosDetails(unittest.TestCase):
                     hardware_encryption = 3, 
                     is_activation_lock_enabled = False, 
                     is_jail_break_detected = False, ), 
-                network = openapi_client.models.network.Network(
+                network = jamf.models.network.Network(
                     cellular_technology = 'Unknown', 
                     is_voice_roaming_enabled = False, 
                     imei = '59 105109 176278 3', 
@@ -97,38 +97,38 @@ class TestIosDetails(unittest.TestCase):
                     is_personal_hotspot_enabled = False, 
                     phone_number = '555-555-5555 ext 5', ), 
                 applications = [
-                    openapi_client.models.ios_details_applications.IosDetails_applications(
+                    jamf.models.ios_details_applications.IosDetails_applications(
                         identifier = 'com.apple.airport.mobileairportutility', 
                         name = 'AirPort Utility', 
                         version = '135.24', 
                         short_version = '7.0', )
                     ], 
                 certificates = [
-                    openapi_client.models.ios_details_certificates.IosDetails_certificates(
+                    jamf.models.ios_details_certificates.IosDetails_certificates(
                         common_name = '3B259E4B-FAD5-4860-B1DD-336ADA786EBA', 
                         is_identity = False, )
                     ], 
                 ebooks = [
-                    openapi_client.models.ios_details_ebooks.IosDetails_ebooks(
+                    jamf.models.ios_details_ebooks.IosDetails_ebooks(
                         author = 'Homer J Simpson', 
                         title = 'The Odyssey', 
                         version = '0.1', )
                     ], 
                 configuration_profiles = [
-                    openapi_client.models.configuration_profile.ConfigurationProfile(
+                    jamf.models.configuration_profile.ConfigurationProfile(
                         display_name = 'Test WiFi', 
                         version = '1', 
                         uuid = 'D29DD9FB-0D5B-422F-A3A2-ABBC5848E949', 
                         identifier = 'ac2-server4.D0EFAC2D-326C-4BB6-87E6-2BCB88490AAA', )
                     ], 
                 provisioning_profiles = [
-                    openapi_client.models.provisioning_profile.ProvisioningProfile(
+                    jamf.models.provisioning_profile.ProvisioningProfile(
                         display_name = 'jamfnation', 
                         uuid = '89AF33FC-123C-1231-AEFD-9C3ED123AFCC', 
                         expiration_date = '2018-10-24T21:57:37Z', )
                     ], 
                 attachments = [
-                    openapi_client.models.ios_details_attachments.IosDetails_attachments(
+                    jamf.models.ios_details_attachments.IosDetails_attachments(
                         name = 'Bob's Attachment', 
                         id = 1, )
                     ]

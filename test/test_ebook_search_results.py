@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.ebook_search_results import EbookSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.ebook_search_results import EbookSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestEbookSearchResults(unittest.TestCase):
     """EbookSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestEbookSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.ebook_search_results.EbookSearchResults()  # noqa: E501
+        # model = jamf.models.ebook_search_results.EbookSearchResults()  # noqa: E501
         if include_optional :
             return EbookSearchResults(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.ebook.Ebook(
+                    jamf.models.ebook.Ebook(
                         id = '1', 
                         name = 'The Neverending API', 
                         kind = 'IBOOKS', 

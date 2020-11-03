@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.device_enrollment_disown_response import DeviceEnrollmentDisownResponse  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.device_enrollment_disown_response import DeviceEnrollmentDisownResponse  # noqa: E501
+from jamf.rest import ApiException
 
 class TestDeviceEnrollmentDisownResponse(unittest.TestCase):
     """DeviceEnrollmentDisownResponse unit test stubs"""
@@ -33,7 +33,7 @@ class TestDeviceEnrollmentDisownResponse(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.device_enrollment_disown_response.DeviceEnrollmentDisownResponse()  # noqa: E501
+        # model = jamf.models.device_enrollment_disown_response.DeviceEnrollmentDisownResponse()  # noqa: E501
         if include_optional :
             return DeviceEnrollmentDisownResponse(
                 devices = {"a2s3d4f5":"SUCCESS","0o9i8u7y6t":"FAILED"}

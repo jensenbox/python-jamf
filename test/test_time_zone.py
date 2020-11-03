@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.time_zone import TimeZone  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.time_zone import TimeZone  # noqa: E501
+from jamf.rest import ApiException
 
 class TestTimeZone(unittest.TestCase):
     """TimeZone unit test stubs"""
@@ -33,7 +33,7 @@ class TestTimeZone(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.time_zone.TimeZone()  # noqa: E501
+        # model = jamf.models.time_zone.TimeZone()  # noqa: E501
         if include_optional :
             return TimeZone(
                 zone_id = 'America/Chicago', 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.file_attachment import FileAttachment  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.file_attachment import FileAttachment  # noqa: E501
+from jamf.rest import ApiException
 
 class TestFileAttachment(unittest.TestCase):
     """FileAttachment unit test stubs"""
@@ -33,7 +33,7 @@ class TestFileAttachment(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.file_attachment.FileAttachment()  # noqa: E501
+        # model = jamf.models.file_attachment.FileAttachment()  # noqa: E501
         if include_optional :
             return FileAttachment(
                 id = 1, 

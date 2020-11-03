@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_content_caching_parent_details import ComputerContentCachingParentDetails  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_content_caching_parent_details import ComputerContentCachingParentDetails  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerContentCachingParentDetails(unittest.TestCase):
     """ComputerContentCachingParentDetails unit test stubs"""
@@ -33,13 +33,13 @@ class TestComputerContentCachingParentDetails(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_content_caching_parent_details.ComputerContentCachingParentDetails()  # noqa: E501
+        # model = jamf.models.computer_content_caching_parent_details.ComputerContentCachingParentDetails()  # noqa: E501
         if include_optional :
             return ComputerContentCachingParentDetails(
                 content_caching_parent_details_id = '1', 
                 ac_power = True, 
                 cache_size_bytes = 0, 
-                capabilities = openapi_client.models.computer_content_caching_parent_capabilities.ComputerContentCachingParentCapabilities(
+                capabilities = jamf.models.computer_content_caching_parent_capabilities.ComputerContentCachingParentCapabilities(
                     content_caching_parent_capabilities_id = '1', 
                     imports = True, 
                     namespaces = True, 
@@ -49,7 +49,7 @@ class TestComputerContentCachingParentDetails(unittest.TestCase):
                     prioritization = True, ), 
                 portable = True, 
                 local_network = [
-                    openapi_client.models.computer_content_caching_parent_local_network.ComputerContentCachingParentLocalNetwork(
+                    jamf.models.computer_content_caching_parent_local_network.ComputerContentCachingParentLocalNetwork(
                         content_caching_parent_local_network_id = '1', 
                         speed = 5000, 
                         wired = True, )

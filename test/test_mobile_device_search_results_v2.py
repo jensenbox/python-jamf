@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.mobile_device_search_results_v2 import MobileDeviceSearchResultsV2  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.mobile_device_search_results_v2 import MobileDeviceSearchResultsV2  # noqa: E501
+from jamf.rest import ApiException
 
 class TestMobileDeviceSearchResultsV2(unittest.TestCase):
     """MobileDeviceSearchResultsV2 unit test stubs"""
@@ -33,12 +33,12 @@ class TestMobileDeviceSearchResultsV2(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.mobile_device_search_results_v2.MobileDeviceSearchResultsV2()  # noqa: E501
+        # model = jamf.models.mobile_device_search_results_v2.MobileDeviceSearchResultsV2()  # noqa: E501
         if include_optional :
             return MobileDeviceSearchResultsV2(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.mobile_device_v2.MobileDeviceV2(
+                    jamf.models.mobile_device_v2.MobileDeviceV2(
                         id = '1', 
                         name = 'iPad', 
                         serial_number = 'DMQVGC0DHLA0', 

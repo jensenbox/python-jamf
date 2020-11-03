@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.departments_api import DepartmentsApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.departments_api import DepartmentsApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestDepartmentsApi(unittest.TestCase):
     """DepartmentsApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.departments_api.DepartmentsApi()  # noqa: E501
+        self.api = jamf.api.departments_api.DepartmentsApi()  # noqa: E501
 
     def tearDown(self):
         pass

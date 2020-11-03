@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.tv_os_details import TvOsDetails  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.tv_os_details import TvOsDetails  # noqa: E501
+from jamf.rest import ApiException
 
 class TestTvOsDetails(unittest.TestCase):
     """TvOsDetails unit test stubs"""
@@ -33,7 +33,7 @@ class TestTvOsDetails(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.tv_os_details.TvOsDetails()  # noqa: E501
+        # model = jamf.models.tv_os_details.TvOsDetails()  # noqa: E501
         if include_optional :
             return TvOsDetails(
                 model = 'Apple TV 3rd Generation Rev 2', 
@@ -43,7 +43,7 @@ class TestTvOsDetails(unittest.TestCase):
                 airplay_password = '1234', 
                 device_id = '1', 
                 locales = '0', 
-                purchasing = openapi_client.models.purchasing_v2.PurchasingV2(
+                purchasing = jamf.models.purchasing_v2.PurchasingV2(
                     purchased = True, 
                     leased = False, 
                     po_number = '8675309', 
@@ -57,7 +57,7 @@ class TestTvOsDetails(unittest.TestCase):
                     life_expectancy = 7, 
                     purchasing_contact = 'Nick in IT', ), 
                 configuration_profiles = [
-                    openapi_client.models.configuration_profile.ConfigurationProfile(
+                    jamf.models.configuration_profile.ConfigurationProfile(
                         display_name = 'Test WiFi', 
                         version = '1', 
                         uuid = 'D29DD9FB-0D5B-422F-A3A2-ABBC5848E949', 

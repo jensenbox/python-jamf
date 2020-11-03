@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.cloud_ldap_configuration_search_results import CloudLdapConfigurationSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.cloud_ldap_configuration_search_results import CloudLdapConfigurationSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestCloudLdapConfigurationSearchResults(unittest.TestCase):
     """CloudLdapConfigurationSearchResults unit test stubs"""
@@ -33,14 +33,14 @@ class TestCloudLdapConfigurationSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.cloud_ldap_configuration_search_results.CloudLdapConfigurationSearchResults()  # noqa: E501
+        # model = jamf.models.cloud_ldap_configuration_search_results.CloudLdapConfigurationSearchResults()  # noqa: E501
         if include_optional :
             return CloudLdapConfigurationSearchResults(
                 total_count = 1, 
                 results = [
-                    openapi_client.models.cloud_ldap_configuration_response.CloudLdapConfigurationResponse(
+                    jamf.models.cloud_ldap_configuration_response.CloudLdapConfigurationResponse(
                         id = '1001', 
-                        server = openapi_client.models.cloud_ldap_server_response.CloudLdapServerResponse(
+                        server = jamf.models.cloud_ldap_server_response.CloudLdapServerResponse(
                             id = '1001', 
                             enabled = True, 
                             provider_name = 'Google', 
@@ -48,7 +48,7 @@ class TestCloudLdapConfigurationSearchResults(unittest.TestCase):
                             server_url = 'ldap.google.com', 
                             domain_name = 'jamf.com', 
                             port = 636, 
-                            keystore = openapi_client.models.cloud_ldap_keystore.CloudLdapKeystore(
+                            keystore = jamf.models.cloud_ldap_keystore.CloudLdapKeystore(
                                 type = 'PKCS12', 
                                 expiration_date = '2030-02-21T12:05:47.244Z', 
                                 subject = 'ST=California, C=US, OU=GSuite, CN=LDAP Client, L=Mountain View, O=Google Inc.', 
@@ -57,8 +57,8 @@ class TestCloudLdapConfigurationSearchResults(unittest.TestCase):
                             search_timeout = 60, 
                             use_wildcards = True, 
                             connection_type = 'LDAPS', ), 
-                        mappings = openapi_client.models.cloud_ldap_mappings_response.CloudLdapMappingsResponse(
-                            user_mappings = openapi_client.models.user_mappings.UserMappings(
+                        mappings = jamf.models.cloud_ldap_mappings_response.CloudLdapMappingsResponse(
+                            user_mappings = jamf.models.user_mappings.UserMappings(
                                 object_class_limitation = 'ANY_OBJECT_CLASSES', 
                                 object_classes = 'inetOrgPerson', 
                                 search_base = 'ou=Users', 
@@ -74,7 +74,7 @@ class TestCloudLdapConfigurationSearchResults(unittest.TestCase):
                                 phone = '0', 
                                 position = 'title', 
                                 user_uuid = 'uid', ), 
-                            group_mappings = openapi_client.models.group_mappings.GroupMappings(
+                            group_mappings = jamf.models.group_mappings.GroupMappings(
                                 object_class_limitation = 'ANY_OBJECT_CLASSES', 
                                 object_classes = 'groupOfNames', 
                                 search_base = 'ou=Groups', 
@@ -82,7 +82,7 @@ class TestCloudLdapConfigurationSearchResults(unittest.TestCase):
                                 group_id = 'cn', 
                                 group_name = 'cn', 
                                 group_uuid = 'gidNumber', ), 
-                            membership_mappings = openapi_client.models.membership_mappings.MembershipMappings(
+                            membership_mappings = jamf.models.membership_mappings.MembershipMappings(
                                 group_membership_mapping = 'memberOf', ), ), )
                     ]
             )

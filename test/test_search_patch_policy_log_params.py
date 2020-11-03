@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.search_patch_policy_log_params import SearchPatchPolicyLogParams  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.search_patch_policy_log_params import SearchPatchPolicyLogParams  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSearchPatchPolicyLogParams(unittest.TestCase):
     """SearchPatchPolicyLogParams unit test stubs"""
@@ -33,18 +33,18 @@ class TestSearchPatchPolicyLogParams(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.search_patch_policy_log_params.SearchPatchPolicyLogParams()  # noqa: E501
+        # model = jamf.models.search_patch_policy_log_params.SearchPatchPolicyLogParams()  # noqa: E501
         if include_optional :
             return SearchPatchPolicyLogParams(
                 page_number = 1, 
                 page_size = 100, 
                 order_by = [
-                    openapi_client.models.order_by.OrderBy(
+                    jamf.models.order_by.OrderBy(
                         field = 'Name', 
                         direction = 'DESC', )
                     ], 
                 filter = [
-                    openapi_client.models.filter.Filter(
+                    jamf.models.filter.Filter(
                         field = 'name', 
                         operator = 'EQUALS', 
                         value = 'value', )

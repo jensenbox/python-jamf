@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.engage_api import EngageApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.engage_api import EngageApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestEngageApi(unittest.TestCase):
     """EngageApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.engage_api.EngageApi()  # noqa: E501
+        self.api = jamf.api.engage_api.EngageApi()  # noqa: E501
 
     def tearDown(self):
         pass

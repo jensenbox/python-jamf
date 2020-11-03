@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.device_enrollment_device import DeviceEnrollmentDevice  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.device_enrollment_device import DeviceEnrollmentDevice  # noqa: E501
+from jamf.rest import ApiException
 
 class TestDeviceEnrollmentDevice(unittest.TestCase):
     """DeviceEnrollmentDevice unit test stubs"""
@@ -33,7 +33,7 @@ class TestDeviceEnrollmentDevice(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.device_enrollment_device.DeviceEnrollmentDevice()  # noqa: E501
+        # model = jamf.models.device_enrollment_device.DeviceEnrollmentDevice()  # noqa: E501
         if include_optional :
             return DeviceEnrollmentDevice(
                 id = '1', 
@@ -45,7 +45,7 @@ class TestDeviceEnrollmentDevice(unittest.TestCase):
                 color = 'BLACK', 
                 asset_tag = 'ACME-1234', 
                 profile_status = 'ASSIGNED', 
-                sync_state = openapi_client.models.assign_remove_profile_response_sync_state.AssignRemoveProfileResponseSyncState(
+                sync_state = jamf.models.assign_remove_profile_response_sync_state.AssignRemoveProfileResponseSyncState(
                     id = 1, 
                     serial_number = 'R7QFDE2YCFN4', 
                     profile_uuid = '9164E5F7C74C2A4C4BE90BB15E549F14', 

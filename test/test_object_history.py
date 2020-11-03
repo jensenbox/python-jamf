@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.object_history import ObjectHistory  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.object_history import ObjectHistory  # noqa: E501
+from jamf.rest import ApiException
 
 class TestObjectHistory(unittest.TestCase):
     """ObjectHistory unit test stubs"""
@@ -33,7 +33,7 @@ class TestObjectHistory(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.object_history.ObjectHistory()  # noqa: E501
+        # model = jamf.models.object_history.ObjectHistory()  # noqa: E501
         if include_optional :
             return ObjectHistory(
                 id = 1, 

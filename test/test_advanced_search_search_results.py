@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.advanced_search_search_results import AdvancedSearchSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.advanced_search_search_results import AdvancedSearchSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAdvancedSearchSearchResults(unittest.TestCase):
     """AdvancedSearchSearchResults unit test stubs"""
@@ -33,16 +33,16 @@ class TestAdvancedSearchSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.advanced_search_search_results.AdvancedSearchSearchResults()  # noqa: E501
+        # model = jamf.models.advanced_search_search_results.AdvancedSearchSearchResults()  # noqa: E501
         if include_optional :
             return AdvancedSearchSearchResults(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.advanced_search.AdvancedSearch(
+                    jamf.models.advanced_search.AdvancedSearch(
                         id = '1', 
                         name = 'Andy's Search', 
                         criteria = [
-                            openapi_client.models.smart_search_criterion.SmartSearchCriterion(
+                            jamf.models.smart_search_criterion.SmartSearchCriterion(
                                 name = 'Account', 
                                 priority = 0, 
                                 and_or = 'and', 

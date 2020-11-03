@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.search_params import SearchParams  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.search_params import SearchParams  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSearchParams(unittest.TestCase):
     """SearchParams unit test stubs"""
@@ -33,14 +33,14 @@ class TestSearchParams(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.search_params.SearchParams()  # noqa: E501
+        # model = jamf.models.search_params.SearchParams()  # noqa: E501
         if include_optional :
             return SearchParams(
                 page_number = 1, 
                 page_size = 100, 
                 is_load_to_end = False, 
                 order_by = [
-                    openapi_client.models.order_by.OrderBy(
+                    jamf.models.order_by.OrderBy(
                         field = 'Name', 
                         direction = 'DESC', )
                     ]

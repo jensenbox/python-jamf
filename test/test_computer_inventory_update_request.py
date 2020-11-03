@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_inventory_update_request import ComputerInventoryUpdateRequest  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_inventory_update_request import ComputerInventoryUpdateRequest  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerInventoryUpdateRequest(unittest.TestCase):
     """ComputerInventoryUpdateRequest unit test stubs"""
@@ -33,18 +33,18 @@ class TestComputerInventoryUpdateRequest(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_inventory_update_request.ComputerInventoryUpdateRequest()  # noqa: E501
+        # model = jamf.models.computer_inventory_update_request.ComputerInventoryUpdateRequest()  # noqa: E501
         if include_optional :
             return ComputerInventoryUpdateRequest(
                 udid = '45436edf-864e-4364-982a-330b01d39e65', 
-                general = openapi_client.models.computer_general_update.ComputerGeneralUpdate(
+                general = jamf.models.computer_general_update.ComputerGeneralUpdate(
                     name = 'Boalime', 
                     last_ip_address = '247.185.82.186', 
                     barcode1 = '5 12345 678900', 
                     barcode2 = '5 12345 678900', 
                     asset_tag = '304822', 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -55,21 +55,21 @@ class TestComputerInventoryUpdateRequest(unittest.TestCase):
                             options = ["foo","bar"], 
                             input_type = 'TEXT', )
                         ], ), 
-                purchasing = openapi_client.models.computer_purchase.ComputerPurchase(
+                purchasing = jamf.models.computer_purchase.ComputerPurchase(
                     leased = True, 
                     purchased = True, 
                     po_number = '53-1', 
-                    po_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                    po_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                     vendor = 'Example Vendor', 
-                    warranty_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                    warranty_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                     apple_care_id = 'abcd', 
-                    lease_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                    lease_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                     purchase_price = '$500', 
                     life_expectancy = 5, 
                     purchasing_account = 'admin', 
                     purchasing_contact = 'true', 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -80,7 +80,7 @@ class TestComputerInventoryUpdateRequest(unittest.TestCase):
                             options = ["foo","bar"], 
                             input_type = 'TEXT', )
                         ], ), 
-                user_and_location = openapi_client.models.computer_user_and_location.ComputerUserAndLocation(
+                user_and_location = jamf.models.computer_user_and_location.ComputerUserAndLocation(
                     username = 'Madison Anderson', 
                     realname = '13-inch MacBook', 
                     email = 'email@com.pl', 
@@ -90,7 +90,7 @@ class TestComputerInventoryUpdateRequest(unittest.TestCase):
                     building_id = '1', 
                     room = '5', 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -101,13 +101,13 @@ class TestComputerInventoryUpdateRequest(unittest.TestCase):
                             options = ["foo","bar"], 
                             input_type = 'TEXT', )
                         ], ), 
-                hardware = openapi_client.models.computer_hardware_update.ComputerHardwareUpdate(
+                hardware = jamf.models.computer_hardware_update.ComputerHardwareUpdate(
                     network_adapter_type = 'Foo', 
                     mac_address = '6A:2C:4B:B7:65:B5', 
                     alt_network_adapter_type = 'Bar', 
                     alt_mac_address = '82:45:58:44:dc:01', 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -118,9 +118,9 @@ class TestComputerInventoryUpdateRequest(unittest.TestCase):
                             options = ["foo","bar"], 
                             input_type = 'TEXT', )
                         ], ), 
-                operating_system = openapi_client.models.computer_operating_system_update.ComputerOperatingSystemUpdate(
+                operating_system = jamf.models.computer_operating_system_update.ComputerOperatingSystemUpdate(
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -132,7 +132,7 @@ class TestComputerInventoryUpdateRequest(unittest.TestCase):
                             input_type = 'TEXT', )
                         ], ), 
                 extension_attributes = [
-                    openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                    jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                         definition_id = '23', 
                         name = 'Some Attribute', 
                         description = 'Some Attribute defines how much Foo impacts Bar.', 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.location import Location  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.location import Location  # noqa: E501
+from jamf.rest import ApiException
 
 class TestLocation(unittest.TestCase):
     """Location unit test stubs"""
@@ -33,7 +33,7 @@ class TestLocation(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.location.Location()  # noqa: E501
+        # model = jamf.models.location.Location()  # noqa: E501
         if include_optional :
             return Location(
                 username = 'admin', 
@@ -41,10 +41,10 @@ class TestLocation(unittest.TestCase):
                 email_address = 'ITBob@jamf.com', 
                 position = 'IT Team Lead', 
                 phone_number = '555-555-5555', 
-                department = openapi_client.models.location_department.Location_department(
+                department = jamf.models.location_department.Location_department(
                     name = 'IT', 
                     id = 1, ), 
-                building = openapi_client.models.location_building.Location_building(
+                building = jamf.models.location_building.Location_building(
                     name = 'Eau Claire', 
                     id = 1, ), 
                 room = '4th Floor - Quad 3'

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.ldap_group_search_results import LdapGroupSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.ldap_group_search_results import LdapGroupSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestLdapGroupSearchResults(unittest.TestCase):
     """LdapGroupSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestLdapGroupSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.ldap_group_search_results.LdapGroupSearchResults()  # noqa: E501
+        # model = jamf.models.ldap_group_search_results.LdapGroupSearchResults()  # noqa: E501
         if include_optional :
             return LdapGroupSearchResults(
                 total_count = 3, 
                 results = [
-                    openapi_client.models.ldap_group.LdapGroup(
+                    jamf.models.ldap_group.LdapGroup(
                         id = '1', 
                         uuid = '89AF33FC-123C-1231-AEFD-9C3ED123AFCC', 
                         ldap_server_id = 1, 

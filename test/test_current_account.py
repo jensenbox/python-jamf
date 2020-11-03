@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.current_account import CurrentAccount  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.current_account import CurrentAccount  # noqa: E501
+from jamf.rest import ApiException
 
 class TestCurrentAccount(unittest.TestCase):
     """CurrentAccount unit test stubs"""
@@ -33,14 +33,14 @@ class TestCurrentAccount(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.current_account.CurrentAccount()  # noqa: E501
+        # model = jamf.models.current_account.CurrentAccount()  # noqa: E501
         if include_optional :
             return CurrentAccount(
                 id = 1, 
                 username = 'admin', 
                 real_name = 'IT Bob', 
                 email = 'ITBob@Jamf.com', 
-                preferences = openapi_client.models.account_preferences.AccountPreferences(
+                preferences = jamf.models.account_preferences.AccountPreferences(
                     language = 'en', 
                     date_format = 'MM/dd/yyyy', 
                     region = 'Europe', 

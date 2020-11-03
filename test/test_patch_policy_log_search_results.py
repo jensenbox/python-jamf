@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.patch_policy_log_search_results import PatchPolicyLogSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.patch_policy_log_search_results import PatchPolicyLogSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestPatchPolicyLogSearchResults(unittest.TestCase):
     """PatchPolicyLogSearchResults unit test stubs"""
@@ -33,11 +33,11 @@ class TestPatchPolicyLogSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.patch_policy_log_search_results.PatchPolicyLogSearchResults()  # noqa: E501
+        # model = jamf.models.patch_policy_log_search_results.PatchPolicyLogSearchResults()  # noqa: E501
         if include_optional :
             return PatchPolicyLogSearchResults(
                 results = [
-                    openapi_client.models.patch_policy_log.PatchPolicyLog(
+                    jamf.models.patch_policy_log.PatchPolicyLog(
                         patch_policy_id = 1, 
                         device_id = 1, 
                         device_name = 'iPad', 

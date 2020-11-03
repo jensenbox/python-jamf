@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.device_enrollment_instance_search_results import DeviceEnrollmentInstanceSearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.device_enrollment_instance_search_results import DeviceEnrollmentInstanceSearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestDeviceEnrollmentInstanceSearchResults(unittest.TestCase):
     """DeviceEnrollmentInstanceSearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestDeviceEnrollmentInstanceSearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.device_enrollment_instance_search_results.DeviceEnrollmentInstanceSearchResults()  # noqa: E501
+        # model = jamf.models.device_enrollment_instance_search_results.DeviceEnrollmentInstanceSearchResults()  # noqa: E501
         if include_optional :
             return DeviceEnrollmentInstanceSearchResults(
                 total_count = 1, 
                 results = [
-                    openapi_client.models.device_enrollment_instance.DeviceEnrollmentInstance(
+                    jamf.models.device_enrollment_instance.DeviceEnrollmentInstance(
                         id = '1', 
                         name = 'Example Device Enrollment Instance', 
                         supervision_identity_id = '1', 

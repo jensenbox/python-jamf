@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.history_search_results_v1 import HistorySearchResultsV1  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.history_search_results_v1 import HistorySearchResultsV1  # noqa: E501
+from jamf.rest import ApiException
 
 class TestHistorySearchResultsV1(unittest.TestCase):
     """HistorySearchResultsV1 unit test stubs"""
@@ -33,12 +33,12 @@ class TestHistorySearchResultsV1(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.history_search_results_v1.HistorySearchResultsV1()  # noqa: E501
+        # model = jamf.models.history_search_results_v1.HistorySearchResultsV1()  # noqa: E501
         if include_optional :
             return HistorySearchResultsV1(
                 total_count = 1, 
                 results = [
-                    openapi_client.models.object_history_v1.ObjectHistoryV1(
+                    jamf.models.object_history_v1.ObjectHistoryV1(
                         id = '1', 
                         username = 'admin', 
                         date = '2019-02-04T21:09:31.661Z', 

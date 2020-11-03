@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.policy_properties import PolicyProperties  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.policy_properties import PolicyProperties  # noqa: E501
+from jamf.rest import ApiException
 
 class TestPolicyProperties(unittest.TestCase):
     """PolicyProperties unit test stubs"""
@@ -33,7 +33,7 @@ class TestPolicyProperties(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.policy_properties.PolicyProperties()  # noqa: E501
+        # model = jamf.models.policy_properties.PolicyProperties()  # noqa: E501
         if include_optional :
             return PolicyProperties(
                 is_policies_require_network_state_change = True, 

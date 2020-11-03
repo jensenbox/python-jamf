@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.android_details import AndroidDetails  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.android_details import AndroidDetails  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAndroidDetails(unittest.TestCase):
     """AndroidDetails unit test stubs"""
@@ -33,7 +33,7 @@ class TestAndroidDetails(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.android_details.AndroidDetails()  # noqa: E501
+        # model = jamf.models.android_details.AndroidDetails()  # noqa: E501
         if include_optional :
             return AndroidDetails(
                 os_name = 'Black Licorice', 
@@ -48,10 +48,10 @@ class TestAndroidDetails(unittest.TestCase):
                 battery_level = 100, 
                 last_backup_timestamp = '2018-10-15T16:39:56.307Z', 
                 api_version = 1, 
-                computer = openapi_client.models.android_details_computer.AndroidDetails_computer(
+                computer = jamf.models.android_details_computer.AndroidDetails_computer(
                     name = 'Ginny's Computer', 
                     id = 1, ), 
-                security = openapi_client.models.security.Security(
+                security = jamf.models.security.Security(
                     is_data_protected = False, 
                     is_block_level_encryption_capable = True, 
                     is_file_level_encryption_capable = True, 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.enrollment_customization_panel_ldap_auth_all_of import EnrollmentCustomizationPanelLdapAuthAllOf  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.enrollment_customization_panel_ldap_auth_all_of import EnrollmentCustomizationPanelLdapAuthAllOf  # noqa: E501
+from jamf.rest import ApiException
 
 class TestEnrollmentCustomizationPanelLdapAuthAllOf(unittest.TestCase):
     """EnrollmentCustomizationPanelLdapAuthAllOf unit test stubs"""
@@ -33,7 +33,7 @@ class TestEnrollmentCustomizationPanelLdapAuthAllOf(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.enrollment_customization_panel_ldap_auth_all_of.EnrollmentCustomizationPanelLdapAuthAllOf()  # noqa: E501
+        # model = jamf.models.enrollment_customization_panel_ldap_auth_all_of.EnrollmentCustomizationPanelLdapAuthAllOf()  # noqa: E501
         if include_optional :
             return EnrollmentCustomizationPanelLdapAuthAllOf(
                 username_label = 'Username', 
@@ -42,7 +42,7 @@ class TestEnrollmentCustomizationPanelLdapAuthAllOf(unittest.TestCase):
                 back_button_text = 'Back', 
                 continue_button_text = 'Continue', 
                 ldap_group_access = [
-                    openapi_client.models.enrollment_customization_ldap_group_access.EnrollmentCustomizationLdapGroupAccess(
+                    jamf.models.enrollment_customization_ldap_group_access.EnrollmentCustomizationLdapGroupAccess(
                         ldap_server_id = 1, 
                         group_name = 'admins', )
                     ]

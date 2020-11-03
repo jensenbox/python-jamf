@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.app_store_country_codes_preview_api import AppStoreCountryCodesPreviewApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.app_store_country_codes_preview_api import AppStoreCountryCodesPreviewApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestAppStoreCountryCodesPreviewApi(unittest.TestCase):
     """AppStoreCountryCodesPreviewApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.app_store_country_codes_preview_api.AppStoreCountryCodesPreviewApi()  # noqa: E501
+        self.api = jamf.api.app_store_country_codes_preview_api.AppStoreCountryCodesPreviewApi()  # noqa: E501
 
     def tearDown(self):
         pass

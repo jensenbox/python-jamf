@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.prestage_dependencies import PrestageDependencies  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.prestage_dependencies import PrestageDependencies  # noqa: E501
+from jamf.rest import ApiException
 
 class TestPrestageDependencies(unittest.TestCase):
     """PrestageDependencies unit test stubs"""
@@ -33,11 +33,11 @@ class TestPrestageDependencies(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.prestage_dependencies.PrestageDependencies()  # noqa: E501
+        # model = jamf.models.prestage_dependencies.PrestageDependencies()  # noqa: E501
         if include_optional :
             return PrestageDependencies(
                 dependencies = [
-                    openapi_client.models.prestage_dependency.PrestageDependency(
+                    jamf.models.prestage_dependency.PrestageDependency(
                         name = 'Name', 
                         human_readable_name = 'Computer PreStage', 
                         hyperlink = '/mobile-prestage/id', )

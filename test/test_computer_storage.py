@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_storage import ComputerStorage  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_storage import ComputerStorage  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerStorage(unittest.TestCase):
     """ComputerStorage unit test stubs"""
@@ -33,12 +33,12 @@ class TestComputerStorage(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_storage.ComputerStorage()  # noqa: E501
+        # model = jamf.models.computer_storage.ComputerStorage()  # noqa: E501
         if include_optional :
             return ComputerStorage(
                 boot_drive_available_space_megabytes = 3072, 
                 disks = [
-                    openapi_client.models.computer_disk.ComputerDisk(
+                    jamf.models.computer_disk.ComputerDisk(
                         id = '170', 
                         device = 'disk0', 
                         model = 'APPLE HDD TOSHIBA MK5065GSXF', 
@@ -48,7 +48,7 @@ class TestComputerStorage(unittest.TestCase):
                         smart_status = 'OK', 
                         type = 'false', 
                         partitions = [
-                            openapi_client.models.computer_partition.ComputerPartition(
+                            jamf.models.computer_partition.ComputerPartition(
                                 name = 'Foo', 
                                 size_megabytes = 262144, 
                                 available_megabytes = 131072, 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.active_patch_history_search_results import ActivePatchHistorySearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.active_patch_history_search_results import ActivePatchHistorySearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestActivePatchHistorySearchResults(unittest.TestCase):
     """ActivePatchHistorySearchResults unit test stubs"""
@@ -33,11 +33,11 @@ class TestActivePatchHistorySearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.active_patch_history_search_results.ActivePatchHistorySearchResults()  # noqa: E501
+        # model = jamf.models.active_patch_history_search_results.ActivePatchHistorySearchResults()  # noqa: E501
         if include_optional :
             return ActivePatchHistorySearchResults(
                 results = [
-                    openapi_client.models.active_patch_history.ActivePatchHistory(
+                    jamf.models.active_patch_history.ActivePatchHistory(
                         patch_id = 1, 
                         patch_history_id = 1, 
                         device_id = 1, 

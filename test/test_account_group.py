@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.account_group import AccountGroup  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.account_group import AccountGroup  # noqa: E501
+from jamf.rest import ApiException
 
 class TestAccountGroup(unittest.TestCase):
     """AccountGroup unit test stubs"""
@@ -33,7 +33,7 @@ class TestAccountGroup(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.account_group.AccountGroup()  # noqa: E501
+        # model = jamf.models.account_group.AccountGroup()  # noqa: E501
         if include_optional :
             return AccountGroup(
                 access_level = 'FullAccess', 

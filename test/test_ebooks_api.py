@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.ebooks_api import EbooksApi  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.api.ebooks_api import EbooksApi  # noqa: E501
+from jamf.rest import ApiException
 
 
 class TestEbooksApi(unittest.TestCase):
     """EbooksApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.ebooks_api.EbooksApi()  # noqa: E501
+        self.api = jamf.api.ebooks_api.EbooksApi()  # noqa: E501
 
     def tearDown(self):
         pass

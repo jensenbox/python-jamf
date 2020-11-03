@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_inventory_response import ComputerInventoryResponse  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_inventory_response import ComputerInventoryResponse  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerInventoryResponse(unittest.TestCase):
     """ComputerInventoryResponse unit test stubs"""
@@ -33,12 +33,12 @@ class TestComputerInventoryResponse(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_inventory_response.ComputerInventoryResponse()  # noqa: E501
+        # model = jamf.models.computer_inventory_response.ComputerInventoryResponse()  # noqa: E501
         if include_optional :
             return ComputerInventoryResponse(
                 id = '1', 
                 udid = '123', 
-                general = openapi_client.models.computer_general.ComputerGeneral(
+                general = jamf.models.computer_general.ComputerGeneral(
                     name = 'Boalime', 
                     last_ip_address = '247.185.82.186', 
                     last_reported_ip = '247.185.82.186', 
@@ -47,12 +47,12 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     barcode1 = '5 12345 678900', 
                     barcode2 = '5 12345 678900', 
                     asset_tag = '304822', 
-                    remote_management = openapi_client.models.computer_remote_management.ComputerRemoteManagement(
+                    remote_management = jamf.models.computer_remote_management.ComputerRemoteManagement(
                         managed = True, 
                         management_username = 'rootname', 
                         management_password = 'example password', ), 
                     supervised = True, 
-                    mdm_capable = openapi_client.models.computer_mdm_capability.ComputerMdmCapability(
+                    mdm_capable = jamf.models.computer_mdm_capability.ComputerMdmCapability(
                         capable = True, 
                         capable_users = ["admin","rootadmin"], ), 
                     report_date = '2018-10-31T18:04:13Z', 
@@ -60,20 +60,20 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     last_cloud_backup_date = '2018-10-31T18:04:13Z', 
                     last_enrolled_date = '2018-10-31T18:04:13Z', 
                     mdm_profile_expiration = '2018-10-31T18:04:13Z', 
-                    initial_entry_date = 'Tue Oct 30 17:00:00 PDT 2018', 
+                    initial_entry_date = 'Wed Oct 31 00:00:00 GMT 2018', 
                     distribution_point = 'distribution point name', 
-                    enrollment_method = openapi_client.models.enrollment_method.EnrollmentMethod(
+                    enrollment_method = jamf.models.enrollment_method.EnrollmentMethod(
                         id = '1', 
                         object_name = 'user@domain.com', 
                         object_type = 'User-initiated - no invitation', ), 
-                    site = openapi_client.models.v1_site.V1Site(
+                    site = jamf.models.v1_site.V1Site(
                         id = '1', 
                         name = 'Eau Claire', ), 
                     itunes_store_account_active = True, 
                     enrolled_via_automated_device_enrollment = True, 
                     user_approved_mdm = True, 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -84,8 +84,8 @@ class TestComputerInventoryResponse(unittest.TestCase):
                             options = ["foo","bar"], 
                             input_type = 'TEXT', )
                         ], ), 
-                disk_encryption = openapi_client.models.computer_disk_encryption.ComputerDiskEncryption(
-                    boot_partition_encryption_details = openapi_client.models.computer_partition_encryption.ComputerPartitionEncryption(
+                disk_encryption = jamf.models.computer_disk_encryption.ComputerDiskEncryption(
+                    boot_partition_encryption_details = jamf.models.computer_partition_encryption.ComputerPartitionEncryption(
                         partition_name = 'main', 
                         partition_file_vault2_state = 'VALID', 
                         partition_file_vault2_percent = 100, ), 
@@ -94,21 +94,21 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     disk_encryption_configuration_name = 'Test configuration', 
                     file_vault2_enabled_user_names = ["admin"], 
                     file_vault2_eligibility_message = 'Not a boot partition', ), 
-                purchasing = openapi_client.models.computer_purchase.ComputerPurchase(
+                purchasing = jamf.models.computer_purchase.ComputerPurchase(
                     leased = True, 
                     purchased = True, 
                     po_number = '53-1', 
-                    po_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                    po_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                     vendor = 'Example Vendor', 
-                    warranty_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                    warranty_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                     apple_care_id = 'abcd', 
-                    lease_date = 'Mon Dec 31 16:00:00 PST 2018', 
+                    lease_date = 'Tue Jan 01 00:00:00 GMT 2019', 
                     purchase_price = '$500', 
                     life_expectancy = 5, 
                     purchasing_account = 'admin', 
                     purchasing_contact = 'true', 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -120,7 +120,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                             input_type = 'TEXT', )
                         ], ), 
                 applications = [
-                    openapi_client.models.computer_application.ComputerApplication(
+                    jamf.models.computer_application.ComputerApplication(
                         name = 'Microsoft Word', 
                         path = '/usr/local/app', 
                         version = '1.0.0', 
@@ -130,10 +130,10 @@ class TestComputerInventoryResponse(unittest.TestCase):
                         update_available = False, 
                         external_version_id = '1', )
                     ], 
-                storage = openapi_client.models.computer_storage.ComputerStorage(
+                storage = jamf.models.computer_storage.ComputerStorage(
                     boot_drive_available_space_megabytes = 3072, 
                     disks = [
-                        openapi_client.models.computer_disk.ComputerDisk(
+                        jamf.models.computer_disk.ComputerDisk(
                             id = '170', 
                             device = 'disk0', 
                             model = 'APPLE HDD TOSHIBA MK5065GSXF', 
@@ -143,7 +143,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                             smart_status = 'OK', 
                             type = 'false', 
                             partitions = [
-                                openapi_client.models.computer_partition.ComputerPartition(
+                                jamf.models.computer_partition.ComputerPartition(
                                     name = 'Foo', 
                                     size_megabytes = 262144, 
                                     available_megabytes = 131072, 
@@ -154,7 +154,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                                     lvm_managed = True, )
                                 ], )
                         ], ), 
-                user_and_location = openapi_client.models.computer_user_and_location.ComputerUserAndLocation(
+                user_and_location = jamf.models.computer_user_and_location.ComputerUserAndLocation(
                     username = 'Madison Anderson', 
                     realname = '13-inch MacBook', 
                     email = 'email@com.pl', 
@@ -164,7 +164,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     building_id = '1', 
                     room = '5', 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -176,7 +176,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                             input_type = 'TEXT', )
                         ], ), 
                 configuration_profiles = [
-                    openapi_client.models.computer_configuration_profile.ComputerConfigurationProfile(
+                    jamf.models.computer_configuration_profile.ComputerConfigurationProfile(
                         id = '1', 
                         username = 'username', 
                         last_installed = '2018-10-31T18:04:13Z', 
@@ -185,17 +185,17 @@ class TestComputerInventoryResponse(unittest.TestCase):
                         profile_identifier = '0ae590fe-9b30-11ea-bb37-0242ac130002', )
                     ], 
                 printers = [
-                    openapi_client.models.computer_printer.ComputerPrinter(
+                    jamf.models.computer_printer.ComputerPrinter(
                         name = 'My Printer', 
                         type = 'XYZ 1122', 
                         uri = 'ipp://10.0.0.5', 
                         location = '7th floor', )
                     ], 
                 services = [
-                    openapi_client.models.computer_service.ComputerService(
+                    jamf.models.computer_service.ComputerService(
                         name = 'SomeService', )
                     ], 
-                hardware = openapi_client.models.computer_hardware.ComputerHardware(
+                hardware = jamf.models.computer_hardware.ComputerHardware(
                     make = 'Apple', 
                     model = '13-inch MacBook Pro (Mid 2012)', 
                     model_identifier = 'MacBookPro9,2', 
@@ -220,7 +220,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     boot_rom = 'MBP91.00D3.B08', 
                     ble_capable = False, 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -232,7 +232,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                             input_type = 'TEXT', )
                         ], ), 
                 local_user_accounts = [
-                    openapi_client.models.computer_local_user_account.ComputerLocalUserAccount(
+                    jamf.models.computer_local_user_account.ComputerLocalUserAccount(
                         uid = '501', 
                         username = 'jamf', 
                         full_name = 'John Jamf', 
@@ -251,7 +251,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                         azure_active_directory_id = 'ACTIVATED', )
                     ], 
                 certificates = [
-                    openapi_client.models.computer_certificate.ComputerCertificate(
+                    jamf.models.computer_certificate.ComputerCertificate(
                         common_name = 'jamf.com', 
                         identity = True, 
                         expiration_date = '2030-10-31T18:04:13Z', 
@@ -260,19 +260,19 @@ class TestComputerInventoryResponse(unittest.TestCase):
                         certificate_status = 'ISSUED', )
                     ], 
                 attachments = [
-                    openapi_client.models.computer_attachment.ComputerAttachment(
+                    jamf.models.computer_attachment.ComputerAttachment(
                         id = '1', 
                         name = 'Attachment.pdf', 
                         file_type = 'application/pdf', 
                         size_bytes = 1024, )
                     ], 
                 plugins = [
-                    openapi_client.models.computer_plugin.ComputerPlugin(
+                    jamf.models.computer_plugin.ComputerPlugin(
                         name = 'plugin name', 
                         version = '1.02', 
                         path = '/Applications/', )
                     ], 
-                package_receipts = openapi_client.models.computer_package_receipts.ComputerPackageReceipts(
+                package_receipts = jamf.models.computer_package_receipts.ComputerPackageReceipts(
                     installed_by_jamf_pro = [
                         'com.jamf.protect.JamfProtect'
                         ], 
@@ -283,12 +283,12 @@ class TestComputerInventoryResponse(unittest.TestCase):
                         'com.jamf.protect.JamfProtect'
                         ], ), 
                 fonts = [
-                    openapi_client.models.computer_font.ComputerFont(
+                    jamf.models.computer_font.ComputerFont(
                         name = 'font name', 
                         version = '1.02', 
                         path = '/Applications/', )
                     ], 
-                security = openapi_client.models.computer_security.ComputerSecurity(
+                security = jamf.models.computer_security.ComputerSecurity(
                     sip_status = 'ENABLED', 
                     gatekeeper_status = 'APP_STORE_AND_IDENTIFIED_DEVELOPERS', 
                     xprotect_version = '1.2.3', 
@@ -298,7 +298,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     secure_boot_level = 'FULL_SECURITY', 
                     external_boot_level = 'ALLOW_BOOTING_FROM_EXTERNAL_MEDIA', 
                     bootstrap_token_allowed = True, ), 
-                operating_system = openapi_client.models.computer_operating_system.ComputerOperatingSystem(
+                operating_system = jamf.models.computer_operating_system.ComputerOperatingSystem(
                     name = 'Mac OS X', 
                     version = '10.9.5', 
                     build = '13A603', 
@@ -306,7 +306,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     master_password_set = True, 
                     file_vault2_status = 'ALL_ENCRYPTED', 
                     extension_attributes = [
-                        openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                        jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                             definition_id = '23', 
                             name = 'Some Attribute', 
                             description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -318,22 +318,22 @@ class TestComputerInventoryResponse(unittest.TestCase):
                             input_type = 'TEXT', )
                         ], ), 
                 licensed_software = [
-                    openapi_client.models.computer_licensed_software.ComputerLicensedSoftware(
+                    jamf.models.computer_licensed_software.ComputerLicensedSoftware(
                         id = '1', 
                         name = 'Microsoft Word', )
                     ], 
                 ibeacons = [
-                    openapi_client.models.computer_ibeacon.ComputerIbeacon(
+                    jamf.models.computer_ibeacon.ComputerIbeacon(
                         name = 'room A', )
                     ], 
                 software_updates = [
-                    openapi_client.models.computer_software_update.ComputerSoftwareUpdate(
+                    jamf.models.computer_software_update.ComputerSoftwareUpdate(
                         name = 'BEdit', 
                         version = '1.15.2', 
                         package_name = 'com.apple.pkg.AdditionalEssentials', )
                     ], 
                 extension_attributes = [
-                    openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                    jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                         definition_id = '23', 
                         name = 'Some Attribute', 
                         description = 'Some Attribute defines how much Foo impacts Bar.', 
@@ -344,22 +344,22 @@ class TestComputerInventoryResponse(unittest.TestCase):
                         options = ["foo","bar"], 
                         input_type = 'TEXT', )
                     ], 
-                content_caching = openapi_client.models.computer_content_caching.ComputerContentCaching(
+                content_caching = jamf.models.computer_content_caching.ComputerContentCaching(
                     computer_content_caching_information_id = '1', 
                     parents = [
-                        openapi_client.models.computer_content_caching_parent.ComputerContentCachingParent(
+                        jamf.models.computer_content_caching_parent.ComputerContentCachingParent(
                             content_caching_parent_id = '1', 
                             address = 'SomeAddress', 
-                            alerts = openapi_client.models.computer_content_caching_parent_alert.ComputerContentCachingParentAlert(
+                            alerts = jamf.models.computer_content_caching_parent_alert.ComputerContentCachingParentAlert(
                                 content_caching_parent_alert_id = '1', 
                                 addresses = [], 
                                 class_name = 'SomeClass', 
                                 post_date = '2018-10-31T18:04:13Z', ), 
-                            details = openapi_client.models.computer_content_caching_parent_details.ComputerContentCachingParentDetails(
+                            details = jamf.models.computer_content_caching_parent_details.ComputerContentCachingParentDetails(
                                 content_caching_parent_details_id = '1', 
                                 ac_power = True, 
                                 cache_size_bytes = 0, 
-                                capabilities = openapi_client.models.computer_content_caching_parent_capabilities.ComputerContentCachingParentCapabilities(
+                                capabilities = jamf.models.computer_content_caching_parent_capabilities.ComputerContentCachingParentCapabilities(
                                     content_caching_parent_capabilities_id = '1', 
                                     imports = True, 
                                     namespaces = True, 
@@ -369,7 +369,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                                     prioritization = True, ), 
                                 portable = True, 
                                 local_network = [
-                                    openapi_client.models.computer_content_caching_parent_local_network.ComputerContentCachingParentLocalNetwork(
+                                    jamf.models.computer_content_caching_parent_local_network.ComputerContentCachingParentLocalNetwork(
                                         content_caching_parent_local_network_id = '1', 
                                         speed = 5000, 
                                         wired = True, )
@@ -380,7 +380,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                             version = '1', )
                         ], 
                     alerts = [
-                        openapi_client.models.computer_content_caching_alert.ComputerContentCachingAlert(
+                        jamf.models.computer_content_caching_alert.ComputerContentCachingAlert(
                             cache_bytes_limit = 0, 
                             class_name = 'SomeClass', 
                             path_preventing_access = '/some/path', 
@@ -392,7 +392,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     active = False, 
                     actual_cache_bytes_used = 0, 
                     cache_details = [
-                        openapi_client.models.computer_content_caching_cache_detail.ComputerContentCachingCacheDetail(
+                        jamf.models.computer_content_caching_cache_detail.ComputerContentCachingCacheDetail(
                             computer_content_caching_cache_details_id = '1', 
                             category_name = 'SomeCategory', 
                             disk_space_bytes_used = 0, )
@@ -403,11 +403,11 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     cache_bytes_used = 0, 
                     data_migration_completed = False, 
                     data_migration_progress_percentage = 0, 
-                    data_migration_error = openapi_client.models.computer_content_caching_data_migration_error.ComputerContentCachingDataMigrationError(
+                    data_migration_error = jamf.models.computer_content_caching_data_migration_error.ComputerContentCachingDataMigrationError(
                         code = 0, 
                         domain = 'SomeDomain', 
                         user_info = [
-                            openapi_client.models.computer_content_caching_data_migration_error_user_info.ComputerContentCachingDataMigrationErrorUserInfo(
+                            jamf.models.computer_content_caching_data_migration_error_user_info.ComputerContentCachingDataMigrationErrorUserInfo(
                                 key = 'foo', 
                                 value = 'bar', )
                             ], ), 
@@ -435,7 +435,7 @@ class TestComputerInventoryResponse(unittest.TestCase):
                     total_bytes_stored_from_parents = 0, 
                     total_bytes_stored_from_peers = 0, ), 
                 group_memberships = [
-                    openapi_client.models.group_membership.GroupMembership(
+                    jamf.models.group_membership.GroupMembership(
                         group_id = '1', 
                         group_name = 'groupOne', 
                         smart_group = True, )

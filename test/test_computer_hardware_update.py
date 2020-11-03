@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.computer_hardware_update import ComputerHardwareUpdate  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.computer_hardware_update import ComputerHardwareUpdate  # noqa: E501
+from jamf.rest import ApiException
 
 class TestComputerHardwareUpdate(unittest.TestCase):
     """ComputerHardwareUpdate unit test stubs"""
@@ -33,7 +33,7 @@ class TestComputerHardwareUpdate(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.computer_hardware_update.ComputerHardwareUpdate()  # noqa: E501
+        # model = jamf.models.computer_hardware_update.ComputerHardwareUpdate()  # noqa: E501
         if include_optional :
             return ComputerHardwareUpdate(
                 network_adapter_type = 'Foo', 
@@ -41,7 +41,7 @@ class TestComputerHardwareUpdate(unittest.TestCase):
                 alt_network_adapter_type = 'Bar', 
                 alt_mac_address = '82:45:58:44:dc:01', 
                 extension_attributes = [
-                    openapi_client.models.computer_extension_attribute.ComputerExtensionAttribute(
+                    jamf.models.computer_extension_attribute.ComputerExtensionAttribute(
                         definition_id = '23', 
                         name = 'Some Attribute', 
                         description = 'Some Attribute defines how much Foo impacts Bar.', 

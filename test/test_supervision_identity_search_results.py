@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import openapi_client
-from openapi_client.models.supervision_identity_search_results import SupervisionIdentitySearchResults  # noqa: E501
-from openapi_client.rest import ApiException
+import jamf
+from jamf.models.supervision_identity_search_results import SupervisionIdentitySearchResults  # noqa: E501
+from jamf.rest import ApiException
 
 class TestSupervisionIdentitySearchResults(unittest.TestCase):
     """SupervisionIdentitySearchResults unit test stubs"""
@@ -33,12 +33,12 @@ class TestSupervisionIdentitySearchResults(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.supervision_identity_search_results.SupervisionIdentitySearchResults()  # noqa: E501
+        # model = jamf.models.supervision_identity_search_results.SupervisionIdentitySearchResults()  # noqa: E501
         if include_optional :
             return SupervisionIdentitySearchResults(
                 total_count = 1, 
                 results = [
-                    openapi_client.models.supervision_identity.SupervisionIdentity(
+                    jamf.models.supervision_identity.SupervisionIdentity(
                         id = 1, 
                         display_name = 'Supervision Identity', 
                         common_name = 'Jamf Identity - Supervision Identity', 
